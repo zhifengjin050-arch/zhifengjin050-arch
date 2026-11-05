@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img">
 <rect x="0.5" y="0.5" width="999" height="149" rx="16" fill="#17140D" stroke="#51452B" stroke-width="1"/>
 <path d="M22 1.5 L978 1.5" stroke="#FFE9A8" stroke-width="1" opacity="0.32"/>
-<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><radialGradient id="cardsheen" cx="50%" cy="50%" r="50%"><stop stop-color="#D6B85C" stop-opacity=".23"/><stop offset=".5" stop-color="#D6B85C" stop-opacity=".12"/><stop offset="1" stop-color="#D6B85C" stop-opacity="0"/></radialGradient></defs>
-<style>@keyframes sweep{0%,100%{transform:translateX(-100px)}50%{transform:translateX(560px)}}@keyframes trace{to{stroke-dashoffset:-2300}}.sheen{animation:sweep 9s ease-in-out infinite}.edge{animation:trace 24s linear infinite}@media(prefers-reduced-motion:reduce){.sheen{display:none}.edge{animation:none}}</style>
-<g clip-path="url(#cardclip)"><rect class="sheen" style="animation-delay:-2.4s" x="0" y="-35" width="560" height="220" fill="url(#cardsheen)"/></g>
+<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><linearGradient id="cardsheen" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0" stop-color="#D6B85C" stop-opacity="0"/><stop offset=".32" stop-color="#D6B85C" stop-opacity=".10"/><stop offset=".48" stop-color="#D6B85C" stop-opacity=".18"/><stop offset=".53" stop-color="#FFF4CF" stop-opacity=".42"/><stop offset=".59" stop-color="#D6B85C" stop-opacity=".16"/><stop offset="1" stop-color="#D6B85C" stop-opacity="0"/></linearGradient></defs>
+<style>@keyframes sweep{from{transform:translateX(-300px)}to{transform:translateX(1200px)}}@keyframes trace{to{stroke-dashoffset:-2300}}.sheen{animation:sweep 11s linear infinite}.edge{animation:trace 24s linear infinite}@media(prefers-reduced-motion:reduce){.sheen{display:none}.edge{animation:none}}</style>
+<g clip-path="url(#cardclip)"><g class="sheen" style="animation-delay:-3.2s"><rect x="0" y="-50" width="240" height="250" fill="url(#cardsheen)" transform="skewX(-18)"/></g></g>
 <rect class="edge" x="1" y="1" width="998" height="148" rx="16" fill="none" stroke="#D6B85C" stroke-width="1.3" stroke-dasharray="95 2205" opacity=".55"/>
 <rect x="20" y="22" width="4" height="106" rx="2" fill="#D6B85C"/>
 <text x="962" y="66" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="46" font-weight="800" fill="#D6B85C" text-anchor="end" opacity="0.16">02</text>
