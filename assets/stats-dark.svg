@@ -14,7 +14,7 @@
 <text x="40" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#F5EBD3" text-anchor="start">RBAC</text>
 <text x="40" y="138" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#B3A480" text-anchor="start">多租户隔离与最小权限</text>
 <text x="262" y="88" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#E3B341" text-anchor="start" letter-spacing="1">TOOL GOVERNANCE</text>
-<text x="262" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#F5EBD3" text-anchor="start">17 tools</text>
+<text x="262" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#F5EBD3" text-anchor="start">18 tools</text>
 <text x="262" y="138" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#B3A480" text-anchor="start">执行门 / 命令过滤 / 审计</text>
 <text x="40" y="164" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#E3B341" text-anchor="start" letter-spacing="1">OBSERVABILITY</text>
 <text x="40" y="194" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#F5EBD3" text-anchor="start">Traces</text>

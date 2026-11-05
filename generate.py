@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-GitHub Profile README 生成器 (v3 · holographic)
+GitHub Profile README 生成器 (v4 · content-first portfolio)
 
 以 lenyanjgk/lenyanjgk 的视觉语言为骨架，升级为自托管动画 SVG + bento 玻璃面板：
 - 所有动画均为纯 SMIL，提交进仓库，不依赖任何第三方服务
@@ -524,220 +524,97 @@ def top_langs(u):
 
 
 def build_readme():
-    u = CFG["username"]
+    u = CFG['username']
     L = []
     a = L.append
-
     a('<div align="center">\n')
-    a(pic("banner", f'{CFG["display_name"]} · @{u}'))
-    a("")
-    a(pic("typing", "Building governed agents"))
-    a("\n<br>\n")
-    for b in CFG["top_badges"]:
-        a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F0EADA'
-          f'?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
-    a("\n</div>\n")
-
-    a(pic("divider", ""))
-    a("")
-    a(pic("hdr-about", "定位"))
-    a("")
-    a("## 定位 / What I build\n")
-    for line in CFG["bio"]:
-        a(f"- {line}")
-    a("")
-    a('<p align="left">')
-    a(f'<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000'
-      f'&color=8A6E14&center=true&vCenter=true&repeat=true&width=520'
-      f'&lines={q(CFG["motto"])}" />')
-    a("</p>\n")
-    a("> **Design constraint:** an agent that can call `kubectl` is a production "
-      "system, not a prompt. Every tool call must be authorized, bounded, and replayable.\n")
-    a(pic("terminal", "终端名片"))
-    a("")
-
-    a(pic("hdr-stack", "技术纵深"))
-    a("")
-    a(pic("arch", "系统分层"))
-    a("")
-    a("<table>\n<tr>")
-    groups = CFG["tech_groups"]
-    for g in groups[:2]:
-        a('<td valign="top" width="50%">\n')
-        a(f'**{g["title"]}**\n')
-        for b in g["badges"]:
-            a(badge(b))
-        a("\n</td>\n")
-    a('</tr>\n<tr>\n<td valign="top" colspan="2">\n')
-    a(f'**{groups[2]["title"]}**\n')
-    for b in groups[2]["badges"]:
-        a(badge(b))
-    a("\n</td>\n\n</tr>\n</table>\n")
-    a('<p align="left">')
-    a(f'<img height="137px" src="{top_langs(u)}" />')
-    a("</p>\n")
-
-    a(pic("hdr-projects", "系统与实践"))
-    a("")
-    for pr in CFG["projects"]:
-        a('<p align="center">')
-        a(f'  <a href="{pr["url"]}">')
-        a("    " + pic(f'proj-{pr["slug"]}', pr["name"]).replace("\n", "\n    "))
-        a("  </a>")
-        a("</p>\n")
-
-    a(pic("hdr-stats", "工程切面与运行视图"))
-    a("")
-    a(pic("stats", "工程指标与仓库矩阵"))
-    a("")
-    a(pic("flow", "请求链路"))
-    a("")
-
-    a(pic("hdr-focus", "设计原则"))
-    a("")
-    a(pic("focus", "设计原则"))
-    a("")
-
-    a(pic("hdr-links", "找到我"))
-    a("")
-    a(pic("links", "联系与仓库入口"))
-    a("")
-    a('<p align="center">')
-    for b in CFG["footer_badges"]:
-        a(f'<a href="{b["url"]}"><img src="https://img.shields.io/badge/'
-          f'{q(b["label"])}-8A6E14?style=flat-square&labelColor=F0EADA&color=8A6E14" '
-          f'alt="{esc(b["label"])}"></a>')
-    a("</p>\n")
-    a(pic("divider", ""))
-    a("")
-    a(f'<div align="center">\n**{CFG["closing"]}**\n</div>')
-
-    (ROOT / "README.md").write_text("\n".join(L) + "\n", encoding="utf-8")
-
-
-# --------------------------------------------------------------------------
-# 本地预览页
-# --------------------------------------------------------------------------
-
-def img_tag(name, alt=""):
-    return (f'<img class="asset" data-base="assets/{name}-light.svg" '
-            f'src="assets/{name}-light.svg" alt="{esc(alt)}">')
+    a(pic('banner', f'Zhifeng Jin · @{u}'))
+    a('\n**AI Agent · AIOps · Platform Engineering**\n')
+    a('让知识可检索，让工具可治理，让系统可观测。\n')
+    for b in CFG['top_badges']:
+        a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F0EADA?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
+    a('\n[👋 关于我](#about) · [🚀 代表项目](#projects) · [🛠️ 技术能力](#stack) · [📚 技术笔记](#notes) · [🤝 交流合作](#contact)\n')
+    a('</div>\n')
+    a('<a id="about"></a>\n\n## 👋 关于我 · About\n')
+    for line in CFG['bio']: a('- ' + line)
+    a('\n> ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。\n')
+    a('### 🧭 从哪里开始看？\n')
+    a('- **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。')
+    a('- **想了解 AIOps / SRE** → 从故障诊断 Agent 入手，看 Kubernetes 现场证据、Runbook 与 Trace。')
+    a('- **想了解 MCP / 工具工程** → 从 DevOps MCP Server 入手，看工具目录、执行门与审计。\n')
+    a('<a id="projects"></a>\n\n## 🚀 代表项目 · Selected Work\n')
+    a('以 **知识自动化 → 故障诊断 → 工具治理** 为主线，下面展开项目场景、系统能力与值得深入阅读的工程设计。\n')
+    for i, (pr, detail) in enumerate(zip(CFG['projects'], CFG['project_details'])):
+        if i == 3:
+            a('## 🧩 更多开源实践 · Engineering Portfolio\n')
+            a('补充展示模型网关、全栈业务与网络认证三个方向。以下介绍仓库能力与实践主题；具体实现与许可说明以各仓库为准。\n')
+        a(f'### {detail["icon"]} {i+1:02d} · [{pr["name"]}]({pr["url"]})\n')
+        a(f'**{detail["tag"]}** · ' + ' / '.join(f'`{x}`' for x in pr['tech']) + '\n')
+        if i < 3:
+            a(f'<a href="{pr["url"]}">\n' + pic('proj-'+pr['slug'], pr['name']) + '\n</a>\n')
+        a(detail['intro'] + '\n')
+        for line in detail['highlights']: a('- ' + line)
+        a('\n> 🔧 ' + detail['focus'] + '\n')
+        links=[('💻 源码',pr['url'])]+detail['links']
+        a(' · '.join(f'[{label}]({url})' for label,url in links)+'\n')
+        if i < 2:
+            repo=pr['url'].rsplit('/',1)[-1]
+            a('<details>\n<summary>🖼️ 展开项目演示入口</summary>\n')
+            a(f'[![{pr["name"]} 演示封面](https://raw.githubusercontent.com/{u}/{repo}/main/docs/videos/cover.png)](https://{u}.github.io/{repo}/)\n')
+            a('点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。\n\n</details>\n')
+        a('---\n')
+    a('<a id="stack"></a>\n\n## 🛠️ 技术能力 · Engineering Stack\n')
+    a('### 🧠 AI / Agent / Retrieval\n')
+    a('- **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。')
+    a('- **知识工程**：文档接入、分块、Embedding、向量与全文混合检索、知识图谱、Rerank 与引用回答。')
+    a('- **工作流**：DAG、审批节点、Webhook / Schedule 触发与执行生命周期。\n')
+    a('### ⚙️ Backend / Data / Product\n')
+    a('- **后端与 API**：Python、FastAPI、SQLAlchemy async、Alembic；Go 服务与网关实践。')
+    a('- **数据与缓存**：PostgreSQL、Redis、ChromaDB；关注租户约束、数据模型与异步任务协作。')
+    a('- **控制台与全栈**：React / Vue 3、TypeScript、Vite、Tailwind；将业务接口与可操作界面连接起来。\n')
+    a('### ☁️ Infrastructure / Security / Delivery\n')
+    a('- **基础设施**：Linux、Docker、Kubernetes、SSH，以及 LDAP / FreeRADIUS / UniFi 集成实践。')
+    a('- **权限与治理**：JWT、RBAC、多租户隔离、工具风险分级、执行保护与审计日志。')
+    a('- **交付与观测**：Docker Compose、Kubernetes manifests、Helm、GitHub Actions、OpenTelemetry、Prometheus 与 Grafana。\n')
+    a(pic('arch','从 API 入口到 Agent、检索、工具治理与基础设施的分层'))
+    a('\n### 🔗 把这些技术放进一条链路\n')
+    a(pic('flow','请求规划、工具调用、检索与响应的示意链路'))
+    a('\n*上图为项目能力的组合示意，各项目实际集成范围见对应仓库。*\n')
+    a('<a id="notes"></a>\n\n## 📚 技术笔记与阅读入口 · Build in Public\n')
+    a('将项目文档作为技术笔记入口，沿着一个问题读到设计与实现：\n')
+    base=f'https://github.com/{u}'
+    for title,body,url in [
+        ('🔍 企业知识如何进入 RAG？','从文档同步、智能分块读到混合检索、图谱与引用回答。',f'{base}/enterprise-ai-agent-platform#rag-pipeline'),
+        ('🧩 Agent 如何执行多步任务？','从 Planner、工具注册与 Memory 读到工作流编排。',f'{base}/enterprise-ai-agent-platform#核心能力'),
+        ('🩺 故障诊断如何组织证据？','从 LangGraph Agent 循环读到 Kubernetes 工具、Runbook 与 Incident Report。',f'{base}/enterprise-ai-sre-platform#features'),
+        ('🔐 MCP 如何划分读与写？','从工具目录的风险 / 权限读到默认只读与执行保护。',f'{base}/enterprise-devops-mcp-server#mcp-tool-catalog'),
+        ('📦 系统如何交付？','从环境配置与 Compose 读到 Kubernetes 和 Helm 部署入口。',f'{base}/enterprise-ai-agent-platform#部署架构')]:
+        a(f'- **[{title}]({url})** — {body}')
+    a('\n## 🌱 持续探索 · What’s Next\n')
+    a('- **检索质量**：如何组织评测样本、定位召回与排序问题，让回答更有依据。')
+    a('- **执行可靠性**：如何处理超时、重试、部分失败与长任务状态，让 Agent 任务更可控。')
+    a('- **可观测性**：如何把模型决策、工具调用、耗时与成本放入同一个分析上下文。')
+    a('- **平台体验**：如何降低系统配置、知识接入与工具集成的使用门槛。\n')
+    a('## 💡 写代码时在意的事\n')
+    a('- 🛡️ **边界明确**：权限、租户、数据访问与执行范围应在接口和实现中看得见。')
+    a('- 🔎 **过程可查**：错误要能定位，工具调用要有记录，结论要有证据。')
+    a('- 📦 **交付完整**：代码之外，补上配置模板、启动方式、部署入口与技术文档。')
+    a('- 🧱 **持续演进**：先理清模块职责，再扩展能力；让后续阅读和修改都有路径。\n')
+    a('<a id="contact"></a>\n\n## 🤝 交流与合作 · Let’s Connect\n')
+    a('欢迎围绕 **Agent 工程、RAG、MCP、Kubernetes 诊断、平台工程** 交流。发现问题或有改进建议，可以在对应仓库提交 Issue / PR。\n')
+    a(f'[🐙 GitHub](https://github.com/{u}) · [📂 所有仓库](https://github.com/{u}?tab=repositories) · [🧠 Agent Platform]({base}/enterprise-ai-agent-platform) · [🛡️ MCP Server]({base}/enterprise-devops-mcp-server)\n')
+    a('---\n\n<div align="center">\n\n**'+CFG['closing']+'**\n\n如果某个项目对你有帮助，欢迎留下一个 ⭐\n\n</div>\n')
+    (ROOT/'README.md').write_text('\n'.join(L)+'\n',encoding='utf-8')
 
 
 def build_preview():
-    u = CFG["username"]
-    imgs = []
-    imgs.append(img_tag("banner", "banner"))
-    imgs.append(img_tag("typing", "typing"))
-    imgs.append('<div class="badges">' + "".join(
-        f'<img src="https://img.shields.io/badge/{b["label"]}-F0EADA?style=for-the-badge'
-        f'&logo={b["logo"]}&logoColor={b["logoColor"]}">' for b in CFG["top_badges"]
-    ) + "</div>")
-    imgs.append(img_tag("divider"))
-    imgs.append(img_tag("hdr-about"))
-    bio = "\n".join(f"<li>{strip_md(x)}</li>" for x in CFG["bio"])
-    imgs.append('<h2>定位 / What I build</h2><ul class="bio">' + bio + "</ul>")
-    imgs.append('<p class="motto">' + esc(CFG["motto"]) + "</p>")
-    imgs.append('<blockquote><b>Design constraint:</b> an agent that can call '
-                '<code>kubectl</code> is a production system, not a prompt. Every tool call '
-                'must be authorized, bounded, and replayable.</blockquote>')
-    imgs.append(img_tag("terminal"))
-    imgs.append(img_tag("hdr-stack"))
-    imgs.append(img_tag("arch"))
-    imgs.append('<table class="tech"><tr>')
-    for g in CFG["tech_groups"][:2]:
-        imgs.append("<td><b>" + esc(g["title"]) + "</b><br>" + "".join(
-            f'<img src="https://img.shields.io/badge/{b["label"]}-{b["color"]}?style=flat-square'
-            f'&logo={b.get("logo","")}&logoColor={b.get("logoColor","white")}">'
-            for b in g["badges"]) + "</td>")
-    imgs.append("</tr><tr><td colspan='2'><b>" + esc(CFG["tech_groups"][2]["title"]) + "</b><br>" + "".join(
-        f'<img src="https://img.shields.io/badge/{b["label"]}-{b["color"]}?style=flat-square'
-        f'&logo={b.get("logo","")}&logoColor={b.get("logoColor","white")}">'
-        for b in CFG["tech_groups"][2]["badges"]) + "</td></tr></table>")
-    imgs.append('<div class="dynstats">'
-                f'<img src="{top_langs(u)}"></div>')
-    imgs.append(img_tag("hdr-projects"))
-    for pr in CFG["projects"]:
-        imgs.append(f'<a class="projlink" href="{pr["url"]}">' +
-                    img_tag("proj-" + pr["slug"], pr["name"]) + "</a>")
-    imgs.append(img_tag("hdr-stats"))
-    imgs.append(img_tag("stats"))
-    imgs.append(img_tag("flow"))
-    imgs.append(img_tag("hdr-focus"))
-    imgs.append(img_tag("focus"))
-    imgs.append(img_tag("hdr-links"))
-    imgs.append(img_tag("links"))
-    imgs.append('<div class="badges">' + "".join(
-        f'<a href="{b["url"]}"><img src="https://img.shields.io/badge/'
-        f'{q(b["label"])}-8A6E14?style=flat-square&labelColor=F0EADA&color=8A6E14"></a>'
-        for b in CFG["footer_badges"]) + "</div>")
-    imgs.append(img_tag("divider"))
-    imgs.append('<p class="thanks"><b>' + esc(CFG["closing"]) + "</b></p>")
-
-    page = """<!doctype html>
-<html lang="zh-CN" data-theme="light">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>GitHub Profile 预览 · v3</title>
-<style>
-:root{
-  --page:#ffffff; --card:#f6f8fa; --ink:#1f2328; --sub:#59636e; --line:#d1d9e0;
-}
-html[data-theme="dark"]{
-  --page:#0d1117; --card:#161b22; --ink:#e6edf3; --sub:#9198a1; --line:#30363d;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--page);color:var(--ink);
- font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
-.toolbar{position:sticky;top:0;z-index:9;display:flex;gap:12px;align-items:center;
- justify-content:center;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--line);
- background:var(--card);font-size:13px}
-.toolbar .note{color:var(--sub)}
-.toolbar button{border:1px solid var(--line);background:transparent;color:var(--ink);
- padding:5px 14px;border-radius:6px;cursor:pointer;font-size:13px}
-.wrap{max-width:920px;margin:24px auto 80px;padding:0 16px}
-.readme{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:28px 26px}
-.asset{display:block;width:100%;height:auto;margin:0 0 2px}
-.badges{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:14px 0 18px}
-.badges img{height:26px}
-h2{font-size:24px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:18px 0 12px}
-.bio{line-height:1.9;padding-left:22px;font-size:15px}
-.motto{font-family:Consolas,monospace;color:#8a6e14;font-size:15px;margin:6px 0 18px}
-blockquote{margin:6px 0 20px;padding:10px 16px;border-left:3px solid #8a6e14;
- background:rgba(138,110,20,.07);font-size:14px;line-height:1.8}
-blockquote code{font-family:Consolas,monospace;font-size:13px}
-.dynstats{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 20px}
-.dynstats img{height:137px}
-.tech{width:100%;border-collapse:collapse;margin:10px 0 14px}
-.tech td{vertical-align:top;width:50%;padding:10px 12px;border:1px solid var(--line);line-height:2.4}
-.tech img{margin:0 4px 4px 0;height:20px}
-.projlink{display:block;text-decoration:none;margin:0 0 14px}
-.thanks{text-align:center;margin:8px 0 4px;font-size:15px}
-</style>
-</head>
-<body>
-<div class="toolbar">
-  <span class="note">v3 · 自托管 SMIL 动画 + bento 玻璃面板 · 零第三方动效依赖</span>
-  <button onclick="setTheme('light')">浅色</button>
-  <button onclick="setTheme('dark')">深色</button>
-</div>
-<div class="wrap"><div class="readme">
-__CONTENT__
-</div></div>
-<script>
-function setTheme(k){
-  document.documentElement.dataset.theme=k;
-  document.querySelectorAll('img[data-base]').forEach(function(el){
-    el.src=el.dataset.base.replace('-light.svg','-'+k+'.svg');
-  });
-}
-</script>
-</body>
-</html>
-"""
-    page = page.replace("__CONTENT__", "\n".join(imgs))
-    (ROOT / "preview.html").write_text(page, encoding="utf-8")
+    import markdown
+    source=(ROOT/'README.md').read_text(encoding='utf-8').replace('<div align="center">', '<div align="center" markdown="1">').replace('<details>', '<details markdown="1">')
+    content=markdown.markdown(source,extensions=['extra','sane_lists','md_in_html'])
+    page='''<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zhifeng Jin · Profile v4</title><style>
+:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #b29a58;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
+</style></head><body><div class="toolbar"><span>Profile v4 · GitHub README 内容预览</span><span><button onclick="setTheme('light')">浅色</button> <button onclick="setTheme('dark')">深色</button></span></div><article class="readme">__BODY__</article><script>function setTheme(t){document.documentElement.dataset.theme=t;document.querySelectorAll('picture').forEach(p=>{let i=p.querySelector('img');if(!i.dataset.light)i.dataset.light=i.src.replace('-dark.svg','-light.svg');i.src=i.dataset.light.replace('-light.svg','-'+t+'.svg');p.querySelectorAll('source').forEach(s=>s.media='not all')})}</script></body></html>'''
+    (ROOT/'preview.html').write_text(page.replace('__BODY__',content),encoding='utf-8')
 
 
 def main():

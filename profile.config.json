@@ -1,6 +1,5 @@
 {
   "_note": "内容全部基于 zhifengjin050-arch 的真实公开仓库生成，未编造 star / follower / 获奖等可核验数据。改这里再跑 python generate.py 即可全量重生成。",
-
   "username": "zhifengjin050-arch",
   "display_name": "Zhifeng Jin",
   "name_en": "ZHIFENG JIN",
@@ -9,156 +8,537 @@
   "motto": "Systems, not demos.",
   "typing_line": "Building governed agents that operate real infrastructure.",
   "year": "2026",
-  "banner_chips": ["Agent Systems", "MCP Tooling", "Cloud Native"],
-
+  "banner_chips": [
+    "Agent Systems",
+    "MCP Tooling",
+    "Cloud Native"
+  ],
   "top_badges": [
-    { "label": "Python",      "logo": "python",     "logoColor": "8A6E14" },
-    { "label": "Go",          "logo": "go",         "logoColor": "8A6E14" },
-    { "label": "Kubernetes",  "logo": "kubernetes", "logoColor": "8A6E14" },
-    { "label": "FastAPI",     "logo": "fastapi",    "logoColor": "8A6E14" },
-    { "label": "LangGraph",   "logo": "langchain",  "logoColor": "8A6E14" }
+    {
+      "label": "Python",
+      "logo": "python",
+      "logoColor": "8A6E14"
+    },
+    {
+      "label": "Go",
+      "logo": "go",
+      "logoColor": "8A6E14"
+    },
+    {
+      "label": "Kubernetes",
+      "logo": "kubernetes",
+      "logoColor": "8A6E14"
+    },
+    {
+      "label": "FastAPI",
+      "logo": "fastapi",
+      "logoColor": "8A6E14"
+    },
+    {
+      "label": "LangGraph",
+      "logo": "langchain",
+      "logoColor": "8A6E14"
+    }
   ],
-
   "bio": [
-    "**定位**：构建让 AI Agent 在真实基础设施上受控运行的系统 —— 不是聊天机器人 demo。",
-    "**关注边界**：多租户隔离、最小权限、工具执行门、全链路 trace；先解决「能不能上线」，再谈能力上限。",
-    "**开源交付**：[enterprise-ai-agent-platform](https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform) · [enterprise-ai-sre-platform](https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform) · [enterprise-devops-mcp-server](https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server)，Apache-2.0 / MIT，README 含架构图与部署说明。",
-    "**评价方式**：看默认安全配置、失败恢复路径与可观测性，而不是看演示视频。"
+    "👋 你好，我是 **Zhifeng Jin**，关注 **AI Agent 应用开发、AIOps 与平台工程**，喜欢把知识检索、工具调用和基础设施自动化连成完整系统。",
+    "🧠 **AI 应用**：围绕企业文档接入、Hybrid RAG、知识图谱与 Agent Runtime，探索从「找到信息」到「执行任务」的工程链路。",
+    "☁️ **云原生与运维**：围绕 Kubernetes 故障诊断、MCP 工具治理与服务可观测性，让模型决策有证据、工具执行有边界。",
+    "🛠️ **工程实践**：主要使用 Python / FastAPI，结合 Go、React / Vue 与 TypeScript，关注 API、数据层、控制台和部署之间的协作。",
+    "📦 **作品入口**：下面整理了 3 个 AI / 运维核心项目与 3 个网关、全栈、网络认证实践；每项均附仓库与可继续阅读的技术资料。",
+    "🌱 **持续探索**：检索质量评估、Agent 执行可靠性、权限边界与故障恢复；欢迎交流实现思路，也欢迎带着具体问题来讨论。"
   ],
-
   "sections": [
-    { "key": "about",    "title": "定位",     "en": "POSITIONING", "no": "01" },
-    { "key": "stack",    "title": "技术纵深", "en": "TECH STACK",  "no": "02" },
-    { "key": "projects", "title": "系统与实践", "en": "SYSTEMS",    "no": "03" },
-    { "key": "stats",    "title": "工程切面", "en": "ENGINEERING", "no": "04" },
-    { "key": "focus",    "title": "设计原则", "en": "PRINCIPLES",  "no": "05" },
-    { "key": "links",    "title": "找到我",   "en": "CONTACT",     "no": "06" }
+    {
+      "key": "about",
+      "title": "定位",
+      "en": "POSITIONING",
+      "no": "01"
+    },
+    {
+      "key": "stack",
+      "title": "技术纵深",
+      "en": "TECH STACK",
+      "no": "02"
+    },
+    {
+      "key": "projects",
+      "title": "系统与实践",
+      "en": "SYSTEMS",
+      "no": "03"
+    },
+    {
+      "key": "stats",
+      "title": "工程切面",
+      "en": "ENGINEERING",
+      "no": "04"
+    },
+    {
+      "key": "focus",
+      "title": "设计原则",
+      "en": "PRINCIPLES",
+      "no": "05"
+    },
+    {
+      "key": "links",
+      "title": "找到我",
+      "en": "CONTACT",
+      "no": "06"
+    }
   ],
-
   "terminal_lines": [
-    { "prompt": "$ whoami",        "out": "Zhifeng Jin · AI Agent / AIOps Engineer" },
-    { "prompt": "$ cat focus.txt", "out": "Agent runtime · MCP tooling · K8s RCA · Hybrid RAG" },
-    { "prompt": "$ echo $DEFAULT", "out": "read-only · least privilege · audited" }
+    {
+      "prompt": "$ whoami",
+      "out": "Zhifeng Jin · AI Agent / AIOps Engineer"
+    },
+    {
+      "prompt": "$ cat focus.txt",
+      "out": "Agent runtime · MCP tooling · K8s RCA · Hybrid RAG"
+    },
+    {
+      "prompt": "$ echo $DEFAULT",
+      "out": "read-only · least privilege · audited"
+    }
   ],
-
   "layers": [
-    { "name": "INGRESS",        "tech": "Go API Gateway · FastAPI",                   "color": "#B08D2E" },
-    { "name": "AGENT RUNTIME",  "tech": "LangGraph · Planner · Tool Calling · Memory", "color": "#8A6E14" },
-    { "name": "RETRIEVAL",      "tech": "Hybrid RAG · pgvector · Knowledge Graph",    "color": "#A8763E" },
-    { "name": "TOOL GOVERNANCE","tech": "MCP · RBAC · Execute Gate · Audit Log",      "color": "#5B8C7B" },
-    { "name": "INFRASTRUCTURE", "tech": "Kubernetes · Helm · Docker · CI",            "color": "#9C8A63" }
+    {
+      "name": "INGRESS",
+      "tech": "Go API Gateway · FastAPI",
+      "color": "#B08D2E"
+    },
+    {
+      "name": "AGENT RUNTIME",
+      "tech": "LangGraph · Planner · Tool Calling · Memory",
+      "color": "#8A6E14"
+    },
+    {
+      "name": "RETRIEVAL",
+      "tech": "Hybrid RAG · pgvector · Knowledge Graph",
+      "color": "#A8763E"
+    },
+    {
+      "name": "TOOL GOVERNANCE",
+      "tech": "MCP · RBAC · Execute Gate · Audit Log",
+      "color": "#5B8C7B"
+    },
+    {
+      "name": "INFRASTRUCTURE",
+      "tech": "Kubernetes · Helm · Docker · CI",
+      "color": "#9C8A63"
+    }
   ],
-
   "tech_groups": [
     {
       "title": "运行时 · 协议",
       "badges": [
-        { "label": "Python_3.11", "color": "3776AB", "logo": "python", "logoColor": "white" },
-        { "label": "Go", "color": "00ADD8", "logo": "go", "logoColor": "white" },
-        { "label": "FastAPI", "color": "009688", "logo": "fastapi", "logoColor": "white" },
-        { "label": "LangGraph", "color": "1C3C3C", "logo": "langchain", "logoColor": "white" },
-        { "label": "MCP", "color": "8A6E14", "logo": "anthropic", "logoColor": "white" }
+        {
+          "label": "Python_3.11",
+          "color": "3776AB",
+          "logo": "python",
+          "logoColor": "white"
+        },
+        {
+          "label": "Go",
+          "color": "00ADD8",
+          "logo": "go",
+          "logoColor": "white"
+        },
+        {
+          "label": "FastAPI",
+          "color": "009688",
+          "logo": "fastapi",
+          "logoColor": "white"
+        },
+        {
+          "label": "LangGraph",
+          "color": "1C3C3C",
+          "logo": "langchain",
+          "logoColor": "white"
+        },
+        {
+          "label": "MCP",
+          "color": "8A6E14",
+          "logo": "anthropic",
+          "logoColor": "white"
+        }
       ]
     },
     {
       "title": "检索 · 数据",
       "badges": [
-        { "label": "Hybrid_RAG", "color": "B08D2E", "logo": "langchain", "logoColor": "white" },
-        { "label": "pgvector", "color": "336791", "logo": "postgresql", "logoColor": "white" },
-        { "label": "PostgreSQL", "color": "4169E1", "logo": "postgresql", "logoColor": "white" },
-        { "label": "Redis", "color": "DC382D", "logo": "redis", "logoColor": "white" },
-        { "label": "Knowledge_Graph", "color": "5B8C7B", "logo": "neo4j", "logoColor": "white" }
+        {
+          "label": "Hybrid_RAG",
+          "color": "B08D2E",
+          "logo": "langchain",
+          "logoColor": "white"
+        },
+        {
+          "label": "pgvector",
+          "color": "336791",
+          "logo": "postgresql",
+          "logoColor": "white"
+        },
+        {
+          "label": "PostgreSQL",
+          "color": "4169E1",
+          "logo": "postgresql",
+          "logoColor": "white"
+        },
+        {
+          "label": "Redis",
+          "color": "DC382D",
+          "logo": "redis",
+          "logoColor": "white"
+        },
+        {
+          "label": "Knowledge_Graph",
+          "color": "5B8C7B",
+          "logo": "neo4j",
+          "logoColor": "white"
+        }
       ]
     },
     {
       "title": "平台 · 交付",
       "badges": [
-        { "label": "Kubernetes", "color": "326CE5", "logo": "kubernetes", "logoColor": "white" },
-        { "label": "Helm", "color": "0F1689", "logo": "helm", "logoColor": "white" },
-        { "label": "Docker", "color": "2496ED", "logo": "docker", "logoColor": "white" },
-        { "label": "TypeScript", "color": "3178C6", "logo": "typescript", "logoColor": "white" },
-        { "label": "GitHub_Actions", "color": "2088FF", "logo": "githubactions", "logoColor": "white" }
+        {
+          "label": "Kubernetes",
+          "color": "326CE5",
+          "logo": "kubernetes",
+          "logoColor": "white"
+        },
+        {
+          "label": "Helm",
+          "color": "0F1689",
+          "logo": "helm",
+          "logoColor": "white"
+        },
+        {
+          "label": "Docker",
+          "color": "2496ED",
+          "logo": "docker",
+          "logoColor": "white"
+        },
+        {
+          "label": "TypeScript",
+          "color": "3178C6",
+          "logo": "typescript",
+          "logoColor": "white"
+        },
+        {
+          "label": "GitHub_Actions",
+          "color": "2088FF",
+          "logo": "githubactions",
+          "logoColor": "white"
+        }
       ]
     }
   ],
-
   "projects": [
     {
-      "slug": "agent-platform", "name": "企业级 AI Agent 平台", "en": "ENTERPRISE AI AGENT PLATFORM",
+      "slug": "agent-platform",
+      "name": "企业级 AI Agent 平台",
+      "en": "ENTERPRISE AI AGENT PLATFORM",
       "desc": "混合 RAG + 知识图谱 + 工作流引擎，JWT/RBAC 多租户隔离，Helm 云原生交付。",
-      "tech": ["Python", "FastAPI", "Apache-2.0"],
+      "tech": [
+        "Python",
+        "FastAPI",
+        "Apache-2.0"
+      ],
       "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform"
     },
     {
-      "slug": "sre-platform", "name": "自治式 AIOps / SRE 平台", "en": "AUTONOMOUS AI SRE PLATFORM",
+      "slug": "sre-platform",
+      "name": "自治式 AIOps / SRE 平台",
+      "en": "AUTONOMOUS AI SRE PLATFORM",
       "desc": "LangGraph SRE Agent：MCP 工具调用、Kubernetes 根因分析、RAG 知识中枢与记忆。",
-      "tech": ["LangGraph", "MCP", "Kubernetes"],
+      "tech": [
+        "LangGraph",
+        "MCP",
+        "Kubernetes"
+      ],
       "url": "https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform"
     },
     {
-      "slug": "mcp-server", "name": "DevOps MCP Server", "en": "GOVERNED MCP TOOLING",
-      "desc": "17 个受治理工具：RBAC、执行门、命令过滤与审计；默认只读、最小权限。",
-      "tech": ["MCP", "Docker", "SSH"],
+      "slug": "mcp-server",
+      "name": "DevOps MCP Server",
+      "en": "GOVERNED MCP TOOLING",
+      "desc": "18 个受治理工具：RBAC、执行门、命令过滤与审计；默认只读、最小权限。",
+      "tech": [
+        "MCP",
+        "Docker",
+        "SSH"
+      ],
       "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server"
     },
     {
-      "slug": "api-gateway", "name": "多模型 API 网关", "en": "MULTI-MODEL API GATEWAY",
+      "slug": "api-gateway",
+      "name": "多模型 API 网关",
+      "en": "MULTI-MODEL API GATEWAY",
       "desc": "Go 实现的多模型统一接入：通道池、动态计价与智能负载均衡。",
-      "tech": ["Go", "Gateway", "AGPL-3.0"],
+      "tech": [
+        "Go",
+        "Gateway",
+        "AGPL-3.0"
+      ],
       "url": "https://github.com/zhifengjin050-arch/new-api"
     },
     {
-      "slug": "dujiao-next", "name": "全栈交易系统", "en": "GO + VUE3 FULL-STACK",
+      "slug": "dujiao-next",
+      "name": "全栈交易系统",
+      "en": "GO + VUE3 FULL-STACK",
       "desc": "高性能自动发卡系统：多语言、多货币、多支付通道，Go + Vue 3 全栈。",
-      "tech": ["Go", "Vue 3", "MySQL"],
+      "tech": [
+        "Go",
+        "Vue 3",
+        "PostgreSQL"
+      ],
       "url": "https://github.com/zhifengjin050-arch/dujiao-next"
     },
     {
-      "slug": "infra-automation", "name": "基础设施自动化", "en": "NETWORK & AUTH AUTOMATION",
-      "desc": "LDAP + FreeRADIUS + UniFi 企业认证；华为网络设备配置自动备份与告警。",
-      "tech": ["Docker", "Python", "FreeRADIUS"],
+      "slug": "infra-automation",
+      "name": "基础设施自动化",
+      "en": "NETWORK & AUTH AUTOMATION",
+      "desc": "LDAP 统一身份、FreeRADIUS 802.1X 认证、UniFi 无线接入与动态 VLAN，提供容器化部署与排障说明。",
+      "tech": [
+        "Docker",
+        "Python",
+        "FreeRADIUS"
+      ],
       "url": "https://github.com/zhifengjin050-arch/ldap-radius-unifi-auth"
     }
   ],
-
   "stats": [
-    { "label": "ISOLATION",       "value": "RBAC",     "note": "多租户隔离与最小权限" },
-    { "label": "TOOL GOVERNANCE", "value": "17 tools", "note": "执行门 / 命令过滤 / 审计" },
-    { "label": "OBSERVABILITY",   "value": "Traces",   "note": "决策与工具调用可回放" },
-    { "label": "DELIVERY",        "value": "Helm",     "note": "K8s / CI / 可重复部署" }
+    {
+      "label": "ISOLATION",
+      "value": "RBAC",
+      "note": "多租户隔离与最小权限"
+    },
+    {
+      "label": "TOOL GOVERNANCE",
+      "value": "18 tools",
+      "note": "执行门 / 命令过滤 / 审计"
+    },
+    {
+      "label": "OBSERVABILITY",
+      "value": "Traces",
+      "note": "决策与工具调用可回放"
+    },
+    {
+      "label": "DELIVERY",
+      "value": "Helm",
+      "note": "K8s / CI / 可重复部署"
+    }
   ],
-
   "telemetry": {
     "repos": 9,
-    "core_systems": ["Agent Platform", "SRE Platform", "MCP Server"],
-    "languages": [
-      { "name": "Python", "count": 5, "color": "#B08D2E" },
-      { "name": "Go",     "count": 2, "color": "#5B8C7B" },
-      { "name": "Other",  "count": 2, "color": "#9C8A63" }
+    "core_systems": [
+      "Agent Platform",
+      "SRE Platform",
+      "MCP Server"
     ],
-    "licenses": ["Apache-2.0", "MIT", "AGPL-3.0"],
+    "languages": [
+      {
+        "name": "Python",
+        "count": 5,
+        "color": "#B08D2E"
+      },
+      {
+        "name": "Go",
+        "count": 2,
+        "color": "#5B8C7B"
+      },
+      {
+        "name": "Other",
+        "count": 2,
+        "color": "#9C8A63"
+      }
+    ],
+    "licenses": [
+      "Apache-2.0",
+      "MIT",
+      "AGPL-3.0"
+    ],
     "topics": 21
   },
-
   "principles": [
-    { "tag": "01", "title": "Secure by default",    "desc": "默认只读、最小权限、全量审计",   "en": "NO IMPLICIT TRUST" },
-    { "tag": "02", "title": "Observable first",     "desc": "每一次工具调用都可追踪、可回放", "en": "TRACES OVER LOGS" },
-    { "tag": "03", "title": "Production over demo", "desc": "多租户、幂等、失败可恢复",       "en": "BUILT TO OPERATE" }
+    {
+      "tag": "01",
+      "title": "Secure by default",
+      "desc": "默认只读、最小权限、全量审计",
+      "en": "NO IMPLICIT TRUST"
+    },
+    {
+      "tag": "02",
+      "title": "Observable first",
+      "desc": "每一次工具调用都可追踪、可回放",
+      "en": "TRACES OVER LOGS"
+    },
+    {
+      "tag": "03",
+      "title": "Production over demo",
+      "desc": "多租户、幂等、失败可恢复",
+      "en": "BUILT TO OPERATE"
+    }
   ],
-
   "links": [
-    { "icon": "GH", "label": "GitHub",         "value": "@zhifengjin050-arch",   "url": "https://github.com/zhifengjin050-arch" },
-    { "icon": "RP", "label": "Repositories",   "value": "9 public repos",        "url": "https://github.com/zhifengjin050-arch?tab=repositories" },
-    { "icon": "AP", "label": "Agent Platform", "value": "RAG · Graph · Workflow", "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform" },
-    { "icon": "MS", "label": "MCP Server",     "value": "17 governed tools",     "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server" }
+    {
+      "icon": "GH",
+      "label": "GitHub",
+      "value": "@zhifengjin050-arch",
+      "url": "https://github.com/zhifengjin050-arch"
+    },
+    {
+      "icon": "RP",
+      "label": "Repositories",
+      "value": "9 public repos",
+      "url": "https://github.com/zhifengjin050-arch?tab=repositories"
+    },
+    {
+      "icon": "AP",
+      "label": "Agent Platform",
+      "value": "RAG · Graph · Workflow",
+      "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform"
+    },
+    {
+      "icon": "MS",
+      "label": "MCP Server",
+      "value": "18 governed tools",
+      "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server"
+    }
   ],
-
   "footer_badges": [
-    { "label": "Agent Platform", "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform" },
-    { "label": "SRE Platform",   "url": "https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform" },
-    { "label": "MCP Server",     "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server" },
-    { "label": "Repositories",   "url": "https://github.com/zhifengjin050-arch?tab=repositories" }
+    {
+      "label": "Agent Platform",
+      "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform"
+    },
+    {
+      "label": "SRE Platform",
+      "url": "https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform"
+    },
+    {
+      "label": "MCP Server",
+      "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server"
+    },
+    {
+      "label": "Repositories",
+      "url": "https://github.com/zhifengjin050-arch?tab=repositories"
+    }
   ],
-
-  "closing": "先看默认安全配置，再看功能演示。"
+  "closing": "把想法写成代码，把系统做得清晰可靠。欢迎交流，也感谢每一份反馈 ✨",
+  "project_details": [
+    {
+      "icon": "🧠",
+      "tag": "KNOWLEDGE × AGENT",
+      "intro": "面向企业内部文档分散、知识检索与流程执行割裂的问题，组织连接器、知识处理、检索增强与 Agent 工作流，形成可私有化部署的知识自动化平台。",
+      "highlights": [
+        "**文档接入与同步**：飞书 / 语雀 / GitLab 连接器统一接入，配合全量与增量同步、作业调度和失败重试，管理知识进入系统的过程。",
+        "**混合检索链路**：文档分块与 Embedding 后，融合向量检索、全文检索与知识图谱，支持可选 Rerank 和带引用回答，兼顾语义召回与事实定位。",
+        "**Agent 与工作流**：Planner、Tool Registry、Memory 与 LLM Gateway 协作，通过 DAG、审批节点及 API / Webhook / Schedule 触发器组织任务执行。",
+        "**平台工程**：JWT / RBAC / 租户隔离覆盖数据访问；OpenTelemetry、Prometheus 与 Grafana 提供观测入口，交付 Compose、Kubernetes 清单与 Helm Chart。"
+      ],
+      "focus": "重点关注：检索融合、权限约束与异步任务生命周期，避免知识链路和执行链路各自孤立。",
+      "links": [
+        [
+          "🎬 演示",
+          "https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"
+        ],
+        [
+          "📐 架构",
+          "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform/blob/main/docs/images/system_architecture.md"
+        ],
+        [
+          "🧩 功能矩阵",
+          "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform/blob/main/docs/showcase/FEATURE_MATRIX.md"
+        ]
+      ]
+    },
+    {
+      "icon": "🔎",
+      "tag": "INCIDENT × EVIDENCE",
+      "intro": "面向 SRE / DevOps 的故障诊断场景，将自然语言故障描述转为工具规划、现场证据采集、Runbook 检索与结构化 Incident Report。",
+      "highlights": [
+        "**多步诊断**：LangGraph 组织 agent → tools → agent 循环，结合会话与工作记忆推进根因分析，支持 Kubernetes、Docker 与 SSH 工具发现和调用。",
+        "**典型故障场景**：覆盖 CrashLoopBackOff、OOMKilled、ImagePullBackOff 与 502 / 503 等排查入口，将资源状态、日志与知识库信息放入同一诊断上下文。",
+        "**知识与权限**：Runbook / SOP 检索结合飞书同步，以 organization_id 约束知识访问，并通过 JWT / RBAC 组织多租户入口。",
+        "**诊断过程可见**：Agent Trace 记录工具调用与耗时，SSE 向 React 控制台流式输出；PostgreSQL、Prometheus / Grafana 与 Compose 组成数据、观测和部署基础。"
+      ],
+      "focus": "重点关注：诊断结论与证据之间的对应关系，以及多步工具调用过程的可追踪性。",
+      "links": [
+        [
+          "🎬 演示",
+          "https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/"
+        ],
+        [
+          "📐 架构",
+          "https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform/blob/main/docs/ARCHITECTURE.md"
+        ],
+        [
+          "🚀 部署",
+          "https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform/blob/main/docs/DEPLOYMENT.md"
+        ]
+      ]
+    },
+    {
+      "icon": "🛡️",
+      "tag": "PROTOCOL × GOVERNANCE",
+      "intro": "为 MCP 客户端提供 Linux、Docker、Kubernetes 与 SSH 运维工具，把基础设施能力封装为有明确权限与风险分级的协议接口。",
+      "highlights": [
+        "**18 个工具**：包含健康检查、CPU / 内存 / 磁盘、进程、容器日志、Kubernetes 资源与 SSH 等工具，目录显式标注风险级别和权限要求。",
+        "**默认只读**：EXECUTE_TOOLS_ENABLED=false；通过模块白名单、执行保护与命令过滤约束操作范围，将只读检查与高风险动作分开处理。",
+        "**执行确认与审计**：提供 confirm_execute_action 和 get_audit_logs 等接口，为客户端调用建立确认与记录入口。",
+        "**接入与交付**：提供 Cursor MCP 配置示例、工具枚举脚本、Docker Compose 与 CI 配置，方便从本地验证逐步接入 Agent 系统。"
+      ],
+      "focus": "重点关注：工具 Schema、风险分级、执行开关和审计记录如何共同约束模型的操作边界。",
+      "links": [
+        [
+          "🎬 演示",
+          "https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/"
+        ],
+        [
+          "📐 架构",
+          "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server/blob/main/docs/architecture.md"
+        ],
+        [
+          "🔐 安全设计",
+          "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server/blob/main/SECURITY.md"
+        ]
+      ]
+    },
+    {
+      "icon": "⚡",
+      "tag": "GATEWAY × AI API",
+      "intro": "多模型统一接入与 AI 资产管理实践，围绕模型渠道、通道池、动态计价与负载均衡梳理 AI 服务网关的核心能力。",
+      "highlights": [
+        "**系统视角**：关注请求从统一 API 入口到模型渠道的路由过程，以及渠道管理、计费规则与可用性之间的关系。",
+        "**阅读入口**：仓库包含中文说明、完整英文文档与 web/ 前端；保留仓库及上游许可声明。"
+      ],
+      "focus": "开源实践方向：模型服务接入、网关路由与管理控制台。",
+      "links": []
+    },
+    {
+      "icon": "🦄",
+      "tag": "FULL STACK × DELIVERY",
+      "intro": "Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆盖用户前台、管理后台与 API 服务。",
+      "highlights": [
+        "**交易链路**：围绕商品、购物车、订单、支付与自动发货组织业务模块，支持多支付渠道与多语言、多币种场景。",
+        "**后端与安全**：按公开、用户、管理、上游与渠道划分 API；使用独立用户 / 管理员 JWT、登录限流与敏感数据加密。",
+        "**数据与部署**：SQLite / PostgreSQL、Redis 与异步队列配置，配套容器化部署及生产配置说明。"
+      ],
+      "focus": "开源实践方向：业务状态流转、API 权限分层与前后端交付。",
+      "links": []
+    },
+    {
+      "icon": "🌐",
+      "tag": "IDENTITY × NETWORK",
+      "intro": "将 Go-Ldap-Admin、OpenLDAP、FreeRADIUS 与 UniFi 组合为企业无线网络认证方案，围绕统一账号、802.1X 接入与部门网络隔离整理部署实践。",
+      "highlights": [
+        "**统一身份**：通过 LDAP 管理账号与组织信息，由 FreeRADIUS 对接认证，再接入 UniFi 无线网络。",
+        "**动态 VLAN**：将 LDAP 部门属性映射到 RADIUS 响应，按部门下发 VLAN，减少为每个组织单独配置 SSID 的复杂度。",
+        "**部署与排障**：提供 Compose 部署、配置路径、权限处理、RADIUS Debug 与 radtest 调试说明。"
+      ],
+      "focus": "工程实践方向：身份系统集成、协议配置与可复现排障。",
+      "links": []
+    }
+  ]
 }
