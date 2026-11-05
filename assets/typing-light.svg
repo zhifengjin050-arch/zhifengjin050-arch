@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="92" viewBox="0 0 1000 92" role="img">
-<rect x="0.5" y="0.5" width="999" height="91" rx="16" fill="#F8F2E4" stroke="#D5BE80" stroke-width="1"/>
-<text x="28" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#8A6914" text-anchor="start">❯</text>
+<rect x="0.5" y="0.5" width="999" height="91" rx="16" fill="#FAF8F3" stroke="#DFD8C8" stroke-width="1"/>
+<text x="28" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#96781A" text-anchor="start">❯</text>
 <style>@media(prefers-reduced-motion:reduce){.cycle{display:none}.fallback{display:block}}</style>
 <g class="fallback" style="display:none"><text x="64" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#302A1C" text-anchor="start">构建知识库 Agent，让企业知识连接实际任务。</text></g>
 <defs><clipPath id="cycle0"><rect x="60" y="15" width="850" height="62"><animate attributeName="width" values="0;850;850;0;0" keyTimes="0.0;0.08;0.3033;0.3333;1" dur="15s" repeatCount="indefinite"/></rect></clipPath></defs>
@@ -9,5 +9,5 @@
 <g class="cycle" clip-path="url(#cycle1)"><text x="64" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#302A1C" text-anchor="start">探索 AIOps，让故障诊断有证据、有过程。</text></g>
 <defs><clipPath id="cycle2"><rect x="60" y="15" width="850" height="62"><animate attributeName="width" values="0;0;850;850;0" keyTimes="0;0.6667;0.7467;0.97;1.0" dur="15s" repeatCount="indefinite"/></rect></clipPath></defs>
 <g class="cycle" clip-path="url(#cycle2)"><text x="64" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#302A1C" text-anchor="start">打磨 MCP 工具，让每次执行有边界、可追踪。</text></g>
-<rect x="940" y="32" width="3" height="28" fill="#8A6914"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
+<rect x="940" y="32" width="3" height="28" fill="#96781A"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
 </svg>

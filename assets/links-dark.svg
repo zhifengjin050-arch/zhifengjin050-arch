@@ -1,28 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="152" viewBox="0 0 1000 152" role="img">
-<rect x="0.5" y="0.5" width="999" height="151" rx="16" fill="#17140D" stroke="#705B2B" stroke-width="1"/>
+<rect x="0.5" y="0.5" width="999" height="151" rx="16" fill="#17140D" stroke="#51452B" stroke-width="1"/>
 <path d="M22 1.5 L978 1.5" stroke="#FFE9A8" stroke-width="1" opacity="0.32"/>
-<rect x="20" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="20" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#51452B" stroke-width="1"/>
 <path d="M32 17.5 L238 17.5" stroke="#FFE9A8" stroke-width="1" opacity="0.28"/>
-<circle cx="56" cy="52" r="18" fill="#3B3018"/>
-<text x="56" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#E4C260" text-anchor="middle">GH</text>
+<circle cx="56" cy="52" r="18" fill="#30291A"/>
+<text x="56" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#D6B85C" text-anchor="middle">GH</text>
 <text x="40" y="92" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="start">GitHub</text>
 <text x="40" y="116" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#F5EEDB" text-anchor="start">@zhifengjin050-arch</text>
-<rect x="265" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="265" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#51452B" stroke-width="1"/>
 <path d="M277 17.5 L483 17.5" stroke="#FFE9A8" stroke-width="1" opacity="0.28"/>
-<circle cx="301" cy="52" r="18" fill="#3B3018"/>
-<text x="301" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#E4C260" text-anchor="middle">RP</text>
+<circle cx="301" cy="52" r="18" fill="#30291A"/>
+<text x="301" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#D6B85C" text-anchor="middle">RP</text>
 <text x="285" y="92" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="start">Repositories</text>
 <text x="285" y="116" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#F5EEDB" text-anchor="start">9 public repos</text>
-<rect x="510" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="510" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#51452B" stroke-width="1"/>
 <path d="M522 17.5 L728 17.5" stroke="#FFE9A8" stroke-width="1" opacity="0.28"/>
-<circle cx="546" cy="52" r="18" fill="#3B3018"/>
-<text x="546" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#E4C260" text-anchor="middle">AP</text>
+<circle cx="546" cy="52" r="18" fill="#30291A"/>
+<text x="546" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#D6B85C" text-anchor="middle">AP</text>
 <text x="530" y="92" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="start">Agent Platform</text>
 <text x="530" y="116" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#F5EEDB" text-anchor="start">RAG · Graph · Workflow</text>
-<rect x="755" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="755" y="16" width="230" height="120" rx="12" fill="#211C13" stroke="#51452B" stroke-width="1"/>
 <path d="M767 17.5 L973 17.5" stroke="#FFE9A8" stroke-width="1" opacity="0.28"/>
-<circle cx="791" cy="52" r="18" fill="#3B3018"/>
-<text x="791" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#E4C260" text-anchor="middle">MS</text>
+<circle cx="791" cy="52" r="18" fill="#30291A"/>
+<text x="791" y="58" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="700" fill="#D6B85C" text-anchor="middle">MS</text>
 <text x="775" y="92" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="start">MCP Server</text>
 <text x="775" y="116" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#F5EEDB" text-anchor="start">18 governed tools</text>
 </svg>
