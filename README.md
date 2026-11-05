@@ -10,11 +10,11 @@
 
 让知识可检索，让工具可治理，让系统可观测。
 
-![Python](https://img.shields.io/badge/Python-F0EADA?style=for-the-badge&logo=python&logoColor=8A6E14)
-![Go](https://img.shields.io/badge/Go-F0EADA?style=for-the-badge&logo=go&logoColor=8A6E14)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-F0EADA?style=for-the-badge&logo=kubernetes&logoColor=8A6E14)
-![FastAPI](https://img.shields.io/badge/FastAPI-F0EADA?style=for-the-badge&logo=fastapi&logoColor=8A6E14)
-![LangGraph](https://img.shields.io/badge/LangGraph-F0EADA?style=for-the-badge&logo=langchain&logoColor=8A6E14)
+![Python](https://img.shields.io/badge/Python-F1F4FF?style=for-the-badge&logo=python&logoColor=6256D9)
+![Go](https://img.shields.io/badge/Go-F1F4FF?style=for-the-badge&logo=go&logoColor=6256D9)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-F1F4FF?style=for-the-badge&logo=kubernetes&logoColor=6256D9)
+![FastAPI](https://img.shields.io/badge/FastAPI-F1F4FF?style=for-the-badge&logo=fastapi&logoColor=6256D9)
+![LangGraph](https://img.shields.io/badge/LangGraph-F1F4FF?style=for-the-badge&logo=langchain&logoColor=6256D9)
 
 [👋 关于我](#about) · [🚀 代表项目](#projects) · [🛠️ 技术能力](#stack) · [📚 技术笔记](#notes) · [🤝 交流合作](#contact)
 
@@ -33,6 +33,11 @@
 
 > ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/capability-light.svg">
+  <img src="assets/capability-dark.svg" alt="知识检索、故障诊断、工具治理：三个核心工程方向" width="100%">
+</picture>
 ### 🧭 从哪里开始看？
 
 - **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。
@@ -59,10 +64,16 @@
 
 面向企业内部文档分散、知识检索与流程执行割裂的问题，组织连接器、知识处理、检索增强与 Agent 工作流，形成可私有化部署的知识自动化平台。
 
+<details open>
+<summary>🔬 技术实现与工程细节</summary>
+
 - **文档接入与同步**：飞书 / 语雀 / GitLab 连接器统一接入，配合全量与增量同步、作业调度和失败重试，管理知识进入系统的过程。
 - **混合检索链路**：文档分块与 Embedding 后，融合向量检索、全文检索与知识图谱，支持可选 Rerank 和带引用回答，兼顾语义召回与事实定位。
 - **Agent 与工作流**：Planner、Tool Registry、Memory 与 LLM Gateway 协作，通过 DAG、审批节点及 API / Webhook / Schedule 触发器组织任务执行。
 - **平台工程**：JWT / RBAC / 租户隔离覆盖数据访问；OpenTelemetry、Prometheus 与 Grafana 提供观测入口，交付 Compose、Kubernetes 清单与 Helm Chart。
+
+</details>
+
 
 > 🔧 重点关注：检索融合、权限约束与异步任务生命周期，避免知识链路和执行链路各自孤立。
 
@@ -93,10 +104,16 @@
 
 面向 SRE / DevOps 的故障诊断场景，将自然语言故障描述转为工具规划、现场证据采集、Runbook 检索与结构化 Incident Report。
 
+<details open>
+<summary>🔬 技术实现与工程细节</summary>
+
 - **多步诊断**：LangGraph 组织 agent → tools → agent 循环，结合会话与工作记忆推进根因分析，支持 Kubernetes、Docker 与 SSH 工具发现和调用。
 - **典型故障场景**：覆盖 CrashLoopBackOff、OOMKilled、ImagePullBackOff 与 502 / 503 等排查入口，将资源状态、日志与知识库信息放入同一诊断上下文。
 - **知识与权限**：Runbook / SOP 检索结合飞书同步，以 organization_id 约束知识访问，并通过 JWT / RBAC 组织多租户入口。
 - **诊断过程可见**：Agent Trace 记录工具调用与耗时，SSE 向 React 控制台流式输出；PostgreSQL、Prometheus / Grafana 与 Compose 组成数据、观测和部署基础。
+
+</details>
+
 
 > 🔧 重点关注：诊断结论与证据之间的对应关系，以及多步工具调用过程的可追踪性。
 
@@ -127,10 +144,16 @@
 
 为 MCP 客户端提供 Linux、Docker、Kubernetes 与 SSH 运维工具，把基础设施能力封装为有明确权限与风险分级的协议接口。
 
+<details open>
+<summary>🔬 技术实现与工程细节</summary>
+
 - **18 个工具**：包含健康检查、CPU / 内存 / 磁盘、进程、容器日志、Kubernetes 资源与 SSH 等工具，目录显式标注风险级别和权限要求。
 - **默认只读**：EXECUTE_TOOLS_ENABLED=false；通过模块白名单、执行保护与命令过滤约束操作范围，将只读检查与高风险动作分开处理。
 - **执行确认与审计**：提供 confirm_execute_action 和 get_audit_logs 等接口，为客户端调用建立确认与记录入口。
 - **接入与交付**：提供 Cursor MCP 配置示例、工具枚举脚本、Docker Compose 与 CI 配置，方便从本地验证逐步接入 Agent 系统。
+
+</details>
+
 
 > 🔧 重点关注：工具 Schema、风险分级、执行开关和审计记录如何共同约束模型的操作边界。
 
@@ -148,8 +171,14 @@
 
 多模型统一接入与 AI 资产管理实践，围绕模型渠道、通道池、动态计价与负载均衡梳理 AI 服务网关的核心能力。
 
+<details open>
+<summary>🔬 技术实现与工程细节</summary>
+
 - **系统视角**：关注请求从统一 API 入口到模型渠道的路由过程，以及渠道管理、计费规则与可用性之间的关系。
 - **阅读入口**：仓库包含中文说明、完整英文文档与 web/ 前端；保留仓库及上游许可声明。
+
+</details>
+
 
 > 🔧 开源实践方向：模型服务接入、网关路由与管理控制台。
 
@@ -163,9 +192,15 @@
 
 Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆盖用户前台、管理后台与 API 服务。
 
+<details open>
+<summary>🔬 技术实现与工程细节</summary>
+
 - **交易链路**：围绕商品、购物车、订单、支付与自动发货组织业务模块，支持多支付渠道与多语言、多币种场景。
 - **后端与安全**：按公开、用户、管理、上游与渠道划分 API；使用独立用户 / 管理员 JWT、登录限流与敏感数据加密。
 - **数据与部署**：SQLite / PostgreSQL、Redis 与异步队列配置，配套容器化部署及生产配置说明。
+
+</details>
+
 
 > 🔧 开源实践方向：业务状态流转、API 权限分层与前后端交付。
 
@@ -179,9 +214,15 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 
 将 Go-Ldap-Admin、OpenLDAP、FreeRADIUS 与 UniFi 组合为企业无线网络认证方案，围绕统一账号、802.1X 接入与部门网络隔离整理部署实践。
 
+<details open>
+<summary>🔬 技术实现与工程细节</summary>
+
 - **统一身份**：通过 LDAP 管理账号与组织信息，由 FreeRADIUS 对接认证，再接入 UniFi 无线网络。
 - **动态 VLAN**：将 LDAP 部门属性映射到 RADIUS 响应，按部门下发 VLAN，减少为每个组织单独配置 SSID 的复杂度。
 - **部署与排障**：提供 Compose 部署、配置路径、权限处理、RADIUS Debug 与 radtest 调试说明。
+
+</details>
+
 
 > 🔧 工程实践方向：身份系统集成、协议配置与可复现排障。
 

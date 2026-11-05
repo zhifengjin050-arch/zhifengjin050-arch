@@ -17,27 +17,27 @@
     {
       "label": "Python",
       "logo": "python",
-      "logoColor": "8A6E14"
+      "logoColor": "6256D9"
     },
     {
       "label": "Go",
       "logo": "go",
-      "logoColor": "8A6E14"
+      "logoColor": "6256D9"
     },
     {
       "label": "Kubernetes",
       "logo": "kubernetes",
-      "logoColor": "8A6E14"
+      "logoColor": "6256D9"
     },
     {
       "label": "FastAPI",
       "logo": "fastapi",
-      "logoColor": "8A6E14"
+      "logoColor": "6256D9"
     },
     {
       "label": "LangGraph",
       "logo": "langchain",
-      "logoColor": "8A6E14"
+      "logoColor": "6256D9"
     }
   ],
   "bio": [

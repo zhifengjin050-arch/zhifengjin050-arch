@@ -24,14 +24,14 @@ CFG = json.loads((ROOT / "profile.config.json").read_text(encoding="utf-8"))
 
 THEMES = {
     "light": dict(
-        card="#F0EADA", card2="#F8F3E6", ink="#3A2E14", sub="#6B5A33",
-        accent="#8A6E14", accent2="#B08D2E", line="#DCCBA6", chip="#E7D9B8",
-        green="#4A7C59", glow="#FFFFFF",
+        card="#F1F4FF", card2="#FAFBFF", ink="#182343", sub="#52617D",
+        accent="#6256D9", accent2="#397BCC", line="#D9E0F4", chip="#E5E9FC",
+        green="#278982", glow="#FFFFFF",
     ),
     "dark": dict(
-        card="#171309", card2="#211C11", ink="#F5EBD3", sub="#B3A480",
-        accent="#E3B341", accent2="#C99A2E", line="#5A4A2A", chip="#302815",
-        green="#7FBF8E", glow="#FFE9A8",
+        card="#0C1225", card2="#141D36", ink="#EDF3FF", sub="#A2B3D3",
+        accent="#A99AFF", accent2="#65D9F1", line="#2C3A5B", chip="#202C49",
+        green="#70DEC6", glow="#B5D9FF",
     ),
 }
 
@@ -162,68 +162,47 @@ def pulse(cx, cy, r, color, begin, dur="2.6s"):
 # --------------------------------------------------------------------------
 
 def banner(t, c):
-    W, H = 1000, 250
-    A, AC2, INK, SUB, LINE = (
-        t["accent"], t["accent2"], t["ink"], t["sub"], t["line"]
-    )
-    p = [
-        '<defs>',
-        '<clipPath id="heroclip"><rect x="1" y="1" width="998" height="248" rx="18"/></clipPath>',
-        f'<radialGradient id="halo"><stop offset="0" stop-color="{A}" stop-opacity="0.17"/>'
-        f'<stop offset="1" stop-color="{A}" stop-opacity="0"/></radialGradient>',
-        f'<pattern id="mesh" width="26" height="26" patternUnits="userSpaceOnUse">'
-        f'<path d="M26 0 L0 0 0 26" fill="none" stroke="{LINE}" stroke-width="0.6"/>'
-        f'</pattern>',
-        beam_defs(t),
-        '</defs>',
-        bg(t, W, H, 18),
-        '<g clip-path="url(#heroclip)">',
-        f'<rect x="0" y="0" width="{W}" height="{H}" fill="url(#mesh)" opacity="0.50"/>',
-        f'<circle cx="862" cy="108" r="170" fill="url(#halo)"/>',
-        beam(t, W, H, "7s"),
-        f'<line x1="0" y1="0" x2="{W}" y2="0" stroke="{A}" stroke-width="1" opacity="0.16">'
-        f'<animate attributeName="y1" values="0;{H}" dur="5.5s" repeatCount="indefinite"/>'
-        f'<animate attributeName="y2" values="0;{H}" dur="5.5s" repeatCount="indefinite"/>'
-        f'</line>',
-        '</g>',
-        f'<path d="M24 1.5 L976 1.5" stroke="{t["glow"]}" stroke-width="1" opacity="0.35"/>',
-    ]
+    W,H=1000,340
+    A=t['accent']; B=t['accent2']
+    p=[bg(t,W,H,20),f'<defs><linearGradient id="aurora"><stop stop-color="{A}"/><stop offset="1" stop-color="{B}"/></linearGradient><radialGradient id="nebula"><stop stop-color="{A}" stop-opacity=".22"/><stop offset="1" stop-color="{A}" stop-opacity="0"/></radialGradient></defs>']
+    p.append('<style>@media(prefers-reduced-motion:reduce){.orbit{display:none}}</style>')
+    p.append('<rect x="1" y="1" width="998" height="338" rx="20" fill="none" stroke="url(#aurora)" opacity=".5"/>')
+    p.append('<path d="M32 1 H968" stroke="url(#aurora)" stroke-width="3"/>')
+    p.append('<circle cx="800" cy="160" r="170" fill="url(#nebula)"/>')
+    for y in range(35,330,28):
+        for x in range(640,975,28):
+            p.append(f'<circle cx="{x}" cy="{y}" r=".8" fill="{A}" opacity=".2"/>')
+    p.append(T(42,44,'ZF / ENGINEERING NOTEBOOK',12,t,color=A,mono=True,spacing=2))
+    p.append(T(42,112,'ZHIFENG JIN',55,t,weight=800))
+    p.append(T(44,147,'AI AGENT  /  AIOPS  /  PLATFORM',15,t,color=B,mono=True,spacing=1))
+    p.append(T(44,191,'从知识到行动，从代码到系统。',24,t,weight=600))
+    p.append(T(44,222,'Build with context. Execute with boundaries.',14,t,color=t['sub'],mono=True))
+    x=44
+    for label in ['Hybrid RAG','MCP Tools','Cloud Native']:
+        part,w=chip(x,246,label,t,12);p.append(part);x+=w+10
+    p.append(T(44,315,'@'+c['username'],12,t,color=t['sub'],mono=True))
+    cx,cy=810,156
+    for r in [57,90,123]:
+        p.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{r}" ry="{r*.62}" transform="rotate(-28 {cx} {cy})" fill="none" stroke="url(#aurora)" opacity=".5"/>')
+    p.append(f'<circle cx="{cx}" cy="{cy}" r="39" fill="{t["chip"]}" stroke="{A}"/>')
+    p.append(T(cx,cy+9,'ZF',28,t,color=A,weight=800,mono=True,anchor='middle'))
+    for i in range(3):
+        p.append(f'<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="{i*120} {cx} {cy}" to="{i*120+360} {cx} {cy}" dur="{18+i*6}s" repeatCount="indefinite"/><circle cx="{cx+90}" cy="{cy}" r="4" fill="{B}"/></g>')
+    for x,y,label in [(700,55,'RETRIEVE'),(902,220,'REASON'),(765,285,'EXECUTE')]:
+        p.append(T(x,y,label,11,t,color=A,mono=True,anchor='middle',spacing=1.5))
+    return S(W,H,'\n'.join(p))
 
-    cx, cy = 862, 108
-    p.append(f'<circle cx="{cx}" cy="{cy}" r="112" fill="none" stroke="{A}" '
-             f'stroke-width="1" stroke-dasharray="3 7" opacity="0.30"/>')
-    for i in range(6):
-        ang = math.pi * 2 * i / 6 - math.pi / 2
-        nx, ny = cx + 78 * math.cos(ang), cy + 78 * math.sin(ang)
-        p.append(f'<line x1="{cx}" y1="{cy}" x2="{nx:.1f}" y2="{ny:.1f}" '
-                 f'stroke="{A}" stroke-width="1" stroke-dasharray="3 5" opacity="0.34">'
-                 f'<animate attributeName="stroke-dashoffset" values="0;-16" dur="2s" '
-                 f'repeatCount="indefinite"/></line>')
-        p.append(f'<circle cx="{nx:.1f}" cy="{ny:.1f}" r="8" fill="{t["chip"]}" '
-                 f'stroke="{A}" stroke-width="1.2"/>')
-        p.append(pulse(f"{nx:.1f}", f"{ny:.1f}", 3.5, A, round(i * 0.4, 1)))
-    p.append(f'<circle cx="{cx}" cy="{cy}" r="33" fill="{A}" opacity="0.15"/>')
-    p.append(f'<circle cx="{cx}" cy="{cy}" r="33" fill="none" stroke="{A}" '
-             f'stroke-width="1.5" opacity="0.65"/>')
-    p.append(T(cx, cy + 7, "AI", 20, t, color=A, weight=700, mono=True, anchor="middle"))
-    p.append(T(cx, 236, "GOVERNED RUNTIME · 2026", 10, t, color=SUB,
-               mono=True, anchor="middle", spacing=1.2))
 
-    p.append(R(48, 38, 5, 22, 2, A))
-    p.append(T(66, 55, c["eyebrow"], 11, t, color=A, weight=600, mono=True, spacing=2))
-    p.append(f'<g opacity="0"><animate attributeName="opacity" values="0;1" '
-             f'dur="1.3s" fill="freeze"/>')
-    p.append(T(46, 126, c["name_en"], 60, t, color=INK, weight=800))
-    p.append('</g>')
-    p.append(T(50, 160, f'@{c["username"]}', 16, t, color=SUB, mono=True))
-    p.append(T(50, 190, c["role"], 14, t, color=AC2, weight=600))
-    p.append(f'<line x1="50" y1="202" x2="470" y2="202" stroke="{LINE}" stroke-width="1"/>')
-    x = 50
-    for label in c["banner_chips"]:
-        s, w = chip(x, 214, label, t, 11)
-        p.append(s)
-        x += w + 10
-    return S(W, H, "\n".join(p))
+def capability_map(t):
+    p=[bg(t,1000,148,16)]
+    items=[('01','KNOWLEDGE','文档接入 · 混合检索 · 知识图谱'),('02','DIAGNOSIS','现场证据 · Runbook · Agent Trace'),('03','GOVERNANCE','MCP 工具 · 执行保护 · 审计')]
+    for i,(n,title,desc) in enumerate(items):
+        x=26+i*328
+        p.append(T(x,34,n,12,t,color=t['accent'],mono=True))
+        p.append(T(x,72,title,22,t,weight=700,mono=True))
+        p.append(T(x,106,desc,13,t,color=t['sub']))
+        p.append(f'<line x1="{x}" y1="127" x2="{x+285}" y2="127" stroke="{t["accent"]}" opacity=".4"/>')
+    return S(1000,148,'\n'.join(p))
 
 
 def typing(t, c):
@@ -532,12 +511,13 @@ def build_readme():
     a('\n**AI Agent · AIOps · Platform Engineering**\n')
     a('让知识可检索，让工具可治理，让系统可观测。\n')
     for b in CFG['top_badges']:
-        a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F0EADA?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
+        a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F1F4FF?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
     a('\n[👋 关于我](#about) · [🚀 代表项目](#projects) · [🛠️ 技术能力](#stack) · [📚 技术笔记](#notes) · [🤝 交流合作](#contact)\n')
     a('</div>\n')
     a('<a id="about"></a>\n\n## 👋 关于我 · About\n')
     for line in CFG['bio']: a('- ' + line)
     a('\n> ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。\n')
+    a(pic('capability', '知识检索、故障诊断、工具治理：三个核心工程方向'))
     a('### 🧭 从哪里开始看？\n')
     a('- **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。')
     a('- **想了解 AIOps / SRE** → 从故障诊断 Agent 入手，看 Kubernetes 现场证据、Runbook 与 Trace。')
@@ -553,7 +533,9 @@ def build_readme():
         if i < 3:
             a(f'<a href="{pr["url"]}">\n' + pic('proj-'+pr['slug'], pr['name']) + '\n</a>\n')
         a(detail['intro'] + '\n')
+        a('<details open>\n<summary>🔬 技术实现与工程细节</summary>\n')
         for line in detail['highlights']: a('- ' + line)
+        a('\n</details>\n')
         a('\n> 🔧 ' + detail['focus'] + '\n')
         links=[('💻 源码',pr['url'])]+detail['links']
         a(' · '.join(f'[{label}]({url})' for label,url in links)+'\n')
@@ -609,16 +591,18 @@ def build_readme():
 
 def build_preview():
     import markdown
-    source=(ROOT/'README.md').read_text(encoding='utf-8').replace('<div align="center">', '<div align="center" markdown="1">').replace('<details>', '<details markdown="1">')
+    source=(ROOT/'README.md').read_text(encoding='utf-8').replace('<div align="center">', '<div align="center" markdown="1">').replace('<details>', '<details markdown="1">').replace('<details open>', '<details open markdown="1">')
     content=markdown.markdown(source,extensions=['extra','sane_lists','md_in_html'])
-    page='''<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zhifeng Jin · Profile v4</title><style>
-:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #b29a58;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
-</style></head><body><div class="toolbar"><span>Profile v4 · GitHub README 内容预览</span><span><button onclick="setTheme('light')">浅色</button> <button onclick="setTheme('dark')">深色</button></span></div><article class="readme">__BODY__</article><script>function setTheme(t){document.documentElement.dataset.theme=t;document.querySelectorAll('picture').forEach(p=>{let i=p.querySelector('img');if(!i.dataset.light)i.dataset.light=i.src.replace('-dark.svg','-light.svg');i.src=i.dataset.light.replace('-light.svg','-'+t+'.svg');p.querySelectorAll('source').forEach(s=>s.media='not all')})}</script></body></html>'''
+    page='''<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zhifeng Jin · Profile v5</title><style>
+:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #8B7CEB;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
+</style></head><body><div class="toolbar"><span>Profile v5 · GitHub README 内容预览</span><span><button onclick="setTheme('light')">浅色</button> <button onclick="setTheme('dark')">深色</button></span></div><article class="readme">__BODY__</article><script>function setTheme(t){document.documentElement.dataset.theme=t;document.querySelectorAll('picture').forEach(p=>{let i=p.querySelector('img');if(!i.dataset.light)i.dataset.light=i.src.replace('-dark.svg','-light.svg');i.src=i.dataset.light.replace('-light.svg','-'+t+'.svg');p.querySelectorAll('source').forEach(s=>s.media='not all')})}</script></body></html>'''
     (ROOT/'preview.html').write_text(page.replace('__BODY__',content),encoding='utf-8')
 
 
 def main():
     n = build_assets()
+    for key,t in THEMES.items():
+        (ASSETS/f'capability-{key}.svg').write_text(capability_map(t),encoding='utf-8')
     build_readme()
     build_preview()
     print(f"OK: {n} animated SVG + README.md + preview.html")

@@ -1,25 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="252" viewBox="0 0 1000 252" role="img">
-<rect x="0.5" y="0.5" width="999" height="251" rx="16" fill="#171309" stroke="#5A4A2A" stroke-width="1"/>
-<path d="M22 1.5 L978 1.5" stroke="#FFE9A8" stroke-width="1" opacity="0.32"/>
-<rect x="16" y="14" width="968" height="224" rx="12" fill="#211C11" stroke="#5A4A2A" stroke-width="1"/>
-<path d="M28 15.5 L972 15.5" stroke="#FFE9A8" stroke-width="1" opacity="0.28"/>
+<rect x="0.5" y="0.5" width="999" height="251" rx="16" fill="#0C1225" stroke="#2C3A5B" stroke-width="1"/>
+<path d="M22 1.5 L978 1.5" stroke="#B5D9FF" stroke-width="1" opacity="0.32"/>
+<rect x="16" y="14" width="968" height="224" rx="12" fill="#141D36" stroke="#2C3A5B" stroke-width="1"/>
+<path d="M28 15.5 L972 15.5" stroke="#B5D9FF" stroke-width="1" opacity="0.28"/>
 <circle cx="40" cy="40" r="6" fill="#E06C5B" opacity="0.85"/>
 <circle cx="60" cy="40" r="6" fill="#E0B45B" opacity="0.85"/>
 <circle cx="80" cy="40" r="6" fill="#6DB37A" opacity="0.85"/>
-<text x="500" y="45" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#B3A480" text-anchor="middle">~/whoami — zhifengjin050-arch</text>
-<line x1="16" y1="62" x2="984" y2="62" stroke="#5A4A2A" stroke-width="1"/>
+<text x="500" y="45" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#A2B3D3" text-anchor="middle">~/whoami — zhifengjin050-arch</text>
+<line x1="16" y1="62" x2="984" y2="62" stroke="#2C3A5B" stroke-width="1"/>
 <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.0s" fill="freeze"/>
-<text x="42" y="96" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#E3B341" text-anchor="start">$ whoami</text>
-<text x="42" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#F5EBD3" text-anchor="start">↳  Zhifeng Jin · AI Agent / AIOps Engineer</text>
+<text x="42" y="96" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#A99AFF" text-anchor="start">$ whoami</text>
+<text x="42" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">↳  Zhifeng Jin · AI Agent / AIOps Engineer</text>
 </g>
 <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.35s" fill="freeze"/>
-<text x="42" y="146" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#E3B341" text-anchor="start">$ cat focus.txt</text>
-<text x="42" y="168" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#F5EBD3" text-anchor="start">↳  Agent runtime · MCP tooling · K8s RCA · Hybrid RAG</text>
+<text x="42" y="146" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#A99AFF" text-anchor="start">$ cat focus.txt</text>
+<text x="42" y="168" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">↳  Agent runtime · MCP tooling · K8s RCA · Hybrid RAG</text>
 </g>
 <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.7s" begin="0.7s" fill="freeze"/>
-<text x="42" y="196" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#E3B341" text-anchor="start">$ echo $DEFAULT</text>
-<text x="42" y="218" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#F5EBD3" text-anchor="start">↳  read-only · least privilege · audited</text>
+<text x="42" y="196" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#A99AFF" text-anchor="start">$ echo $DEFAULT</text>
+<text x="42" y="218" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">↳  read-only · least privilege · audited</text>
 </g>
-<circle cx="900" cy="220" r="4" fill="#7FBF8E"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.2s" begin="0s" repeatCount="indefinite"/></circle>
-<text x="958" y="224" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#7FBF8E" text-anchor="end">online</text>
+<circle cx="900" cy="220" r="4" fill="#70DEC6"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.2s" begin="0s" repeatCount="indefinite"/></circle>
+<text x="958" y="224" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#70DEC6" text-anchor="end">online</text>
 </svg>

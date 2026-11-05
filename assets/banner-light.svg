@@ -1,50 +1,160 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img">
-<defs>
-<clipPath id="heroclip"><rect x="1" y="1" width="998" height="248" rx="18"/></clipPath>
-<radialGradient id="halo"><stop offset="0" stop-color="#8A6E14" stop-opacity="0.17"/><stop offset="1" stop-color="#8A6E14" stop-opacity="0"/></radialGradient>
-<pattern id="mesh" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0 L0 0 0 26" fill="none" stroke="#DCCBA6" stroke-width="0.6"/></pattern>
-<defs><linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A6E14" stop-opacity="0"/><stop offset="0.5" stop-color="#8A6E14" stop-opacity="0.16"/><stop offset="1" stop-color="#8A6E14" stop-opacity="0"/></linearGradient></defs>
-</defs>
-<rect x="0.5" y="0.5" width="999" height="249" rx="18" fill="#F0EADA" stroke="#DCCBA6" stroke-width="1"/>
-<g clip-path="url(#heroclip)">
-<rect x="0" y="0" width="1000" height="250" fill="url(#mesh)" opacity="0.50"/>
-<circle cx="862" cy="108" r="170" fill="url(#halo)"/>
-<rect x="-340" y="0" width="340" height="250" fill="url(#beam)"><animate attributeName="x" values="-340;1060" dur="7s" repeatCount="indefinite"/></rect>
-<line x1="0" y1="0" x2="1000" y2="0" stroke="#8A6E14" stroke-width="1" opacity="0.16"><animate attributeName="y1" values="0;250" dur="5.5s" repeatCount="indefinite"/><animate attributeName="y2" values="0;250" dur="5.5s" repeatCount="indefinite"/></line>
-</g>
-<path d="M24 1.5 L976 1.5" stroke="#FFFFFF" stroke-width="1" opacity="0.35"/>
-<circle cx="862" cy="108" r="112" fill="none" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 7" opacity="0.30"/>
-<line x1="862" y1="108" x2="862.0" y2="30.0" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 5" opacity="0.34"><animate attributeName="stroke-dashoffset" values="0;-16" dur="2s" repeatCount="indefinite"/></line>
-<circle cx="862.0" cy="30.0" r="8" fill="#E7D9B8" stroke="#8A6E14" stroke-width="1.2"/>
-<circle cx="862.0" cy="30.0" r="3.5" fill="#8A6E14"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" begin="0.0s" repeatCount="indefinite"/></circle>
-<line x1="862" y1="108" x2="929.5" y2="69.0" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 5" opacity="0.34"><animate attributeName="stroke-dashoffset" values="0;-16" dur="2s" repeatCount="indefinite"/></line>
-<circle cx="929.5" cy="69.0" r="8" fill="#E7D9B8" stroke="#8A6E14" stroke-width="1.2"/>
-<circle cx="929.5" cy="69.0" r="3.5" fill="#8A6E14"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" begin="0.4s" repeatCount="indefinite"/></circle>
-<line x1="862" y1="108" x2="929.5" y2="147.0" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 5" opacity="0.34"><animate attributeName="stroke-dashoffset" values="0;-16" dur="2s" repeatCount="indefinite"/></line>
-<circle cx="929.5" cy="147.0" r="8" fill="#E7D9B8" stroke="#8A6E14" stroke-width="1.2"/>
-<circle cx="929.5" cy="147.0" r="3.5" fill="#8A6E14"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" begin="0.8s" repeatCount="indefinite"/></circle>
-<line x1="862" y1="108" x2="862.0" y2="186.0" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 5" opacity="0.34"><animate attributeName="stroke-dashoffset" values="0;-16" dur="2s" repeatCount="indefinite"/></line>
-<circle cx="862.0" cy="186.0" r="8" fill="#E7D9B8" stroke="#8A6E14" stroke-width="1.2"/>
-<circle cx="862.0" cy="186.0" r="3.5" fill="#8A6E14"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" begin="1.2s" repeatCount="indefinite"/></circle>
-<line x1="862" y1="108" x2="794.5" y2="147.0" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 5" opacity="0.34"><animate attributeName="stroke-dashoffset" values="0;-16" dur="2s" repeatCount="indefinite"/></line>
-<circle cx="794.5" cy="147.0" r="8" fill="#E7D9B8" stroke="#8A6E14" stroke-width="1.2"/>
-<circle cx="794.5" cy="147.0" r="3.5" fill="#8A6E14"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" begin="1.6s" repeatCount="indefinite"/></circle>
-<line x1="862" y1="108" x2="794.5" y2="69.0" stroke="#8A6E14" stroke-width="1" stroke-dasharray="3 5" opacity="0.34"><animate attributeName="stroke-dashoffset" values="0;-16" dur="2s" repeatCount="indefinite"/></line>
-<circle cx="794.5" cy="69.0" r="8" fill="#E7D9B8" stroke="#8A6E14" stroke-width="1.2"/>
-<circle cx="794.5" cy="69.0" r="3.5" fill="#8A6E14"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" begin="2.0s" repeatCount="indefinite"/></circle>
-<circle cx="862" cy="108" r="33" fill="#8A6E14" opacity="0.15"/>
-<circle cx="862" cy="108" r="33" fill="none" stroke="#8A6E14" stroke-width="1.5" opacity="0.65"/>
-<text x="862" y="115" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="20" font-weight="700" fill="#8A6E14" text-anchor="middle">AI</text>
-<text x="862" y="236" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#6B5A33" text-anchor="middle" letter-spacing="1.2">GOVERNED RUNTIME · 2026</text>
-<rect x="48" y="38" width="5" height="22" rx="2" fill="#8A6E14"/>
-<text x="66" y="55" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#8A6E14" text-anchor="start" letter-spacing="2">PLATFORM ENGINEERING / AI SYSTEMS</text>
-<g opacity="0"><animate attributeName="opacity" values="0;1" dur="1.3s" fill="freeze"/>
-<text x="46" y="126" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="60" font-weight="800" fill="#3A2E14" text-anchor="start">ZHIFENG JIN</text>
-</g>
-<text x="50" y="160" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="16" font-weight="400" fill="#6B5A33" text-anchor="start">@zhifengjin050-arch</text>
-<text x="50" y="190" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="600" fill="#B08D2E" text-anchor="start">AI Agent · AIOps · Platform Engineering</text>
-<line x1="50" y1="202" x2="470" y2="202" stroke="#DCCBA6" stroke-width="1"/>
-<rect x="50" y="214" width="104.07999999999998" height="25" rx="12" fill="#E7D9B8"/><text x="102.03999999999999" y="231" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#6B5A33" text-anchor="middle">Agent Systems</text>
-<rect x="164.07999999999998" y="214" width="91.75999999999999" height="25" rx="12" fill="#E7D9B8"/><text x="209.95999999999998" y="231" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#6B5A33" text-anchor="middle">MCP Tooling</text>
-<rect x="265.84" y="214" width="97.91999999999999" height="25" rx="12" fill="#E7D9B8"/><text x="314.79999999999995" y="231" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#6B5A33" text-anchor="middle">Cloud Native</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img">
+<rect x="0.5" y="0.5" width="999" height="339" rx="20" fill="#F1F4FF" stroke="#D9E0F4" stroke-width="1"/>
+<defs><linearGradient id="aurora"><stop stop-color="#6256D9"/><stop offset="1" stop-color="#397BCC"/></linearGradient><radialGradient id="nebula"><stop stop-color="#6256D9" stop-opacity=".22"/><stop offset="1" stop-color="#6256D9" stop-opacity="0"/></radialGradient></defs>
+<style>@media(prefers-reduced-motion:reduce){.orbit{display:none}}</style>
+<rect x="1" y="1" width="998" height="338" rx="20" fill="none" stroke="url(#aurora)" opacity=".5"/>
+<path d="M32 1 H968" stroke="url(#aurora)" stroke-width="3"/>
+<circle cx="800" cy="160" r="170" fill="url(#nebula)"/>
+<circle cx="640" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="35" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="63" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="91" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="119" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="147" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="175" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="203" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="231" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="259" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="287" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="640" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="668" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="696" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="724" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="752" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="780" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="808" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="836" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="864" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="892" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="920" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<circle cx="948" cy="315" r=".8" fill="#6256D9" opacity=".2"/>
+<text x="42" y="44" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#6256D9" text-anchor="start" letter-spacing="2">ZF / ENGINEERING NOTEBOOK</text>
+<text x="42" y="112" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="55" font-weight="800" fill="#182343" text-anchor="start">ZHIFENG JIN</text>
+<text x="44" y="147" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="15" font-weight="400" fill="#397BCC" text-anchor="start" letter-spacing="1">AI AGENT  /  AIOPS  /  PLATFORM</text>
+<text x="44" y="191" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="600" fill="#182343" text-anchor="start">从知识到行动，从代码到系统。</text>
+<text x="44" y="222" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#52617D" text-anchor="start">Build with context. Execute with boundaries.</text>
+<rect x="44" y="246" width="91.2" height="25" rx="12" fill="#E5E9FC"/><text x="89.6" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#52617D" text-anchor="middle">Hybrid RAG</text>
+<rect x="145.2" y="246" width="84.47999999999999" height="25" rx="12" fill="#E5E9FC"/><text x="187.44" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#52617D" text-anchor="middle">MCP Tools</text>
+<rect x="239.67999999999998" y="246" width="104.64" height="25" rx="12" fill="#E5E9FC"/><text x="292.0" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#52617D" text-anchor="middle">Cloud Native</text>
+<text x="44" y="315" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#52617D" text-anchor="start">@zhifengjin050-arch</text>
+<ellipse cx="810" cy="156" rx="57" ry="35.339999999999996" transform="rotate(-28 810 156)" fill="none" stroke="url(#aurora)" opacity=".5"/>
+<ellipse cx="810" cy="156" rx="90" ry="55.8" transform="rotate(-28 810 156)" fill="none" stroke="url(#aurora)" opacity=".5"/>
+<ellipse cx="810" cy="156" rx="123" ry="76.26" transform="rotate(-28 810 156)" fill="none" stroke="url(#aurora)" opacity=".5"/>
+<circle cx="810" cy="156" r="39" fill="#E5E9FC" stroke="#6256D9"/>
+<text x="810" y="165" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="28" font-weight="800" fill="#6256D9" text-anchor="middle">ZF</text>
+<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="0 810 156" to="360 810 156" dur="18s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#397BCC"/></g>
+<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="120 810 156" to="480 810 156" dur="24s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#397BCC"/></g>
+<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="240 810 156" to="600 810 156" dur="30s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#397BCC"/></g>
+<text x="700" y="55" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#6256D9" text-anchor="middle" letter-spacing="1.5">RETRIEVE</text>
+<text x="902" y="220" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#6256D9" text-anchor="middle" letter-spacing="1.5">REASON</text>
+<text x="765" y="285" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#6256D9" text-anchor="middle" letter-spacing="1.5">EXECUTE</text>
 </svg>
