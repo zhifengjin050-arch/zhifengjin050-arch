@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="74" viewBox="0 0 1000 74" role="img">
-<rect x="2" y="20" width="5" height="36" rx="2" fill="#D6B85C"/>
-<text x="22" y="47" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="26" font-weight="700" fill="#F5EEDB" text-anchor="start">系统与实践</text>
-<text x="174.0" y="46" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#D6B85C" text-anchor="start" letter-spacing="2.2">SYSTEMS</text>
-<text x="994" y="46" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="end">03 / 06</text>
-<path d="M922 40 L928 46 L922 52 L916 46 Z" fill="#D6B85C" opacity="0.45"/>
-<line x1="2" y1="68" x2="998" y2="68" stroke="#51452B" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="88" viewBox="0 0 1000 88" role="img">
+<rect x="1" y="9" width="58" height="58" rx="14" fill="#211C13" stroke="#51452B"/>
+<path d="M18 25l12-6 12 6v18l-12 6-12-6z M18 25l12 7 12-7 M30 32v17" fill="none" stroke="#D6B85C" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="80" y="39" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#D6B85C" text-anchor="start">代表项目</text>
+<text x="82" y="61" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#B8AC90" text-anchor="start" letter-spacing="3">SELECTED WORK</text>
+<defs><linearGradient id="rule"><stop stop-color="#D6B85C"/><stop offset="1" stop-color="#51452B" stop-opacity=".2"/></linearGradient></defs><path d="M1 83H999" stroke="url(#rule)"/>
 </svg>

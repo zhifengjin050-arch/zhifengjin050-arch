@@ -27,7 +27,7 @@
 
 <a id="about"></a>
 
-## 👋 关于我 · About
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-about-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-about-light.svg">  <img src="assets/hdr-about-dark.svg" alt="关于我" width="100%"></picture></h2>
 
 - 👋 你好，我是 **Zhifeng Jin**，关注 **AI Agent 应用开发、AIOps 与平台工程**，喜欢把知识检索、工具调用和基础设施自动化连成完整系统。
 - 🧠 **AI 应用**：围绕企业文档接入、Hybrid RAG、知识图谱与 Agent Runtime，探索从「找到信息」到「执行任务」的工程链路。
@@ -52,7 +52,7 @@
 
 <a id="stack"></a>
 
-## 🛠️ 技术能力 · Engineering Stack
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-stack-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-stack-light.svg">  <img src="assets/hdr-stack-dark.svg" alt="技术栈" width="100%"></picture></h2>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
@@ -157,7 +157,7 @@
 
 <a id="projects"></a>
 
-## 🚀 代表项目 · Selected Work
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-projects-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-projects-light.svg">  <img src="assets/hdr-projects-dark.svg" alt="代表项目" width="100%"></picture></h2>
 
 以 **知识自动化 → 故障诊断 → 工具治理** 为主线，下面展开项目场景、系统能力与值得深入阅读的工程设计。
 
@@ -272,7 +272,7 @@
 
 ---
 
-## 🧩 更多开源实践 · Engineering Portfolio
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-portfolio-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-portfolio-light.svg">  <img src="assets/hdr-portfolio-dark.svg" alt="更多开源实践" width="100%"></picture></h2>
 
 补充展示模型网关、全栈业务与网络认证三个方向。以下介绍仓库能力与实践主题；具体实现与许可说明以各仓库为准。
 
@@ -367,7 +367,7 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 
 <a id="notes"></a>
 
-## 📚 技术笔记与阅读入口 · Build in Public
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-notes-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-notes-light.svg">  <img src="assets/hdr-notes-dark.svg" alt="技术笔记" width="100%"></picture></h2>
 
 将项目文档作为技术笔记入口，沿着一个问题读到设计与实现：
 
@@ -376,15 +376,14 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 - **[🩺 故障诊断如何组织证据？](https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform#features)** — 从 LangGraph Agent 循环读到 Kubernetes 工具、Runbook 与 Incident Report。
 - **[🔐 MCP 如何划分读与写？](https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server#mcp-tool-catalog)** — 从工具目录的风险 / 权限读到默认只读与执行保护。
 - **[📦 系统如何交付？](https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform#部署架构)** — 从环境配置与 Compose 读到 Kubernetes 和 Helm 部署入口。
-
-## 🌱 持续探索 · What’s Next
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-focus-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-focus-light.svg">  <img src="assets/hdr-focus-dark.svg" alt="方向与投入" width="100%"></picture></h2>
 
 - **检索质量**：如何组织评测样本、定位召回与排序问题，让回答更有依据。
 - **执行可靠性**：如何处理超时、重试、部分失败与长任务状态，让 Agent 任务更可控。
 - **可观测性**：如何把模型决策、工具调用、耗时与成本放入同一个分析上下文。
 - **平台体验**：如何降低系统配置、知识接入与工具集成的使用门槛。
 
-## 💡 写代码时在意的事
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-principles-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-principles-light.svg">  <img src="assets/hdr-principles-dark.svg" alt="工程原则" width="100%"></picture></h2>
 
 - 🛡️ **边界明确**：权限、租户、数据访问与执行范围应在接口和实现中看得见。
 - 🔎 **过程可查**：错误要能定位，工具调用要有记录，结论要有证据。
@@ -393,7 +392,7 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 
 <a id="contact"></a>
 
-## 🤝 交流与合作 · Let’s Connect
+<h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-links-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-links-light.svg">  <img src="assets/hdr-links-dark.svg" alt="交流与合作" width="100%"></picture></h2>
 
 欢迎围绕 **Agent 工程、RAG、MCP、Kubernetes 诊断、平台工程** 交流。发现问题或有改进建议，可以在对应仓库提交 Issue / PR。
 

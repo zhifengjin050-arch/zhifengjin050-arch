@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="88" viewBox="0 0 1000 88" role="img">
+<rect x="1" y="9" width="58" height="58" rx="14" fill="#211C13" stroke="#51452B"/>
+<path d="M18 21h10l2 3 2-3h10v26H32l-2 2-2-2H18z M30 25v24" fill="none" stroke="#D6B85C" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="80" y="39" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#D6B85C" text-anchor="start">技术笔记</text>
+<text x="82" y="61" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#B8AC90" text-anchor="start" letter-spacing="3">BUILD IN PUBLIC</text>
+<defs><linearGradient id="rule"><stop stop-color="#D6B85C"/><stop offset="1" stop-color="#51452B" stop-opacity=".2"/></linearGradient></defs><path d="M1 83H999" stroke="url(#rule)"/>
+</svg>

@@ -237,18 +237,23 @@ def divider(t, c):
 
 
 def header(t, sec):
-    W, H = 1000, 74
-    A, INK, SUB, LINE = t["accent"], t["ink"], t["sub"], t["line"]
-    title, en, no = sec["title"], sec["en"], sec["no"]
-    total = len(CFG["sections"])
-    p = [R(2, 20, 5, 36, 2, A)]
-    p.append(T(22, 47, title, 26, t, color=INK, weight=700))
-    en_x = 26 + width_of(title, 26) + 18
-    p.append(T(en_x, 46, en, 11, t, color=A, weight=600, mono=True, spacing=2.2))
-    p.append(T(994, 46, f"{no} / {total:02d}", 12, t, color=SUB, mono=True, anchor="end"))
-    p.append(f'<path d="M922 40 L928 46 L922 52 L916 46 Z" fill="{A}" opacity="0.45"/>')
-    p.append(f'<line x1="2" y1="68" x2="998" y2="68" stroke="{LINE}" stroke-width="1"/>')
-    return S(W, H, "\n".join(p))
+    A=t['accent']
+    icons={
+      'about':'M24 26a6 6 0 1 0 12 0a6 6 0 1 0-12 0 M20 46v-4a10 10 0 0 1 20 0v4',
+      'stack':'M17 27l13-7 13 7-13 7z M17 34l13 7 13-7 M17 41l13 7 13-7',
+      'projects':'M18 25l12-6 12 6v18l-12 6-12-6z M18 25l12 7 12-7 M30 32v17',
+      'portfolio':'M18 24h24v23H18z M24 18h12v6 M18 32h24 M27 30v5h6v-5',
+      'notes':'M18 21h10l2 3 2-3h10v26H32l-2 2-2-2H18z M30 25v24',
+      'focus':'M44 34a14 14 0 1 1-14-14 M39 34a9 9 0 1 1-9-9 M30 34l14-14 M36 20h8v8',
+      'principles':'M30 19l13 5v11c0 7-7 12-13 15-6-3-13-8-13-15V24z M23 34l5 5 9-10',
+      'links':'M17 23h26v20H29l-8 7v-7h-4z M23 30h14 M23 36h9'
+    }
+    p=[f'<rect x="1" y="9" width="58" height="58" rx="14" fill="{t["card2"]}" stroke="{t["line"]}"/>',f'<path d="{icons.get(sec["key"],icons["stack"])}" fill="none" stroke="{A}" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>']
+    p.append(T(80,39,sec['title'],27,t,color=A,weight=700))
+    p.append(T(82,61,sec['en'],10,t,color=t['sub'],mono=True,spacing=3))
+    p.append(f'<defs><linearGradient id="rule"><stop stop-color="{A}"/><stop offset="1" stop-color="{t["line"]}" stop-opacity=".2"/></linearGradient></defs><path d="M1 83H999" stroke="url(#rule)"/>')
+    return S(1000,88,'\n'.join(p))
+
 
 
 def terminal(t, c):
@@ -544,6 +549,12 @@ def tech_badge_grid():
     return '\n'.join(rows)
 
 
+def section_heading(key, anchor=None):
+    sec=next(x for x in CFG['sections'] if x['key']==key)
+    prefix=f'<a id="{anchor}"></a>\n\n' if anchor else ''
+    return prefix+'<h2>'+pic('hdr-'+key,sec['title']).replace('\n','')+'</h2>\n'
+
+
 def build_readme():
     u = CFG['username']
     L = []
@@ -557,7 +568,7 @@ def build_readme():
         a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F0EADA?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
     a('\n[👋 关于我](#about) · [🚀 代表项目](#projects) · [🛠️ 技术能力](#stack) · [📚 技术笔记](#notes) · [🤝 交流合作](#contact)\n')
     a('</div>\n')
-    a('<a id="about"></a>\n\n## 👋 关于我 · About\n')
+    a(section_heading('about','about'))
     for line in CFG['bio']: a('- ' + line)
     a('\n> ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。\n')
     a(pic('capability', '知识检索、故障诊断、工具治理：三个核心工程方向')+'\n')
@@ -565,7 +576,7 @@ def build_readme():
     a('- **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。')
     a('- **想了解 AIOps / SRE** → 从故障诊断 Agent 入手，看 Kubernetes 现场证据、Runbook 与 Trace。')
     a('- **想了解 MCP / 工具工程** → 从 DevOps MCP Server 入手，看工具目录、执行门与审计。\n')
-    a('<a id="stack"></a>\n\n## 🛠️ 技术能力 · Engineering Stack\n')
+    a(section_heading('stack','stack'))
     a(pic('languages', '六个展示仓库的真实代码语言占比')+'\n')
     a(tech_badge_grid())
     a('上列技术覆盖当前公开项目中的应用与集成实践，具体实现见各项目源码。\n')
@@ -587,11 +598,11 @@ def build_readme():
     a(pic('flow','请求规划、工具调用、检索与响应的示意链路'))
     a('\n*上图为项目能力的组合示意，各项目实际集成范围见对应仓库。*\n')
     a('\n</details>\n')
-    a('<a id="projects"></a>\n\n## 🚀 代表项目 · Selected Work\n')
+    a(section_heading('projects','projects'))
     a('以 **知识自动化 → 故障诊断 → 工具治理** 为主线，下面展开项目场景、系统能力与值得深入阅读的工程设计。\n')
     for i, (pr, detail) in enumerate(zip(CFG['projects'], CFG['project_details'])):
         if i == 3:
-            a('## 🧩 更多开源实践 · Engineering Portfolio\n')
+            a(section_heading('portfolio'))
             a('补充展示模型网关、全栈业务与网络认证三个方向。以下介绍仓库能力与实践主题；具体实现与许可说明以各仓库为准。\n')
         a(f'### {detail["icon"]} {i+1:02d} · [{pr["name"]}]({pr["url"]})\n')
         a(f'**{detail["tag"]}** · ' + ' / '.join(f'`{x}`' for x in pr['tech']) + '\n')
@@ -610,7 +621,7 @@ def build_readme():
             a(f'[![{pr["name"]} 演示封面](https://raw.githubusercontent.com/{u}/{repo}/main/docs/videos/cover.png)](https://{u}.github.io/{repo}/)\n')
             a('点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。\n\n</details>\n')
         a('---\n')
-    a('<a id="notes"></a>\n\n## 📚 技术笔记与阅读入口 · Build in Public\n')
+    a(section_heading('notes','notes'))
     a('将项目文档作为技术笔记入口，沿着一个问题读到设计与实现：\n')
     base=f'https://github.com/{u}'
     for title,body,url in [
@@ -620,17 +631,17 @@ def build_readme():
         ('🔐 MCP 如何划分读与写？','从工具目录的风险 / 权限读到默认只读与执行保护。',f'{base}/enterprise-devops-mcp-server#mcp-tool-catalog'),
         ('📦 系统如何交付？','从环境配置与 Compose 读到 Kubernetes 和 Helm 部署入口。',f'{base}/enterprise-ai-agent-platform#部署架构')]:
         a(f'- **[{title}]({url})** — {body}')
-    a('\n## 🌱 持续探索 · What’s Next\n')
+    a(section_heading('focus'))
     a('- **检索质量**：如何组织评测样本、定位召回与排序问题，让回答更有依据。')
     a('- **执行可靠性**：如何处理超时、重试、部分失败与长任务状态，让 Agent 任务更可控。')
     a('- **可观测性**：如何把模型决策、工具调用、耗时与成本放入同一个分析上下文。')
     a('- **平台体验**：如何降低系统配置、知识接入与工具集成的使用门槛。\n')
-    a('## 💡 写代码时在意的事\n')
+    a(section_heading('principles'))
     a('- 🛡️ **边界明确**：权限、租户、数据访问与执行范围应在接口和实现中看得见。')
     a('- 🔎 **过程可查**：错误要能定位，工具调用要有记录，结论要有证据。')
     a('- 📦 **交付完整**：代码之外，补上配置模板、启动方式、部署入口与技术文档。')
     a('- 🧱 **持续演进**：先理清模块职责，再扩展能力；让后续阅读和修改都有路径。\n')
-    a('<a id="contact"></a>\n\n## 🤝 交流与合作 · Let’s Connect\n')
+    a(section_heading('links','contact'))
     a('欢迎围绕 **Agent 工程、RAG、MCP、Kubernetes 诊断、平台工程** 交流。发现问题或有改进建议，可以在对应仓库提交 Issue / PR。\n')
     a(f'[🐙 GitHub](https://github.com/{u}) · [📂 所有仓库](https://github.com/{u}?tab=repositories) · [🧠 Agent Platform]({base}/enterprise-ai-agent-platform) · [🛡️ MCP Server]({base}/enterprise-devops-mcp-server)\n')
     a('---\n\n<div align="center">\n\n**'+CFG['closing']+'**\n\n如果某个项目对你有帮助，欢迎留下一个 ⭐\n\n</div>\n')

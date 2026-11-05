@@ -51,39 +51,51 @@
   "sections": [
     {
       "key": "about",
-      "title": "定位",
-      "en": "POSITIONING",
+      "title": "关于我",
+      "en": "ABOUT",
       "no": "01"
     },
     {
       "key": "stack",
-      "title": "技术纵深",
+      "title": "技术栈",
       "en": "TECH STACK",
       "no": "02"
     },
     {
       "key": "projects",
-      "title": "系统与实践",
-      "en": "SYSTEMS",
+      "title": "代表项目",
+      "en": "SELECTED WORK",
       "no": "03"
     },
     {
-      "key": "stats",
-      "title": "工程切面",
-      "en": "ENGINEERING",
+      "key": "portfolio",
+      "title": "更多开源实践",
+      "en": "ENGINEERING PORTFOLIO",
       "no": "04"
     },
     {
-      "key": "focus",
-      "title": "设计原则",
-      "en": "PRINCIPLES",
+      "key": "notes",
+      "title": "技术笔记",
+      "en": "BUILD IN PUBLIC",
       "no": "05"
     },
     {
-      "key": "links",
-      "title": "找到我",
-      "en": "CONTACT",
+      "key": "focus",
+      "title": "方向与投入",
+      "en": "FOCUS",
       "no": "06"
+    },
+    {
+      "key": "principles",
+      "title": "工程原则",
+      "en": "PRINCIPLES",
+      "no": "07"
+    },
+    {
+      "key": "links",
+      "title": "交流与合作",
+      "en": "CONNECT",
+      "no": "08"
     }
   ],
   "terminal_lines": [
