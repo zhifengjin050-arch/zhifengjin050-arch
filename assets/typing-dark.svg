@@ -1,10 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="66" viewBox="0 0 1000 66" role="img">
-<rect x="0.5" y="0.5" width="999" height="65" rx="14" fill="#0C1225" stroke="#2C3A5B" stroke-width="1"/>
-<path d="M20 1.5 L980 1.5" stroke="#B5D9FF" stroke-width="1" opacity="0.32"/>
-<defs><clipPath id="twclip"><rect x="70" y="14" width="0" height="38"><animate attributeName="width" values="0;528.0;528.0" keyTimes="0;0.62;1" dur="5s" repeatCount="indefinite"/></rect></clipPath></defs>
-<circle cx="30" cy="33" r="5" fill="#A99AFF"><animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/></circle>
-<text x="48" y="39" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="17" font-weight="700" fill="#A99AFF" text-anchor="start">&gt;</text>
-<text x="70" y="39" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="15" font-weight="400" fill="#EDF3FF" clip-path="url(#twclip)">Building governed agents that operate real infrastructure.</text>
-<rect x="601.0" y="22" width="9" height="21" rx="2" fill="#A99AFF"><animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/></rect>
-<text x="972" y="39" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="end" opacity="0.5">▌</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="92" viewBox="0 0 1000 92" role="img">
+<rect x="0.5" y="0.5" width="999" height="91" rx="16" fill="#0C1225" stroke="#2C3A5B" stroke-width="1"/>
+<text x="28" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#A99AFF" text-anchor="start">❯</text>
+<style>@media(prefers-reduced-motion:reduce){.cycle{display:none}.fallback{display:block}}</style>
+<g class="fallback" style="display:none"><text x="64" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#EDF3FF" text-anchor="start">构建知识库 Agent，让企业知识连接实际任务。</text></g>
+<defs><clipPath id="cycle0"><rect x="60" y="15" width="850" height="62"><animate attributeName="width" values="0;850;850;0;0" keyTimes="0.0;0.08;0.3033;0.3333;1" dur="15s" repeatCount="indefinite"/></rect></clipPath></defs>
+<g class="cycle" clip-path="url(#cycle0)"><text x="64" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#EDF3FF" text-anchor="start">构建知识库 Agent，让企业知识连接实际任务。</text></g>
+<defs><clipPath id="cycle1"><rect x="60" y="15" width="850" height="62"><animate attributeName="width" values="0;0;850;850;0;0" keyTimes="0;0.3333;0.4133;0.6367;0.6667;1" dur="15s" repeatCount="indefinite"/></rect></clipPath></defs>
+<g class="cycle" clip-path="url(#cycle1)"><text x="64" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#EDF3FF" text-anchor="start">探索 AIOps，让故障诊断有证据、有过程。</text></g>
+<defs><clipPath id="cycle2"><rect x="60" y="15" width="850" height="62"><animate attributeName="width" values="0;0;850;850;0" keyTimes="0;0.6667;0.7467;0.97;1.0" dur="15s" repeatCount="indefinite"/></rect></clipPath></defs>
+<g class="cycle" clip-path="url(#cycle2)"><text x="64" y="56" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="22" font-weight="400" fill="#EDF3FF" text-anchor="start">打磨 MCP 工具，让每次执行有边界、可追踪。</text></g>
+<rect x="940" y="32" width="3" height="28" fill="#A99AFF"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
 </svg>

@@ -5,6 +5,11 @@
   <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
   <img src="assets/banner-dark.svg" alt="Zhifeng Jin · @zhifengjin050-arch" width="100%">
 </picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/typing-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/typing-light.svg">
+  <img src="assets/typing-dark.svg" alt="构建知识库 Agent、探索 AIOps、打磨 MCP 工具" width="100%">
+</picture>
 
 **AI Agent · AIOps · Platform Engineering**
 

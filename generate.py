@@ -206,27 +206,20 @@ def capability_map(t):
 
 
 def typing(t, c):
-    W, H = 1000, 66
-    A, INK, SUB = t["accent"], t["ink"], t["sub"]
-    line = c["typing_line"]
-    tw = width_of(line, 15, True)
-    p = glass_bg(t, W, H, 14, mesh=False)
-    p.append(f'<defs><clipPath id="twclip"><rect x="70" y="14" width="0" height="38">'
-             f'<animate attributeName="width" values="0;{tw+6:.1f};{tw+6:.1f}" '
-             f'keyTimes="0;0.62;1" dur="5s" repeatCount="indefinite"/>'
-             f'</rect></clipPath></defs>')
-    p.append(f'<circle cx="30" cy="33" r="5" fill="{A}">'
-             f'<animate attributeName="opacity" values="0.4;1;0.4" dur="2s" '
-             f'repeatCount="indefinite"/></circle>')
-    p.append(T(48, 39, ">", 17, t, color=A, weight=700, mono=True))
-    p.append(f'<text x="70" y="39" font-family="{MONO}" font-size="15" '
-             f'font-weight="400" fill="{INK}" clip-path="url(#twclip)">{esc(line)}</text>')
-    cx = 70 + tw + 9
-    p.append(f'<rect x="{cx:.1f}" y="22" width="9" height="21" rx="2" fill="{A}">'
-             f'<animate attributeName="opacity" values="1;1;0;0" dur="1.1s" '
-             f'repeatCount="indefinite"/></rect>')
-    p.append(T(972, 39, "▌", 13, t, color=SUB, anchor="end", opacity=0.5))
-    return S(W, H, "\n".join(p))
+    lines=['构建知识库 Agent，让企业知识连接实际任务。','探索 AIOps，让故障诊断有证据、有过程。','打磨 MCP 工具，让每次执行有边界、可追踪。']
+    p=[bg(t,1000,92,16),T(28,56,'❯',24,t,color=t['accent'],weight=700)]
+    p.append('<style>@media(prefers-reduced-motion:reduce){.cycle{display:none}.fallback{display:block}}</style>')
+    p.append('<g class="fallback" style="display:none">'+T(64,56,lines[0],22,t)+'</g>')
+    for i,line in enumerate(lines):
+        begin=i/3; end=(i+1)/3
+        times=[0,begin,begin+.08,end-.03,end,1]
+        vals=['0','0','850','850','0','0']
+        if i==0: times=times[1:];vals=vals[1:]
+        if i==2: times=times[:-1];vals=vals[:-1]
+        p.append(f'<defs><clipPath id="cycle{i}"><rect x="60" y="15" width="850" height="62"><animate attributeName="width" values="'+ ';'.join(vals)+'" keyTimes="'+';'.join(str(round(x,4)) for x in times)+'" dur="15s" repeatCount="indefinite"/></rect></clipPath></defs>')
+        p.append(f'<g class="cycle" clip-path="url(#cycle{i})">'+T(64,56,line,22,t)+'</g>')
+    p.append(f'<rect x="940" y="32" width="3" height="28" fill="{t["accent"]}"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>')
+    return S(1000,92,'\n'.join(p))
 
 
 def divider(t, c):
@@ -508,6 +501,7 @@ def build_readme():
     a = L.append
     a('<div align="center">\n')
     a(pic('banner', f'Zhifeng Jin · @{u}'))
+    a(pic('typing', '构建知识库 Agent、探索 AIOps、打磨 MCP 工具'))
     a('\n**AI Agent · AIOps · Platform Engineering**\n')
     a('让知识可检索，让工具可治理，让系统可观测。\n')
     for b in CFG['top_badges']:
