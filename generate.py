@@ -24,14 +24,14 @@ CFG = json.loads((ROOT / "profile.config.json").read_text(encoding="utf-8"))
 
 THEMES = {
     "light": dict(
-        card="#F1F4FF", card2="#FAFBFF", ink="#182343", sub="#52617D",
-        accent="#6256D9", accent2="#397BCC", line="#D9E0F4", chip="#E5E9FC",
-        green="#278982", glow="#FFFFFF",
+        card="#FAF8F3", card2="#F7F4EE", ink="#302A1C", sub="#71674F",
+        accent="#96781A", accent2="#A8862A", line="#DFD8C8", chip="#F0EBDF",
+        green="#628571", glow="#FFFFFF",
     ),
     "dark": dict(
-        card="#0C1225", card2="#141D36", ink="#EDF3FF", sub="#A2B3D3",
-        accent="#A99AFF", accent2="#65D9F1", line="#2C3A5B", chip="#202C49",
-        green="#70DEC6", glow="#B5D9FF",
+        card="#17140D", card2="#211C13", ink="#F5EEDB", sub="#B8AC90",
+        accent="#D6B85C", accent2="#E7CD86", line="#51452B", chip="#30291A",
+        green="#8FAE92", glow="#FFE9A8",
     ),
 }
 
@@ -538,13 +538,13 @@ def build_readme():
     a('\n**AI Agent · AIOps · Platform Engineering**\n')
     a('让知识可检索，让工具可治理，让系统可观测。\n')
     for b in CFG['top_badges']:
-        a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F1F4FF?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
+        a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F0EADA?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
     a('\n[👋 关于我](#about) · [🚀 代表项目](#projects) · [🛠️ 技术能力](#stack) · [📚 技术笔记](#notes) · [🤝 交流合作](#contact)\n')
     a('</div>\n')
     a('<a id="about"></a>\n\n## 👋 关于我 · About\n')
     for line in CFG['bio']: a('- ' + line)
     a('\n> ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。\n')
-    a(pic('capability', '知识检索、故障诊断、工具治理：三个核心工程方向'))
+    a(pic('capability', '知识检索、故障诊断、工具治理：三个核心工程方向')+'\n')
     a('### 🧭 从哪里开始看？\n')
     a('- **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。')
     a('- **想了解 AIOps / SRE** → 从故障诊断 Agent 入手，看 Kubernetes 现场证据、Runbook 与 Trace。')
@@ -573,7 +573,7 @@ def build_readme():
             a('点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。\n\n</details>\n')
         a('---\n')
     a('<a id="stack"></a>\n\n## 🛠️ 技术能力 · Engineering Stack\n')
-    a(pic('languages', '六个展示仓库的真实代码语言占比'))
+    a(pic('languages', '六个展示仓库的真实代码语言占比')+'\n')
     a('### 🧠 AI / Agent / Retrieval\n')
     a('- **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。')
     a('- **知识工程**：文档接入、分块、Embedding、向量与全文混合检索、知识图谱、Rerank 与引用回答。')
@@ -622,7 +622,7 @@ def build_preview():
     source=(ROOT/'README.md').read_text(encoding='utf-8').replace('<div align="center">', '<div align="center" markdown="1">').replace('<details>', '<details markdown="1">').replace('<details open>', '<details open markdown="1">')
     content=markdown.markdown(source,extensions=['extra','sane_lists','md_in_html'])
     page='''<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zhifeng Jin · Profile v5</title><style>
-:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #8B7CEB;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
+:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #B29A58;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
 </style></head><body><div class="toolbar"><span>Profile v5 · GitHub README 内容预览</span><span><button onclick="setTheme('light')">浅色</button> <button onclick="setTheme('dark')">深色</button></span></div><article class="readme">__BODY__</article><script>function setTheme(t){document.documentElement.dataset.theme=t;document.querySelectorAll('picture').forEach(p=>{let i=p.querySelector('img');if(!i.dataset.light)i.dataset.light=i.src.replace('-dark.svg','-light.svg');i.src=i.dataset.light.replace('-light.svg','-'+t+'.svg');p.querySelectorAll('source').forEach(s=>s.media='not all')})}</script></body></html>'''
     (ROOT/'preview.html').write_text(page.replace('__BODY__',content),encoding='utf-8')
 

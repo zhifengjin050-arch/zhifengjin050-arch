@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img">
-<rect x="0.5" y="0.5" width="999" height="149" rx="16" fill="#0C1225" stroke="#2C3A5B" stroke-width="1"/>
-<path d="M22 1.5 L978 1.5" stroke="#B5D9FF" stroke-width="1" opacity="0.32"/>
-<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><linearGradient id="cardsheen"><stop stop-color="#A99AFF" stop-opacity="0"/><stop offset=".5" stop-color="#A99AFF" stop-opacity=".09"/><stop offset="1" stop-color="#A99AFF" stop-opacity="0"/></linearGradient></defs>
+<rect x="0.5" y="0.5" width="999" height="149" rx="16" fill="#17140D" stroke="#51452B" stroke-width="1"/>
+<path d="M22 1.5 L978 1.5" stroke="#FFE9A8" stroke-width="1" opacity="0.32"/>
+<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><linearGradient id="cardsheen"><stop stop-color="#D6B85C" stop-opacity="0"/><stop offset=".5" stop-color="#D6B85C" stop-opacity=".09"/><stop offset="1" stop-color="#D6B85C" stop-opacity="0"/></linearGradient></defs>
 <style>@keyframes sweep{0%,15%{transform:translateX(-350px)}65%,100%{transform:translateX(1100px)}}@keyframes trace{to{stroke-dashoffset:-2300}}.sheen{animation:sweep 10s ease-in-out infinite}.edge{animation:trace 24s linear infinite}@media(prefers-reduced-motion:reduce){.sheen{display:none}.edge{animation:none}}</style>
 <g clip-path="url(#cardclip)"><rect class="sheen" x="0" y="0" width="280" height="150" fill="url(#cardsheen)"/></g>
-<rect class="edge" x="1" y="1" width="998" height="148" rx="16" fill="none" stroke="#A99AFF" stroke-width="1.3" stroke-dasharray="95 2205" opacity=".55"/>
-<rect x="20" y="22" width="4" height="106" rx="2" fill="#A99AFF"/>
-<text x="962" y="66" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="46" font-weight="800" fill="#A99AFF" text-anchor="end" opacity="0.16">01</text>
-<text x="44" y="50" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#EDF3FF" text-anchor="start">企业级 AI Agent 平台</text>
-<text x="45" y="72" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#A99AFF" text-anchor="start" letter-spacing="1.6">ENTERPRISE AI AGENT PLATFORM</text>
-<text x="44" y="102" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#A2B3D3" text-anchor="start">混合 RAG + 知识图谱 + 工作流引擎，JWT/RBAC 多租户隔离，Helm 云原生交付。</text>
-<rect x="44" y="114" width="60.96" height="25" rx="12" fill="#202C49"/><text x="74.48" y="131" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#A2B3D3" text-anchor="middle">Python</text>
-<rect x="113.96000000000001" y="114" width="67.12" height="25" rx="12" fill="#202C49"/><text x="147.52" y="131" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#A2B3D3" text-anchor="middle">FastAPI</text>
-<rect x="190.08" y="114" width="85.6" height="25" rx="12" fill="#202C49"/><text x="232.88" y="131" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#A2B3D3" text-anchor="middle">Apache-2.0</text>
-<text x="968" y="44" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#A99AFF" text-anchor="end">↗</text>
+<rect class="edge" x="1" y="1" width="998" height="148" rx="16" fill="none" stroke="#D6B85C" stroke-width="1.3" stroke-dasharray="95 2205" opacity=".55"/>
+<rect x="20" y="22" width="4" height="106" rx="2" fill="#D6B85C"/>
+<text x="962" y="66" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="46" font-weight="800" fill="#D6B85C" text-anchor="end" opacity="0.16">01</text>
+<text x="44" y="50" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#F5EEDB" text-anchor="start">企业级 AI Agent 平台</text>
+<text x="45" y="72" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#D6B85C" text-anchor="start" letter-spacing="1.6">ENTERPRISE AI AGENT PLATFORM</text>
+<text x="44" y="102" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#B8AC90" text-anchor="start">混合 RAG + 知识图谱 + 工作流引擎，JWT/RBAC 多租户隔离，Helm 云原生交付。</text>
+<rect x="44" y="114" width="60.96" height="25" rx="12" fill="#30291A"/><text x="74.48" y="131" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#B8AC90" text-anchor="middle">Python</text>
+<rect x="113.96000000000001" y="114" width="67.12" height="25" rx="12" fill="#30291A"/><text x="147.52" y="131" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#B8AC90" text-anchor="middle">FastAPI</text>
+<rect x="190.08" y="114" width="85.6" height="25" rx="12" fill="#30291A"/><text x="232.88" y="131" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#B8AC90" text-anchor="middle">Apache-2.0</text>
+<text x="968" y="44" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="20" font-weight="400" fill="#D6B85C" text-anchor="end">↗</text>
 </svg>

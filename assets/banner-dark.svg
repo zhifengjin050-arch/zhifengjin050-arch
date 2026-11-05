@@ -1,160 +1,160 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="340" viewBox="0 0 1000 340" role="img">
-<rect x="0.5" y="0.5" width="999" height="339" rx="20" fill="#0C1225" stroke="#2C3A5B" stroke-width="1"/>
-<defs><linearGradient id="aurora"><stop stop-color="#A99AFF"/><stop offset="1" stop-color="#65D9F1"/></linearGradient><radialGradient id="nebula"><stop stop-color="#A99AFF" stop-opacity=".22"/><stop offset="1" stop-color="#A99AFF" stop-opacity="0"/></radialGradient></defs>
+<rect x="0.5" y="0.5" width="999" height="339" rx="20" fill="#17140D" stroke="#51452B" stroke-width="1"/>
+<defs><linearGradient id="aurora"><stop stop-color="#D6B85C"/><stop offset="1" stop-color="#E7CD86"/></linearGradient><radialGradient id="nebula"><stop stop-color="#D6B85C" stop-opacity=".22"/><stop offset="1" stop-color="#D6B85C" stop-opacity="0"/></radialGradient></defs>
 <style>@media(prefers-reduced-motion:reduce){.orbit{display:none}}</style>
 <rect x="1" y="1" width="998" height="338" rx="20" fill="none" stroke="url(#aurora)" opacity=".5"/>
 <path d="M32 1 H968" stroke="url(#aurora)" stroke-width="3"/>
 <circle cx="800" cy="160" r="170" fill="url(#nebula)"/>
-<circle cx="640" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="35" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="63" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="91" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="119" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="147" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="175" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="203" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="231" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="259" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="287" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="640" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="668" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="696" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="724" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="752" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="780" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="808" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="836" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="864" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="892" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="920" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<circle cx="948" cy="315" r=".8" fill="#A99AFF" opacity=".2"/>
-<text x="42" y="44" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#A99AFF" text-anchor="start" letter-spacing="2">ZF / ENGINEERING NOTEBOOK</text>
-<text x="42" y="112" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="55" font-weight="800" fill="#EDF3FF" text-anchor="start">ZHIFENG JIN</text>
-<text x="44" y="147" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="15" font-weight="400" fill="#65D9F1" text-anchor="start" letter-spacing="1">AI AGENT  /  AIOPS  /  PLATFORM</text>
-<text x="44" y="191" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="600" fill="#EDF3FF" text-anchor="start">从知识到行动，从代码到系统。</text>
-<text x="44" y="222" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#A2B3D3" text-anchor="start">Build with context. Execute with boundaries.</text>
-<rect x="44" y="246" width="91.2" height="25" rx="12" fill="#202C49"/><text x="89.6" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#A2B3D3" text-anchor="middle">Hybrid RAG</text>
-<rect x="145.2" y="246" width="84.47999999999999" height="25" rx="12" fill="#202C49"/><text x="187.44" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#A2B3D3" text-anchor="middle">MCP Tools</text>
-<rect x="239.67999999999998" y="246" width="104.64" height="25" rx="12" fill="#202C49"/><text x="292.0" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#A2B3D3" text-anchor="middle">Cloud Native</text>
-<text x="44" y="315" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#A2B3D3" text-anchor="start">@zhifengjin050-arch</text>
+<circle cx="640" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="35" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="63" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="91" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="119" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="147" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="175" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="203" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="231" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="259" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="287" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="640" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="668" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="696" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="724" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="752" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="780" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="808" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="836" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="864" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="892" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="920" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<circle cx="948" cy="315" r=".8" fill="#D6B85C" opacity=".2"/>
+<text x="42" y="44" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#D6B85C" text-anchor="start" letter-spacing="2">ZF / ENGINEERING NOTEBOOK</text>
+<text x="42" y="112" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="55" font-weight="800" fill="#F5EEDB" text-anchor="start">ZHIFENG JIN</text>
+<text x="44" y="147" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="15" font-weight="400" fill="#E7CD86" text-anchor="start" letter-spacing="1">AI AGENT  /  AIOPS  /  PLATFORM</text>
+<text x="44" y="191" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="600" fill="#F5EEDB" text-anchor="start">从知识到行动，从代码到系统。</text>
+<text x="44" y="222" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="14" font-weight="400" fill="#B8AC90" text-anchor="start">Build with context. Execute with boundaries.</text>
+<rect x="44" y="246" width="91.2" height="25" rx="12" fill="#30291A"/><text x="89.6" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="middle">Hybrid RAG</text>
+<rect x="145.2" y="246" width="84.47999999999999" height="25" rx="12" fill="#30291A"/><text x="187.44" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="middle">MCP Tools</text>
+<rect x="239.67999999999998" y="246" width="104.64" height="25" rx="12" fill="#30291A"/><text x="292.0" y="263" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="middle">Cloud Native</text>
+<text x="44" y="315" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#B8AC90" text-anchor="start">@zhifengjin050-arch</text>
 <ellipse cx="810" cy="156" rx="57" ry="35.339999999999996" transform="rotate(-28 810 156)" fill="none" stroke="url(#aurora)" opacity=".5"/>
 <ellipse cx="810" cy="156" rx="90" ry="55.8" transform="rotate(-28 810 156)" fill="none" stroke="url(#aurora)" opacity=".5"/>
 <ellipse cx="810" cy="156" rx="123" ry="76.26" transform="rotate(-28 810 156)" fill="none" stroke="url(#aurora)" opacity=".5"/>
-<circle cx="810" cy="156" r="39" fill="#202C49" stroke="#A99AFF"/>
-<text x="810" y="165" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="28" font-weight="800" fill="#A99AFF" text-anchor="middle">ZF</text>
-<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="0 810 156" to="360 810 156" dur="18s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#65D9F1"/></g>
-<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="120 810 156" to="480 810 156" dur="24s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#65D9F1"/></g>
-<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="240 810 156" to="600 810 156" dur="30s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#65D9F1"/></g>
-<text x="700" y="55" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#A99AFF" text-anchor="middle" letter-spacing="1.5">RETRIEVE</text>
-<text x="902" y="220" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#A99AFF" text-anchor="middle" letter-spacing="1.5">REASON</text>
-<text x="765" y="285" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#A99AFF" text-anchor="middle" letter-spacing="1.5">EXECUTE</text>
+<circle cx="810" cy="156" r="39" fill="#30291A" stroke="#D6B85C"/>
+<text x="810" y="165" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="28" font-weight="800" fill="#D6B85C" text-anchor="middle">ZF</text>
+<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="0 810 156" to="360 810 156" dur="18s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#E7CD86"/></g>
+<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="120 810 156" to="480 810 156" dur="24s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#E7CD86"/></g>
+<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="240 810 156" to="600 810 156" dur="30s" repeatCount="indefinite"/><circle cx="900" cy="156" r="4" fill="#E7CD86"/></g>
+<text x="700" y="55" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#D6B85C" text-anchor="middle" letter-spacing="1.5">RETRIEVE</text>
+<text x="902" y="220" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#D6B85C" text-anchor="middle" letter-spacing="1.5">REASON</text>
+<text x="765" y="285" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#D6B85C" text-anchor="middle" letter-spacing="1.5">EXECUTE</text>
 </svg>

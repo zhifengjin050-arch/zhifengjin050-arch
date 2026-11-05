@@ -1,46 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img">
-<rect x="0.5" y="0.5" width="999" height="259" rx="18" fill="#0C1225" stroke="#2C3A5B" stroke-width="1"/>
+<rect x="0.5" y="0.5" width="999" height="259" rx="18" fill="#17140D" stroke="#51452B" stroke-width="1"/>
 <style>@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes orbit{to{transform:rotate(360deg)}}.bar{transform-box:fill-box;transform-origin:left;animation:grow 1.8s ease-out both}.orbit{transform-origin:150px 125px;animation:orbit 28s linear infinite}@media(prefers-reduced-motion:reduce){.bar,.orbit{animation:none!important}}</style>
-<text x="310" y="36" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="600" fill="#A99AFF" text-anchor="start">CODE / LANGUAGE COMPOSITION</text>
-<text x="310" y="61" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="start">6 个展示仓库 · GitHub 代码字节统计</text>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#A99AFF" stroke-width="19" pathLength="100" stroke-dasharray="53.2183 46.7817" stroke-dashoffset="0.0000" transform="rotate(-90 150 125)"/>
-<rect x="310" y="93" width="8" height="8" rx="2" fill="#A99AFF"/>
-<text x="328" y="103" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">Go</text>
-<text x="600" y="103" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="end">53.6%</text>
-<rect x="310" y="115" width="290" height="3" rx="1" fill="#2C3A5B"/>
-<g class="bar" style="animation-delay:0.0s"><rect x="310" y="115" width="155.34799302646314" height="3" rx="1" fill="#A99AFF"/></g>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#65D9F1" stroke-width="19" pathLength="100" stroke-dasharray="21.0127 78.9873" stroke-dashoffset="-53.5683" transform="rotate(-90 150 125)"/>
-<rect x="645" y="93" width="8" height="8" rx="2" fill="#65D9F1"/>
-<text x="663" y="103" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">Python</text>
-<text x="935" y="103" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="end">21.4%</text>
-<rect x="645" y="115" width="290" height="3" rx="1" fill="#2C3A5B"/>
-<g class="bar" style="animation-delay:0.12s"><rect x="645" y="115" width="61.95182298506072" height="3" rx="1" fill="#65D9F1"/></g>
+<text x="310" y="36" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="600" fill="#D6B85C" text-anchor="start">CODE / LANGUAGE COMPOSITION</text>
+<text x="310" y="61" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="13" font-weight="400" fill="#B8AC90" text-anchor="start">6 个展示仓库 · GitHub 代码字节统计</text>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#D6B85C" stroke-width="19" pathLength="100" stroke-dasharray="53.2183 46.7817" stroke-dashoffset="0.0000" transform="rotate(-90 150 125)"/>
+<rect x="310" y="93" width="8" height="8" rx="2" fill="#D6B85C"/>
+<text x="328" y="103" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#F5EEDB" text-anchor="start">Go</text>
+<text x="600" y="103" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#B8AC90" text-anchor="end">53.6%</text>
+<rect x="310" y="115" width="290" height="3" rx="1" fill="#51452B"/>
+<g class="bar" style="animation-delay:0.0s"><rect x="310" y="115" width="155.34799302646314" height="3" rx="1" fill="#D6B85C"/></g>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#E7CD86" stroke-width="19" pathLength="100" stroke-dasharray="21.0127 78.9873" stroke-dashoffset="-53.5683" transform="rotate(-90 150 125)"/>
+<rect x="645" y="93" width="8" height="8" rx="2" fill="#E7CD86"/>
+<text x="663" y="103" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#F5EEDB" text-anchor="start">Python</text>
+<text x="935" y="103" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#B8AC90" text-anchor="end">21.4%</text>
+<rect x="645" y="115" width="290" height="3" rx="1" fill="#51452B"/>
+<g class="bar" style="animation-delay:0.12s"><rect x="645" y="115" width="61.95182298506072" height="3" rx="1" fill="#E7CD86"/></g>
 <circle cx="150" cy="125" r="76" fill="none" stroke="#4BAF9C" stroke-width="19" pathLength="100" stroke-dasharray="15.2914 84.7086" stroke-dashoffset="-74.9310" transform="rotate(-90 150 125)"/>
 <rect x="310" y="144" width="8" height="8" rx="2" fill="#4BAF9C"/>
-<text x="328" y="154" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">Vue</text>
-<text x="600" y="154" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="end">15.6%</text>
-<rect x="310" y="166" width="290" height="3" rx="1" fill="#2C3A5B"/>
+<text x="328" y="154" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#F5EEDB" text-anchor="start">Vue</text>
+<text x="600" y="154" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#B8AC90" text-anchor="end">15.6%</text>
+<rect x="310" y="166" width="290" height="3" rx="1" fill="#51452B"/>
 <g class="bar" style="animation-delay:0.24s"><rect x="310" y="166" width="45.36020244461081" height="3" rx="1" fill="#4BAF9C"/></g>
 <circle cx="150" cy="125" r="76" fill="none" stroke="#BC82CD" stroke-width="19" pathLength="100" stroke-dasharray="7.8719 92.1281" stroke-dashoffset="-90.5724" transform="rotate(-90 150 125)"/>
 <rect x="645" y="144" width="8" height="8" rx="2" fill="#BC82CD"/>
-<text x="663" y="154" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">TypeScript</text>
-<text x="935" y="154" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="end">8.2%</text>
-<rect x="645" y="166" width="290" height="3" rx="1" fill="#2C3A5B"/>
+<text x="663" y="154" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#F5EEDB" text-anchor="start">TypeScript</text>
+<text x="935" y="154" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#B8AC90" text-anchor="end">8.2%</text>
+<rect x="645" y="166" width="290" height="3" rx="1" fill="#51452B"/>
 <g class="bar" style="animation-delay:0.36s"><rect x="645" y="166" width="23.843614717173896" height="3" rx="1" fill="#BC82CD"/></g>
 <circle cx="150" cy="125" r="76" fill="none" stroke="#DBA25D" stroke-width="19" pathLength="100" stroke-dasharray="0.1815 99.8185" stroke-dashoffset="-98.7944" transform="rotate(-90 150 125)"/>
 <rect x="310" y="195" width="8" height="8" rx="2" fill="#DBA25D"/>
-<text x="328" y="205" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">CSS</text>
-<text x="600" y="205" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="end">0.5%</text>
-<rect x="310" y="217" width="290" height="3" rx="1" fill="#2C3A5B"/>
+<text x="328" y="205" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#F5EEDB" text-anchor="start">CSS</text>
+<text x="600" y="205" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#B8AC90" text-anchor="end">0.5%</text>
+<rect x="310" y="217" width="290" height="3" rx="1" fill="#51452B"/>
 <g class="bar" style="animation-delay:0.48s"><rect x="310" y="217" width="1.5413833677419138" height="3" rx="1" fill="#DBA25D"/></g>
 <circle cx="150" cy="125" r="76" fill="none" stroke="#8194B3" stroke-width="19" pathLength="100" stroke-dasharray="0.3241 99.6759" stroke-dashoffset="-99.3259" transform="rotate(-90 150 125)"/>
 <rect x="645" y="195" width="8" height="8" rx="2" fill="#8194B3"/>
-<text x="663" y="205" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#EDF3FF" text-anchor="start">Other</text>
-<text x="935" y="205" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#A2B3D3" text-anchor="end">0.7%</text>
-<rect x="645" y="217" width="290" height="3" rx="1" fill="#2C3A5B"/>
+<text x="663" y="205" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#F5EEDB" text-anchor="start">Other</text>
+<text x="935" y="205" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#B8AC90" text-anchor="end">0.7%</text>
+<rect x="645" y="217" width="290" height="3" rx="1" fill="#51452B"/>
 <g class="bar" style="animation-delay:0.6s"><rect x="645" y="217" width="1.9549834589494623" height="3" rx="1" fill="#8194B3"/></g>
-<circle class="orbit" cx="150" cy="125" r="94" fill="none" stroke="#65D9F1" stroke-width="1.5" stroke-dasharray="26 564" opacity=".7"/>
-<text x="150" y="124" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="34" font-weight="800" fill="#EDF3FF" text-anchor="middle">54%</text>
-<text x="150" y="150" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="400" fill="#A2B3D3" text-anchor="middle">Go</text>
-<text x="310" y="243" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#A2B3D3" text-anchor="start">快照 2026-11-05 · 代码占比，不代表熟练度</text>
+<circle class="orbit" cx="150" cy="125" r="94" fill="none" stroke="#E7CD86" stroke-width="1.5" stroke-dasharray="26 564" opacity=".7"/>
+<text x="150" y="124" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="34" font-weight="800" fill="#F5EEDB" text-anchor="middle">54%</text>
+<text x="150" y="150" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="400" fill="#B8AC90" text-anchor="middle">Go</text>
+<text x="310" y="243" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#B8AC90" text-anchor="start">快照 2026-11-05 · 代码占比，不代表熟练度</text>
 </svg>

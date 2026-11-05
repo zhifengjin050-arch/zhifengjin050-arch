@@ -15,11 +15,11 @@
 
 让知识可检索，让工具可治理，让系统可观测。
 
-![Python](https://img.shields.io/badge/Python-F1F4FF?style=for-the-badge&logo=python&logoColor=6256D9)
-![Go](https://img.shields.io/badge/Go-F1F4FF?style=for-the-badge&logo=go&logoColor=6256D9)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-F1F4FF?style=for-the-badge&logo=kubernetes&logoColor=6256D9)
-![FastAPI](https://img.shields.io/badge/FastAPI-F1F4FF?style=for-the-badge&logo=fastapi&logoColor=6256D9)
-![LangGraph](https://img.shields.io/badge/LangGraph-F1F4FF?style=for-the-badge&logo=langchain&logoColor=6256D9)
+![Python](https://img.shields.io/badge/Python-F0EADA?style=for-the-badge&logo=python&logoColor=96781A)
+![Go](https://img.shields.io/badge/Go-F0EADA?style=for-the-badge&logo=go&logoColor=96781A)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-F0EADA?style=for-the-badge&logo=kubernetes&logoColor=96781A)
+![FastAPI](https://img.shields.io/badge/FastAPI-F0EADA?style=for-the-badge&logo=fastapi&logoColor=96781A)
+![LangGraph](https://img.shields.io/badge/LangGraph-F0EADA?style=for-the-badge&logo=langchain&logoColor=96781A)
 
 [👋 关于我](#about) · [🚀 代表项目](#projects) · [🛠️ 技术能力](#stack) · [📚 技术笔记](#notes) · [🤝 交流合作](#contact)
 
@@ -43,6 +43,7 @@
   <source media="(prefers-color-scheme: light)" srcset="assets/capability-light.svg">
   <img src="assets/capability-dark.svg" alt="知识检索、故障诊断、工具治理：三个核心工程方向" width="100%">
 </picture>
+
 ### 🧭 从哪里开始看？
 
 - **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。
@@ -268,6 +269,7 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
   <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
   <img src="assets/languages-dark.svg" alt="六个展示仓库的真实代码语言占比" width="100%">
 </picture>
+
 ### 🧠 AI / Agent / Retrieval
 
 - **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。

@@ -1,47 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="248" viewBox="0 0 1000 248" role="img">
-<rect x="0.5" y="0.5" width="999" height="247" rx="16" fill="#F1F4FF" stroke="#D9E0F4" stroke-width="1"/>
-<defs><pattern id="mesh2" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0 L0 0 0 26" fill="none" stroke="#D9E0F4" stroke-width="0.6"/></pattern></defs>
+<rect x="0.5" y="0.5" width="999" height="247" rx="16" fill="#FAF8F3" stroke="#DFD8C8" stroke-width="1"/>
+<defs><pattern id="mesh2" width="26" height="26" patternUnits="userSpaceOnUse"><path d="M26 0 L0 0 0 26" fill="none" stroke="#DFD8C8" stroke-width="0.6"/></pattern></defs>
 <rect x="1" y="1" width="998" height="246" rx="16" fill="url(#mesh2)" opacity="0.45"/>
 <path d="M22 1.5 L978 1.5" stroke="#FFFFFF" stroke-width="1" opacity="0.32"/>
 <defs><clipPath id="statclip"><rect x="1" y="1" width="998" height="246" rx="16"/></clipPath></defs>
-<defs><linearGradient id="statbeam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6256D9" stop-opacity="0"/><stop offset="0.5" stop-color="#6256D9" stop-opacity="0.10"/><stop offset="1" stop-color="#6256D9" stop-opacity="0"/></linearGradient></defs>
+<defs><linearGradient id="statbeam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#96781A" stop-opacity="0"/><stop offset="0.5" stop-color="#96781A" stop-opacity="0.10"/><stop offset="1" stop-color="#96781A" stop-opacity="0"/></linearGradient></defs>
 <g clip-path="url(#statclip)"><rect x="-340" y="0" width="340" height="248" fill="url(#statbeam)"><animate attributeName="x" values="-340;1060" dur="10s" repeatCount="indefinite"/></rect></g>
-<rect x="20" y="20" width="470" height="208" rx="14" fill="#FAFBFF" stroke="#D9E0F4" stroke-width="1"/>
+<rect x="20" y="20" width="470" height="208" rx="14" fill="#F7F4EE" stroke="#DFD8C8" stroke-width="1"/>
 <path d="M34 21.5 L476 21.5" stroke="#FFFFFF" stroke-width="1" opacity="0.28"/>
-<text x="40" y="46" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#6256D9" text-anchor="start" letter-spacing="1.6">ENGINEERING SURFACE</text>
-<line x1="40" y1="56" x2="470" y2="56" stroke="#D9E0F4" stroke-width="1"/>
-<text x="40" y="88" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#6256D9" text-anchor="start" letter-spacing="1">ISOLATION</text>
-<text x="40" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#182343" text-anchor="start">RBAC</text>
-<text x="40" y="138" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#52617D" text-anchor="start">多租户隔离与最小权限</text>
-<text x="262" y="88" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#6256D9" text-anchor="start" letter-spacing="1">TOOL GOVERNANCE</text>
-<text x="262" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#182343" text-anchor="start">18 tools</text>
-<text x="262" y="138" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#52617D" text-anchor="start">执行门 / 命令过滤 / 审计</text>
-<text x="40" y="164" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#6256D9" text-anchor="start" letter-spacing="1">OBSERVABILITY</text>
-<text x="40" y="194" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#182343" text-anchor="start">Traces</text>
-<text x="40" y="214" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#52617D" text-anchor="start">决策与工具调用可回放</text>
-<text x="262" y="164" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#6256D9" text-anchor="start" letter-spacing="1">DELIVERY</text>
-<text x="262" y="194" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#182343" text-anchor="start">Helm</text>
-<text x="262" y="214" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#52617D" text-anchor="start">K8s / CI / 可重复部署</text>
-<rect x="502" y="20" width="478" height="100" rx="14" fill="#FAFBFF" stroke="#D9E0F4" stroke-width="1"/>
+<text x="40" y="46" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#96781A" text-anchor="start" letter-spacing="1.6">ENGINEERING SURFACE</text>
+<line x1="40" y1="56" x2="470" y2="56" stroke="#DFD8C8" stroke-width="1"/>
+<text x="40" y="88" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#96781A" text-anchor="start" letter-spacing="1">ISOLATION</text>
+<text x="40" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#302A1C" text-anchor="start">RBAC</text>
+<text x="40" y="138" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#71674F" text-anchor="start">多租户隔离与最小权限</text>
+<text x="262" y="88" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#96781A" text-anchor="start" letter-spacing="1">TOOL GOVERNANCE</text>
+<text x="262" y="118" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#302A1C" text-anchor="start">18 tools</text>
+<text x="262" y="138" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#71674F" text-anchor="start">执行门 / 命令过滤 / 审计</text>
+<text x="40" y="164" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#96781A" text-anchor="start" letter-spacing="1">OBSERVABILITY</text>
+<text x="40" y="194" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#302A1C" text-anchor="start">Traces</text>
+<text x="40" y="214" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#71674F" text-anchor="start">决策与工具调用可回放</text>
+<text x="262" y="164" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#96781A" text-anchor="start" letter-spacing="1">DELIVERY</text>
+<text x="262" y="194" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="22" font-weight="700" fill="#302A1C" text-anchor="start">Helm</text>
+<text x="262" y="214" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#71674F" text-anchor="start">K8s / CI / 可重复部署</text>
+<rect x="502" y="20" width="478" height="100" rx="14" fill="#F7F4EE" stroke="#DFD8C8" stroke-width="1"/>
 <path d="M516 21.5 L966 21.5" stroke="#FFFFFF" stroke-width="1" opacity="0.28"/>
-<text x="522" y="44" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#6256D9" text-anchor="start" letter-spacing="1.6">REPOSITORY MATRIX</text>
-<text x="522" y="84" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="34" font-weight="800" fill="#182343" text-anchor="start">09</text>
-<text x="578" y="82" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#52617D" text-anchor="start">PUBLIC REPOS</text>
-<rect x="522" y="96" width="438" height="7" rx="3" fill="#E5E9FC"/>
+<text x="522" y="44" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#96781A" text-anchor="start" letter-spacing="1.6">REPOSITORY MATRIX</text>
+<text x="522" y="84" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="34" font-weight="800" fill="#302A1C" text-anchor="start">09</text>
+<text x="578" y="82" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="400" fill="#71674F" text-anchor="start">PUBLIC REPOS</text>
+<rect x="522" y="96" width="438" height="7" rx="3" fill="#F0EBDF"/>
 <rect x="522.0" y="96" width="243.8" height="7" fill="#B08D2E"/>
 <rect x="765.3" y="96" width="97.8" height="7" fill="#5B8C7B"/>
 <rect x="862.7" y="96" width="97.8" height="7" fill="#9C8A63"/>
-<text x="522" y="116" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#52617D" text-anchor="start">Python 5  ·  Go 2  ·  Other 2</text>
-<rect x="502" y="132" width="478" height="96" rx="14" fill="#FAFBFF" stroke="#D9E0F4" stroke-width="1"/>
+<text x="522" y="116" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#71674F" text-anchor="start">Python 5  ·  Go 2  ·  Other 2</text>
+<rect x="502" y="132" width="478" height="96" rx="14" fill="#F7F4EE" stroke="#DFD8C8" stroke-width="1"/>
 <path d="M516 133.5 L966 133.5" stroke="#FFFFFF" stroke-width="1" opacity="0.28"/>
-<text x="522" y="156" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#6256D9" text-anchor="start" letter-spacing="1.6">SYSTEM STATUS</text>
-<circle cx="528" cy="181" r="4" fill="#278982"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.0s" repeatCount="indefinite"/></circle>
-<text x="540" y="185" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#182343" text-anchor="start">Agent Platform</text>
-<circle cx="686" cy="181" r="4" fill="#278982"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.5s" repeatCount="indefinite"/></circle>
-<text x="698" y="185" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#182343" text-anchor="start">SRE Platform</text>
-<circle cx="844" cy="181" r="4" fill="#278982"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.0s" repeatCount="indefinite"/></circle>
-<text x="856" y="185" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#182343" text-anchor="start">MCP Server</text>
-<line x1="522" y1="198" x2="960" y2="198" stroke="#D9E0F4" stroke-width="1"/>
-<text x="522" y="218" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#52617D" text-anchor="start">Apache-2.0  ·  MIT  ·  AGPL-3.0</text>
-<text x="960" y="218" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#6256D9" text-anchor="end">21 TOPICS</text>
+<text x="522" y="156" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="11" font-weight="600" fill="#96781A" text-anchor="start" letter-spacing="1.6">SYSTEM STATUS</text>
+<circle cx="528" cy="181" r="4" fill="#628571"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.0s" repeatCount="indefinite"/></circle>
+<text x="540" y="185" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#302A1C" text-anchor="start">Agent Platform</text>
+<circle cx="686" cy="181" r="4" fill="#628571"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="0.5s" repeatCount="indefinite"/></circle>
+<text x="698" y="185" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#302A1C" text-anchor="start">SRE Platform</text>
+<circle cx="844" cy="181" r="4" fill="#628571"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.4s" begin="1.0s" repeatCount="indefinite"/></circle>
+<text x="856" y="185" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#302A1C" text-anchor="start">MCP Server</text>
+<line x1="522" y1="198" x2="960" y2="198" stroke="#DFD8C8" stroke-width="1"/>
+<text x="522" y="218" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#71674F" text-anchor="start">Apache-2.0  ·  MIT  ·  AGPL-3.0</text>
+<text x="960" y="218" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#96781A" text-anchor="end">21 TOPICS</text>
 </svg>
