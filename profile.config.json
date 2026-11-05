@@ -540,5 +540,203 @@
       "focus": "工程实践方向：身份系统集成、协议配置与可复现排障。",
       "links": []
     }
+  ],
+  "badge_groups": [
+    {
+      "title": "⚙️ 后端 · 服务",
+      "repo": "enterprise-ai-agent-platform",
+      "items": [
+        [
+          "Python",
+          "3776AB",
+          "python"
+        ],
+        [
+          "Go",
+          "00ADD8",
+          "go"
+        ],
+        [
+          "FastAPI",
+          "009688",
+          "fastapi"
+        ],
+        [
+          "Flask",
+          "303030",
+          "flask"
+        ],
+        [
+          "SQLAlchemy",
+          "D71F00",
+          "sqlalchemy"
+        ]
+      ]
+    },
+    {
+      "title": "🎨 前端 · 工程",
+      "repo": "dujiao-next",
+      "items": [
+        [
+          "Vue 3",
+          "42B883",
+          "vuedotjs"
+        ],
+        [
+          "React",
+          "149ECA",
+          "react"
+        ],
+        [
+          "TypeScript",
+          "3178C6",
+          "typescript"
+        ],
+        [
+          "Vite",
+          "646CFF",
+          "vite"
+        ],
+        [
+          "Tailwind CSS",
+          "0891B2",
+          "tailwindcss"
+        ]
+      ]
+    },
+    {
+      "title": "🧠 AI · 智能体",
+      "repo": "enterprise-ai-agent-platform",
+      "items": [
+        [
+          "LangGraph",
+          "1C3C3C",
+          "langgraph"
+        ],
+        [
+          "LangChain",
+          "1C3C3C",
+          "langchain"
+        ],
+        [
+          "MCP",
+          "96781A",
+          "modelcontextprotocol"
+        ],
+        [
+          "Hybrid RAG",
+          "96781A",
+          ""
+        ],
+        [
+          "PyTorch",
+          "EE4C2C",
+          "pytorch"
+        ]
+      ]
+    },
+    {
+      "title": "🗄️ 数据 · 缓存",
+      "repo": "enterprise-ai-agent-platform",
+      "items": [
+        [
+          "PostgreSQL",
+          "4169E1",
+          "postgresql"
+        ],
+        [
+          "Redis",
+          "DC382D",
+          "redis"
+        ],
+        [
+          "ChromaDB",
+          "96781A",
+          ""
+        ],
+        [
+          "SQLite",
+          "003B57",
+          "sqlite"
+        ],
+        [
+          "MySQL",
+          "4479A1",
+          "mysql"
+        ]
+      ]
+    },
+    {
+      "title": "☁️ 云原生 · 工具链",
+      "repo": "enterprise-devops-mcp-server",
+      "items": [
+        [
+          "Docker",
+          "2496ED",
+          "docker"
+        ],
+        [
+          "Kubernetes",
+          "326CE5",
+          "kubernetes"
+        ],
+        [
+          "Linux",
+          "444444",
+          "linux"
+        ],
+        [
+          "Helm",
+          "0F1689",
+          "helm"
+        ],
+        [
+          "Git",
+          "F05032",
+          "git"
+        ],
+        [
+          "GitHub Actions",
+          "2088FF",
+          "githubactions"
+        ]
+      ]
+    },
+    {
+      "title": "🔎 观测 · 权限",
+      "repo": "enterprise-ai-sre-platform",
+      "items": [
+        [
+          "Prometheus",
+          "E6522C",
+          "prometheus"
+        ],
+        [
+          "Grafana",
+          "F46800",
+          "grafana"
+        ],
+        [
+          "OpenTelemetry",
+          "425CC7",
+          "opentelemetry"
+        ],
+        [
+          "JWT",
+          "333333",
+          "jsonwebtokens"
+        ],
+        [
+          "RBAC",
+          "96781A",
+          ""
+        ],
+        [
+          "LDAP",
+          "96781A",
+          ""
+        ]
+      ]
+    }
   ]
 }

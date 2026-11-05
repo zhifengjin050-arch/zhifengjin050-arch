@@ -528,6 +528,22 @@ def top_langs(u):
             + "&hide_title=true&hide_border=true&layout=compact&theme=graywhite&locale=cn")
 
 
+def tech_badge_grid():
+    from urllib.parse import quote
+    rows=['<table width="100%">']
+    for i,g in enumerate(CFG['badge_groups']):
+        if i%2==0:rows.append('<tr>')
+        rows.append('<td valign="top" width="50%"><h4>'+esc(g['title'])+'</h4><p>')
+        for label,color,logo in g['items']:
+            url='https://img.shields.io/badge/'+quote(label.replace('-', '--'),safe='')+'-'+color+'?style=flat-square'
+            if logo:url+='&logo='+logo+'&logoColor=white'
+            rows.append('<img alt="'+esc(label)+'" src="'+esc(url)+'" height="22"> ')
+        rows.append('</p></td>')
+        if i%2==1:rows.append('</tr>')
+    rows.append('</table>\n')
+    return '\n'.join(rows)
+
+
 def build_readme():
     u = CFG['username']
     L = []
@@ -549,6 +565,28 @@ def build_readme():
     a('- **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。')
     a('- **想了解 AIOps / SRE** → 从故障诊断 Agent 入手，看 Kubernetes 现场证据、Runbook 与 Trace。')
     a('- **想了解 MCP / 工具工程** → 从 DevOps MCP Server 入手，看工具目录、执行门与审计。\n')
+    a('<a id="stack"></a>\n\n## 🛠️ 技术能力 · Engineering Stack\n')
+    a(pic('languages', '六个展示仓库的真实代码语言占比')+'\n')
+    a(tech_badge_grid())
+    a('上列技术覆盖当前公开项目中的应用与集成实践，具体实现见各项目源码。\n')
+    a('<details>\n<summary>📐 展开技术说明与系统架构</summary>\n')
+    a('### 🧠 AI / Agent / Retrieval\n')
+    a('- **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。')
+    a('- **知识工程**：文档接入、分块、Embedding、向量与全文混合检索、知识图谱、Rerank 与引用回答。')
+    a('- **工作流**：DAG、审批节点、Webhook / Schedule 触发与执行生命周期。\n')
+    a('### ⚙️ Backend / Data / Product\n')
+    a('- **后端与 API**：Python、FastAPI、SQLAlchemy async、Alembic；Go 服务与网关实践。')
+    a('- **数据与缓存**：PostgreSQL、Redis、ChromaDB；关注租户约束、数据模型与异步任务协作。')
+    a('- **控制台与全栈**：React / Vue 3、TypeScript、Vite、Tailwind；将业务接口与可操作界面连接起来。\n')
+    a('### ☁️ Infrastructure / Security / Delivery\n')
+    a('- **基础设施**：Linux、Docker、Kubernetes、SSH，以及 LDAP / FreeRADIUS / UniFi 集成实践。')
+    a('- **权限与治理**：JWT、RBAC、多租户隔离、工具风险分级、执行保护与审计日志。')
+    a('- **交付与观测**：Docker Compose、Kubernetes manifests、Helm、GitHub Actions、OpenTelemetry、Prometheus 与 Grafana。\n')
+    a(pic('arch','从 API 入口到 Agent、检索、工具治理与基础设施的分层'))
+    a('\n### 🔗 把这些技术放进一条链路\n')
+    a(pic('flow','请求规划、工具调用、检索与响应的示意链路'))
+    a('\n*上图为项目能力的组合示意，各项目实际集成范围见对应仓库。*\n')
+    a('\n</details>\n')
     a('<a id="projects"></a>\n\n## 🚀 代表项目 · Selected Work\n')
     a('以 **知识自动化 → 故障诊断 → 工具治理** 为主线，下面展开项目场景、系统能力与值得深入阅读的工程设计。\n')
     for i, (pr, detail) in enumerate(zip(CFG['projects'], CFG['project_details'])):
@@ -572,24 +610,6 @@ def build_readme():
             a(f'[![{pr["name"]} 演示封面](https://raw.githubusercontent.com/{u}/{repo}/main/docs/videos/cover.png)](https://{u}.github.io/{repo}/)\n')
             a('点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。\n\n</details>\n')
         a('---\n')
-    a('<a id="stack"></a>\n\n## 🛠️ 技术能力 · Engineering Stack\n')
-    a(pic('languages', '六个展示仓库的真实代码语言占比')+'\n')
-    a('### 🧠 AI / Agent / Retrieval\n')
-    a('- **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。')
-    a('- **知识工程**：文档接入、分块、Embedding、向量与全文混合检索、知识图谱、Rerank 与引用回答。')
-    a('- **工作流**：DAG、审批节点、Webhook / Schedule 触发与执行生命周期。\n')
-    a('### ⚙️ Backend / Data / Product\n')
-    a('- **后端与 API**：Python、FastAPI、SQLAlchemy async、Alembic；Go 服务与网关实践。')
-    a('- **数据与缓存**：PostgreSQL、Redis、ChromaDB；关注租户约束、数据模型与异步任务协作。')
-    a('- **控制台与全栈**：React / Vue 3、TypeScript、Vite、Tailwind；将业务接口与可操作界面连接起来。\n')
-    a('### ☁️ Infrastructure / Security / Delivery\n')
-    a('- **基础设施**：Linux、Docker、Kubernetes、SSH，以及 LDAP / FreeRADIUS / UniFi 集成实践。')
-    a('- **权限与治理**：JWT、RBAC、多租户隔离、工具风险分级、执行保护与审计日志。')
-    a('- **交付与观测**：Docker Compose、Kubernetes manifests、Helm、GitHub Actions、OpenTelemetry、Prometheus 与 Grafana。\n')
-    a(pic('arch','从 API 入口到 Agent、检索、工具治理与基础设施的分层'))
-    a('\n### 🔗 把这些技术放进一条链路\n')
-    a(pic('flow','请求规划、工具调用、检索与响应的示意链路'))
-    a('\n*上图为项目能力的组合示意，各项目实际集成范围见对应仓库。*\n')
     a('<a id="notes"></a>\n\n## 📚 技术笔记与阅读入口 · Build in Public\n')
     a('将项目文档作为技术笔记入口，沿着一个问题读到设计与实现：\n')
     base=f'https://github.com/{u}'
@@ -622,7 +642,7 @@ def build_preview():
     source=(ROOT/'README.md').read_text(encoding='utf-8').replace('<div align="center">', '<div align="center" markdown="1">').replace('<details>', '<details markdown="1">').replace('<details open>', '<details open markdown="1">')
     content=markdown.markdown(source,extensions=['extra','sane_lists','md_in_html'])
     page='''<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zhifeng Jin · Profile v5</title><style>
-:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #B29A58;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
+:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}table{width:100%;border-collapse:collapse;table-layout:fixed}td{border:1px solid var(--line);padding:12px;vertical-align:top}td h4{margin:0 0 12px}td p{margin:0}td img{margin:3px 2px 3px 0}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #B29A58;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
 </style></head><body><div class="toolbar"><span>Profile v5 · GitHub README 内容预览</span><span><button onclick="setTheme('light')">浅色</button> <button onclick="setTheme('dark')">深色</button></span></div><article class="readme">__BODY__</article><script>function setTheme(t){document.documentElement.dataset.theme=t;document.querySelectorAll('picture').forEach(p=>{let i=p.querySelector('img');if(!i.dataset.light)i.dataset.light=i.src.replace('-dark.svg','-light.svg');i.src=i.dataset.light.replace('-light.svg','-'+t+'.svg');p.querySelectorAll('source').forEach(s=>s.media='not all')})}</script></body></html>'''
     (ROOT/'preview.html').write_text(page.replace('__BODY__',content),encoding='utf-8')
 

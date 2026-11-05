@@ -50,6 +50,111 @@
 - **想了解 AIOps / SRE** → 从故障诊断 Agent 入手，看 Kubernetes 现场证据、Runbook 与 Trace。
 - **想了解 MCP / 工具工程** → 从 DevOps MCP Server 入手，看工具目录、执行门与审计。
 
+<a id="stack"></a>
+
+## 🛠️ 技术能力 · Engineering Stack
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
+  <img src="assets/languages-dark.svg" alt="六个展示仓库的真实代码语言占比" width="100%">
+</picture>
+
+<table width="100%">
+<tr>
+<td valign="top" width="50%"><h4>⚙️ 后端 · 服务</h4><p>
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" height="22"> 
+<img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white" height="22"> 
+<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" height="22"> 
+<img alt="Flask" src="https://img.shields.io/badge/Flask-303030?style=flat-square&amp;logo=flask&amp;logoColor=white" height="22"> 
+<img alt="SQLAlchemy" src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&amp;logo=sqlalchemy&amp;logoColor=white" height="22"> 
+</p></td>
+<td valign="top" width="50%"><h4>🎨 前端 · 工程</h4><p>
+<img alt="Vue 3" src="https://img.shields.io/badge/Vue%203-42B883?style=flat-square&amp;logo=vuedotjs&amp;logoColor=white" height="22"> 
+<img alt="React" src="https://img.shields.io/badge/React-149ECA?style=flat-square&amp;logo=react&amp;logoColor=white" height="22"> 
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" height="22"> 
+<img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&amp;logo=vite&amp;logoColor=white" height="22"> 
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-0891B2?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white" height="22"> 
+</p></td>
+</tr>
+<tr>
+<td valign="top" width="50%"><h4>🧠 AI · 智能体</h4><p>
+<img alt="LangGraph" src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&amp;logo=langgraph&amp;logoColor=white" height="22"> 
+<img alt="LangChain" src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&amp;logo=langchain&amp;logoColor=white" height="22"> 
+<img alt="MCP" src="https://img.shields.io/badge/MCP-96781A?style=flat-square&amp;logo=modelcontextprotocol&amp;logoColor=white" height="22"> 
+<img alt="Hybrid RAG" src="https://img.shields.io/badge/Hybrid%20RAG-96781A?style=flat-square" height="22"> 
+<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&amp;logo=pytorch&amp;logoColor=white" height="22"> 
+</p></td>
+<td valign="top" width="50%"><h4>🗄️ 数据 · 缓存</h4><p>
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" height="22"> 
+<img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white" height="22"> 
+<img alt="ChromaDB" src="https://img.shields.io/badge/ChromaDB-96781A?style=flat-square" height="22"> 
+<img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&amp;logo=sqlite&amp;logoColor=white" height="22"> 
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&amp;logo=mysql&amp;logoColor=white" height="22"> 
+</p></td>
+</tr>
+<tr>
+<td valign="top" width="50%"><h4>☁️ 云原生 · 工具链</h4><p>
+<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" height="22"> 
+<img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white" height="22"> 
+<img alt="Linux" src="https://img.shields.io/badge/Linux-444444?style=flat-square&amp;logo=linux&amp;logoColor=white" height="22"> 
+<img alt="Helm" src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&amp;logo=helm&amp;logoColor=white" height="22"> 
+<img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" height="22"> 
+<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" height="22"> 
+</p></td>
+<td valign="top" width="50%"><h4>🔎 观测 · 权限</h4><p>
+<img alt="Prometheus" src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&amp;logo=prometheus&amp;logoColor=white" height="22"> 
+<img alt="Grafana" src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&amp;logo=grafana&amp;logoColor=white" height="22"> 
+<img alt="OpenTelemetry" src="https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&amp;logo=opentelemetry&amp;logoColor=white" height="22"> 
+<img alt="JWT" src="https://img.shields.io/badge/JWT-333333?style=flat-square&amp;logo=jsonwebtokens&amp;logoColor=white" height="22"> 
+<img alt="RBAC" src="https://img.shields.io/badge/RBAC-96781A?style=flat-square" height="22"> 
+<img alt="LDAP" src="https://img.shields.io/badge/LDAP-96781A?style=flat-square" height="22"> 
+</p></td>
+</tr>
+</table>
+
+上列技术覆盖当前公开项目中的应用与集成实践，具体实现见各项目源码。
+
+<details>
+<summary>📐 展开技术说明与系统架构</summary>
+
+### 🧠 AI / Agent / Retrieval
+
+- **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。
+- **知识工程**：文档接入、分块、Embedding、向量与全文混合检索、知识图谱、Rerank 与引用回答。
+- **工作流**：DAG、审批节点、Webhook / Schedule 触发与执行生命周期。
+
+### ⚙️ Backend / Data / Product
+
+- **后端与 API**：Python、FastAPI、SQLAlchemy async、Alembic；Go 服务与网关实践。
+- **数据与缓存**：PostgreSQL、Redis、ChromaDB；关注租户约束、数据模型与异步任务协作。
+- **控制台与全栈**：React / Vue 3、TypeScript、Vite、Tailwind；将业务接口与可操作界面连接起来。
+
+### ☁️ Infrastructure / Security / Delivery
+
+- **基础设施**：Linux、Docker、Kubernetes、SSH，以及 LDAP / FreeRADIUS / UniFi 集成实践。
+- **权限与治理**：JWT、RBAC、多租户隔离、工具风险分级、执行保护与审计日志。
+- **交付与观测**：Docker Compose、Kubernetes manifests、Helm、GitHub Actions、OpenTelemetry、Prometheus 与 Grafana。
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/arch-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/arch-light.svg">
+  <img src="assets/arch-dark.svg" alt="从 API 入口到 Agent、检索、工具治理与基础设施的分层" width="100%">
+</picture>
+
+### 🔗 把这些技术放进一条链路
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/flow-light.svg">
+  <img src="assets/flow-dark.svg" alt="请求规划、工具调用、检索与响应的示意链路" width="100%">
+</picture>
+
+*上图为项目能力的组合示意，各项目实际集成范围见对应仓库。*
+
+
+</details>
+
 <a id="projects"></a>
 
 ## 🚀 代表项目 · Selected Work
@@ -259,50 +364,6 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 [💻 源码](https://github.com/zhifengjin050-arch/ldap-radius-unifi-auth)
 
 ---
-
-<a id="stack"></a>
-
-## 🛠️ 技术能力 · Engineering Stack
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
-  <img src="assets/languages-dark.svg" alt="六个展示仓库的真实代码语言占比" width="100%">
-</picture>
-
-### 🧠 AI / Agent / Retrieval
-
-- **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。
-- **知识工程**：文档接入、分块、Embedding、向量与全文混合检索、知识图谱、Rerank 与引用回答。
-- **工作流**：DAG、审批节点、Webhook / Schedule 触发与执行生命周期。
-
-### ⚙️ Backend / Data / Product
-
-- **后端与 API**：Python、FastAPI、SQLAlchemy async、Alembic；Go 服务与网关实践。
-- **数据与缓存**：PostgreSQL、Redis、ChromaDB；关注租户约束、数据模型与异步任务协作。
-- **控制台与全栈**：React / Vue 3、TypeScript、Vite、Tailwind；将业务接口与可操作界面连接起来。
-
-### ☁️ Infrastructure / Security / Delivery
-
-- **基础设施**：Linux、Docker、Kubernetes、SSH，以及 LDAP / FreeRADIUS / UniFi 集成实践。
-- **权限与治理**：JWT、RBAC、多租户隔离、工具风险分级、执行保护与审计日志。
-- **交付与观测**：Docker Compose、Kubernetes manifests、Helm、GitHub Actions、OpenTelemetry、Prometheus 与 Grafana。
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/arch-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/arch-light.svg">
-  <img src="assets/arch-dark.svg" alt="从 API 入口到 Agent、检索、工具治理与基础设施的分层" width="100%">
-</picture>
-
-### 🔗 把这些技术放进一条链路
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/flow-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/flow-light.svg">
-  <img src="assets/flow-dark.svg" alt="请求规划、工具调用、检索与响应的示意链路" width="100%">
-</picture>
-
-*上图为项目能力的组合示意，各项目实际集成范围见对应仓库。*
 
 <a id="notes"></a>
 
