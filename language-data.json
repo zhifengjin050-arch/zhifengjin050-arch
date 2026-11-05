@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-05",
+  "repositories": {
+    "enterprise-ai-agent-platform": {
+      "Python": 1755726,
+      "TypeScript": 88621,
+      "CSS": 5170,
+      "Dockerfile": 3442,
+      "Go Template": 2460,
+      "JavaScript": 2104,
+      "PowerShell": 1325,
+      "Shell": 1033,
+      "Mako": 594,
+      "HTML": 360
+    },
+    "enterprise-ai-sre-platform": {
+      "Python": 690336,
+      "TypeScript": 164731,
+      "JavaScript": 33130,
+      "CSS": 29935,
+      "HTML": 10960,
+      "Go Template": 4552,
+      "Shell": 3053,
+      "PowerShell": 2547,
+      "Dockerfile": 2343,
+      "Mako": 589
+    },
+    "enterprise-devops-mcp-server": {
+      "Python": 201569,
+      "Dockerfile": 1754,
+      "PowerShell": 664,
+      "Shell": 488
+    },
+    "new-api": {
+      "Go": 3685947,
+      "Makefile": 4128,
+      "Dockerfile": 1656,
+      "Lua": 1289,
+      "Shell": 1248
+    },
+    "dujiao-next": {
+      "Go": 2953150,
+      "Vue": 1938556,
+      "TypeScript": 765651,
+      "CSS": 30769,
+      "JavaScript": 2147,
+      "Dockerfile": 1684
+    },
+    "ldap-radius-unifi-auth": {}
+  }
+}

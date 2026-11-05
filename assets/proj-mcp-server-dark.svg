@@ -1,6 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img">
 <rect x="0.5" y="0.5" width="999" height="149" rx="16" fill="#0C1225" stroke="#2C3A5B" stroke-width="1"/>
 <path d="M22 1.5 L978 1.5" stroke="#B5D9FF" stroke-width="1" opacity="0.32"/>
+<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><linearGradient id="cardsheen"><stop stop-color="#A99AFF" stop-opacity="0"/><stop offset=".5" stop-color="#A99AFF" stop-opacity=".09"/><stop offset="1" stop-color="#A99AFF" stop-opacity="0"/></linearGradient></defs>
+<style>@keyframes sweep{0%,15%{transform:translateX(-350px)}65%,100%{transform:translateX(1100px)}}@keyframes trace{to{stroke-dashoffset:-2300}}.sheen{animation:sweep 10s ease-in-out infinite}.edge{animation:trace 24s linear infinite}@media(prefers-reduced-motion:reduce){.sheen{display:none}.edge{animation:none}}</style>
+<g clip-path="url(#cardclip)"><rect class="sheen" x="0" y="0" width="280" height="150" fill="url(#cardsheen)"/></g>
+<rect class="edge" x="1" y="1" width="998" height="148" rx="16" fill="none" stroke="#A99AFF" stroke-width="1.3" stroke-dasharray="95 2205" opacity=".55"/>
 <rect x="20" y="22" width="4" height="106" rx="2" fill="#A99AFF"/>
 <text x="962" y="66" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="46" font-weight="800" fill="#A99AFF" text-anchor="end" opacity="0.16">03</text>
 <text x="44" y="50" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#EDF3FF" text-anchor="start">DevOps MCP Server</text>

@@ -294,10 +294,43 @@ def arch(t, c):
     return S(W, H, "\n".join(p))
 
 
+def language_panel(t):
+    data=json.loads((ROOT/'language-data.json').read_text(encoding='utf-8'))
+    totals={}
+    for repo in data['repositories'].values():
+        for lang,size in repo.items(): totals[lang]=totals.get(lang,0)+size
+    ranked=sorted(totals.items(),key=lambda x:-x[1]); total=sum(totals.values())
+    ranked=ranked[:5]+[('Other',sum(v for _,v in ranked[5:]))]
+    colors=[t['accent'],t['accent2'],'#4BAF9C','#BC82CD','#DBA25D','#8194B3']
+    p=[bg(t,1000,260,18),'<style>@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes orbit{to{transform:rotate(360deg)}}.bar{transform-box:fill-box;transform-origin:left;animation:grow 1.8s ease-out both}.orbit{transform-origin:150px 125px;animation:orbit 28s linear infinite}@media(prefers-reduced-motion:reduce){.bar,.orbit{animation:none!important}}</style>']
+    p.append(T(310,36,'CODE / LANGUAGE COMPOSITION',13,t,color=t['accent'],mono=True,weight=600))
+    p.append(T(310,61,'6 个展示仓库 · GitHub 代码字节统计',13,t,color=t['sub']))
+    offset=0
+    for i,((lang,size),color) in enumerate(zip(ranked,colors)):
+        pct=size/total*100
+        p.append(f'<circle cx="150" cy="125" r="76" fill="none" stroke="{color}" stroke-width="19" pathLength="100" stroke-dasharray="{pct-.35:.4f} {100-pct+.35:.4f}" stroke-dashoffset="{-offset:.4f}" transform="rotate(-90 150 125)"/>')
+        x=310+(i%2)*335;y=103+(i//2)*51
+        p.append(R(x,y-10,8,8,2,color))
+        p.append(T(x+18,y,lang,14,t))
+        p.append(T(x+290,y,f'{pct:.1f}%',13,t,color=t['sub'],anchor='end',mono=True))
+        p.append(R(x,y+12,290,3,1,t['line']))
+        p.append(f'<g class="bar" style="animation-delay:{i*.12}s">'+R(x,y+12,290*pct/100,3,1,color)+'</g>')
+        offset+=pct
+    p.append(f'<circle class="orbit" cx="150" cy="125" r="94" fill="none" stroke="{t["accent2"]}" stroke-width="1.5" stroke-dasharray="26 564" opacity=".7"/>')
+    p.append(T(150,124,f'{ranked[0][1]/total*100:.0f}%',34,t,weight=800,anchor='middle',mono=True))
+    p.append(T(150,150,ranked[0][0],15,t,color=t['sub'],anchor='middle'))
+    p.append(T(310,243,'快照 '+data['date']+' · 代码占比，不代表熟练度',11,t,color=t['sub']))
+    return S(1000,260,'\n'.join(p))
+
+
 def project(t, p_, idx):
     W, H = 1000, 150
     A, INK, SUB, LINE = t["accent"], t["ink"], t["sub"], t["line"]
     p = glass_bg(t, W, H, 16)
+    p.append('<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><linearGradient id="cardsheen"><stop stop-color="'+A+'" stop-opacity="0"/><stop offset=".5" stop-color="'+A+'" stop-opacity=".09"/><stop offset="1" stop-color="'+A+'" stop-opacity="0"/></linearGradient></defs>')
+    p.append('<style>@keyframes sweep{0%,15%{transform:translateX(-350px)}65%,100%{transform:translateX(1100px)}}@keyframes trace{to{stroke-dashoffset:-2300}}.sheen{animation:sweep 10s ease-in-out infinite}.edge{animation:trace 24s linear infinite}@media(prefers-reduced-motion:reduce){.sheen{display:none}.edge{animation:none}}</style>')
+    p.append('<g clip-path="url(#cardclip)"><rect class="sheen" x="0" y="0" width="280" height="150" fill="url(#cardsheen)"/></g>')
+    p.append(f'<rect class="edge" x="1" y="1" width="998" height="148" rx="16" fill="none" stroke="{A}" stroke-width="1.3" stroke-dasharray="95 2205" opacity=".55"/>')
     p.append(R(20, 22, 4, 106, 2, A))
     p.append(T(962, 66, f"{idx:02d}", 46, t, color=A, weight=800, mono=True,
                anchor="end", opacity=0.16))
@@ -524,7 +557,7 @@ def build_readme():
             a('补充展示模型网关、全栈业务与网络认证三个方向。以下介绍仓库能力与实践主题；具体实现与许可说明以各仓库为准。\n')
         a(f'### {detail["icon"]} {i+1:02d} · [{pr["name"]}]({pr["url"]})\n')
         a(f'**{detail["tag"]}** · ' + ' / '.join(f'`{x}`' for x in pr['tech']) + '\n')
-        if i < 3:
+        if i < 6:
             a(f'<a href="{pr["url"]}">\n' + pic('proj-'+pr['slug'], pr['name']) + '\n</a>\n')
         a(detail['intro'] + '\n')
         a('<details open>\n<summary>🔬 技术实现与工程细节</summary>\n')
@@ -540,6 +573,7 @@ def build_readme():
             a('点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。\n\n</details>\n')
         a('---\n')
     a('<a id="stack"></a>\n\n## 🛠️ 技术能力 · Engineering Stack\n')
+    a(pic('languages', '六个展示仓库的真实代码语言占比'))
     a('### 🧠 AI / Agent / Retrieval\n')
     a('- **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。')
     a('- **知识工程**：文档接入、分块、Embedding、向量与全文混合检索、知识图谱、Rerank 与引用回答。')
@@ -596,6 +630,7 @@ def build_preview():
 def main():
     n = build_assets()
     for key,t in THEMES.items():
+        (ASSETS/f'languages-{key}.svg').write_text(language_panel(t),encoding='utf-8')
         (ASSETS/f'capability-{key}.svg').write_text(capability_map(t),encoding='utf-8')
     build_readme()
     build_preview()

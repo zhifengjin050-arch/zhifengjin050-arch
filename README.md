@@ -174,6 +174,14 @@
 
 **GATEWAY × AI API** · `Go` / `Gateway` / `AGPL-3.0`
 
+<a href="https://github.com/zhifengjin050-arch/new-api">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/proj-api-gateway-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/proj-api-gateway-light.svg">
+  <img src="assets/proj-api-gateway-dark.svg" alt="多模型 API 网关" width="100%">
+</picture>
+</a>
+
 多模型统一接入与 AI 资产管理实践，围绕模型渠道、通道池、动态计价与负载均衡梳理 AI 服务网关的核心能力。
 
 <details open>
@@ -194,6 +202,14 @@
 ### 🦄 05 · [全栈交易系统](https://github.com/zhifengjin050-arch/dujiao-next)
 
 **FULL STACK × DELIVERY** · `Go` / `Vue 3` / `PostgreSQL`
+
+<a href="https://github.com/zhifengjin050-arch/dujiao-next">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/proj-dujiao-next-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/proj-dujiao-next-light.svg">
+  <img src="assets/proj-dujiao-next-dark.svg" alt="全栈交易系统" width="100%">
+</picture>
+</a>
 
 Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆盖用户前台、管理后台与 API 服务。
 
@@ -217,6 +233,14 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 
 **IDENTITY × NETWORK** · `Docker` / `Python` / `FreeRADIUS`
 
+<a href="https://github.com/zhifengjin050-arch/ldap-radius-unifi-auth">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/proj-infra-automation-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/proj-infra-automation-light.svg">
+  <img src="assets/proj-infra-automation-dark.svg" alt="基础设施自动化" width="100%">
+</picture>
+</a>
+
 将 Go-Ldap-Admin、OpenLDAP、FreeRADIUS 与 UniFi 组合为企业无线网络认证方案，围绕统一账号、802.1X 接入与部门网络隔离整理部署实践。
 
 <details open>
@@ -239,6 +263,11 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 
 ## 🛠️ 技术能力 · Engineering Stack
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/languages-light.svg">
+  <img src="assets/languages-dark.svg" alt="六个展示仓库的真实代码语言占比" width="100%">
+</picture>
 ### 🧠 AI / Agent / Retrieval
 
 - **Agent 编排**：LangGraph、Planner、Tool Calling、Memory、MCP 工具发现与调用。
