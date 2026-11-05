@@ -249,8 +249,10 @@ def header(t, sec):
       'links':'M17 23h26v20H29l-8 7v-7h-4z M23 30h14 M23 36h9'
     }
     p=[f'<rect x="1" y="9" width="58" height="58" rx="14" fill="{t["card2"]}" stroke="{t["line"]}"/>',f'<path d="{icons.get(sec["key"],icons["stack"])}" fill="none" stroke="{A}" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>']
-    p.append(T(80,39,sec['title'],27,t,color=A,weight=700))
-    p.append(T(82,61,sec['en'],10,t,color=t['sub'],mono=True,spacing=3))
+    stops=['#765018','#B68A26','#8B641A'] if t['card']=='#FAF8F3' else ['#C59938','#F6D98D','#D2AE50']
+    p.append('<defs><linearGradient id="titleGold" x1="0%" y1="0%" x2="100%" y2="25%">'+''.join(f'<stop offset="{offset}" stop-color="{color}"/>' for offset,color in zip(['0%','48%','100%'],stops))+'</linearGradient></defs>')
+    p.append(T(80,39,sec['title'],27,t,color='url(#titleGold)',weight=700))
+    p.append(T(82,61,sec['en'],10,t,color='url(#titleGold)',mono=True,spacing=3))
     p.append(f'<defs><linearGradient id="rule"><stop stop-color="{A}"/><stop offset="1" stop-color="{t["line"]}" stop-opacity=".2"/></linearGradient></defs><path d="M1 83H999" stroke="url(#rule)"/>')
     return S(1000,88,'\n'.join(p))
 

@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="88" viewBox="0 0 1000 88" role="img">
 <rect x="1" y="9" width="58" height="58" rx="14" fill="#F7F4EE" stroke="#DFD8C8"/>
 <path d="M44 34a14 14 0 1 1-14-14 M39 34a9 9 0 1 1-9-9 M30 34l14-14 M36 20h8v8" fill="none" stroke="#96781A" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
-<text x="80" y="39" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="#96781A" text-anchor="start">方向与投入</text>
-<text x="82" y="61" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#71674F" text-anchor="start" letter-spacing="3">FOCUS</text>
+<defs><linearGradient id="titleGold" x1="0%" y1="0%" x2="100%" y2="25%"><stop offset="0%" stop-color="#765018"/><stop offset="48%" stop-color="#B68A26"/><stop offset="100%" stop-color="#8B641A"/></linearGradient></defs>
+<text x="80" y="39" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="url(#titleGold)" text-anchor="start">方向与投入</text>
+<text x="82" y="61" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="url(#titleGold)" text-anchor="start" letter-spacing="3">FOCUS</text>
 <defs><linearGradient id="rule"><stop stop-color="#96781A"/><stop offset="1" stop-color="#DFD8C8" stop-opacity=".2"/></linearGradient></defs><path d="M1 83H999" stroke="url(#rule)"/>
 </svg>
