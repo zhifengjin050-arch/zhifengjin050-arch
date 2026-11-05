@@ -209,10 +209,11 @@ def spatial_systems(t,english=False):
     p.append(f'<path class="iso-wire" d="M205 192L500 165L795 192" fill="none" stroke="{t["accent"]}" stroke-dasharray="3 7" stroke-width="1.8"/>')
     for i,(x,y,tag) in enumerate(centers):
         p.append(f'<ellipse cx="{x}" cy="{y+65}" rx="95" ry="23" fill="{t["accent"]}" opacity=".10"/>')
-        p.append(iso_block(t,x,y+35,180,0,12))
+        base_label,mid_label=[('DOCS','SEARCH'),('EVIDENCE','REASON'),('AUDIT','GATE')][i]
+        p.append(iso_block(t,x,y+35,180,0,20,base_label,metal=True,face_label=True))
         p.append(f'<g class="iso-float" style="animation-delay:-{i*2}s">')
-        p.append(iso_block(t,x,y+4,116,0,18))
-        p.append(iso_block(t,x,y-22,84,0,22,tag))
+        p.append(iso_block(t,x,y+4,116,0,18,mid_label,metal=True,face_label=True))
+        p.append(iso_block(t,x,y-22,84,0,22,tag,metal=True))
         p.append('</g>')
     texts=[('KNOWLEDGE','文档 · 检索 · 工作流'),('DIAGNOSIS','证据 · 推理 · 故障报告'),('GOVERNANCE','权限 · 执行门 · 审计')]
     english_sub=['Documents · Retrieval · Workflows','Evidence · Reasoning · Reports','Permissions · Gates · Audit']
