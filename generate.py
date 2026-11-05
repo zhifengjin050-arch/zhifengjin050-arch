@@ -161,7 +161,7 @@ def pulse(cx, cy, r, color, begin, dur="2.6s"):
 # 各区块 SVG
 # --------------------------------------------------------------------------
 
-def iso_block(t,x,y,w,h,depth,label=None):
+def iso_block(t,x,y,w,h,depth,label=None,metal=False,face_label=False):
     # Original isometric geometry. Coordinates refer to the front vertex of the top face.
     a=w/2; b=w/4
     top=f'{x},{y-b} {x+a},{y} {x},{y+b} {x-a},{y}'
@@ -171,14 +171,29 @@ def iso_block(t,x,y,w,h,depth,label=None):
     light='#E7CC7E' if dark else '#F2DFA4'
     mid='#92702D' if dark else '#B6954B'
     shade='#5B4525' if dark else '#95722F'
-    parts=[f'<polygon points="{left}" fill="{mid}" stroke="{t["accent"]}" stroke-width=".8"/>',f'<polygon points="{right}" fill="{shade}" stroke="{t["accent"]}" stroke-width=".8"/>',f'<polygon points="{top}" fill="{light}" stroke="{t["accent"]}" stroke-width=".8"/>']
+    defs=''
+    if metal:
+        uid=f'layer-{x}-{y}-{w}'
+        stops=[('#F5E5AF','#C4A04B'),('#DCC27D','#AD873A'),('#AE893B','#725222')]
+        defs='<defs>'
+        for j,(c1,c2) in enumerate(stops):
+            defs+=f'<linearGradient id="{uid}-{j}" x1="0%" y1="0%" x2="100%" y2="100%"><stop stop-color="{c1}"/><stop offset="1" stop-color="{c2}"/></linearGradient>'
+        defs+=f'<clipPath id="{uid}-clip"><polygon points="{left}"/><polygon points="{right}"/><polygon points="{top}"/></clipPath><linearGradient id="{uid}-shine"><stop stop-color="#FFF9DF" stop-opacity="0"/><stop offset=".5" stop-color="#FFF9DF" stop-opacity=".55"/><stop offset="1" stop-color="#FFF9DF" stop-opacity="0"/></linearGradient></defs>'
+        light=f'url(#{uid}-0)';mid=f'url(#{uid}-1)';shade=f'url(#{uid}-2)'
+    parts=[defs,f'<polygon points="{left}" fill="{mid}" stroke="{t["accent"]}" stroke-width=".8"/>',f'<polygon points="{right}" fill="{shade}" stroke="{t["accent"]}" stroke-width=".8"/>',f'<polygon points="{top}" fill="{light}" stroke="{t["accent"]}" stroke-width=".8"/>']
     parts.append(f'<path d="M{x-a+5} {y}L{x} {y-b+3}L{x+a-5} {y}" fill="none" stroke="{t["glow"]}" opacity=".65"/>')
-    if label:parts.append(T(x,y+4,label,12,t,color='#554013',weight=700,anchor='middle',mono=True))
+    if metal:
+        parts.append(f'<g clip-path="url(#{uid}-clip)"><g class="iso-reflection" style="--travel:{w+220}px;animation-delay:-{y*.025:.2f}s"><rect x="{x-a-140}" y="{y-b-3}" width="100" height="{2*b+depth+6}" fill="url(#{uid}-shine)"/></g></g>')
+    if label:
+        if face_label:
+            lx=x-a*.50;ly=y+b*.50+depth*.69
+            parts.append(f'<g transform="rotate(26.565 {lx} {ly})">'+T(lx,ly,label,11,t,color='#392B13',weight=700,anchor='middle',mono=True)+'</g>')
+        else:parts.append(T(x,y+4,label,12,t,color='#554013',weight=700,anchor='middle',mono=True))
     return ''.join(parts)
 
 
 def iso_styles():
-    return '<style>@keyframes levitate{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes wireflow{to{stroke-dashoffset:-40}}.iso-float{animation:levitate 7s ease-in-out infinite}.iso-wire{animation:wireflow 3s linear infinite}@media(prefers-reduced-motion:reduce){.iso-float,.iso-wire{animation:none}.iso-packet{display:none}}</style>'
+    return '<style>@keyframes levitate{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes wireflow{to{stroke-dashoffset:-40}}@keyframes layerShine{from{transform:translateX(0)}to{transform:translateX(var(--travel))}}.iso-reflection{animation:layerShine 8s linear infinite}.iso-float{animation:levitate 7s ease-in-out infinite}.iso-wire{animation:wireflow 3s linear infinite}@media(prefers-reduced-motion:reduce){.iso-float,.iso-wire{animation:none}.iso-packet,.iso-reflection{display:none}}</style>'
 
 
 def spatial_systems(t,english=False):
@@ -236,11 +251,11 @@ def banner(t, c):
     for i in range(5):
         yy=203+i*12
         p.append(f'<path d="M675 {yy}l135 55 135-55" fill="none" stroke="{A}" opacity=".12"/>')
-    p.append(iso_block(t,810,214,218,0,14))
+    p.append(iso_block(t,810,214,218,0,20,'INFRA',metal=True,face_label=True))
     p.append('<g class="iso-float">')
-    p.append(iso_block(t,810,165,160,0,21))
-    p.append(iso_block(t,810,118,118,0,25))
-    p.append(iso_block(t,810,76,78,0,29,'ZF'))
+    p.append(iso_block(t,810,165,160,0,21,'TOOLS',metal=True,face_label=True))
+    p.append(iso_block(t,810,118,118,0,25,'AGENT',metal=True,face_label=True))
+    p.append(iso_block(t,810,76,78,0,29,'ZF',metal=True))
     p.append('</g>')
     p.append(T(810,303,'KNOWLEDGE → ACTION',11,t,color=A,mono=True,anchor='middle',spacing=1.4))
     return S(W,H,'\n'.join(p))
