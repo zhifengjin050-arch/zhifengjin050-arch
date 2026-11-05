@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub Profile 预览 · v3</title>
+<style>
+:root{
+  --page:#ffffff; --card:#f6f8fa; --ink:#1f2328; --sub:#59636e; --line:#d1d9e0;
+}
+html[data-theme="dark"]{
+  --page:#0d1117; --card:#161b22; --ink:#e6edf3; --sub:#9198a1; --line:#30363d;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page);color:var(--ink);
+ font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.toolbar{position:sticky;top:0;z-index:9;display:flex;gap:12px;align-items:center;
+ justify-content:center;flex-wrap:wrap;padding:10px 16px;border-bottom:1px solid var(--line);
+ background:var(--card);font-size:13px}
+.toolbar .note{color:var(--sub)}
+.toolbar button{border:1px solid var(--line);background:transparent;color:var(--ink);
+ padding:5px 14px;border-radius:6px;cursor:pointer;font-size:13px}
+.wrap{max-width:920px;margin:24px auto 80px;padding:0 16px}
+.readme{border:1px solid var(--line);border-radius:8px;background:var(--card);padding:28px 26px}
+.asset{display:block;width:100%;height:auto;margin:0 0 2px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:14px 0 18px}
+.badges img{height:26px}
+h2{font-size:24px;border-bottom:1px solid var(--line);padding-bottom:8px;margin:18px 0 12px}
+.bio{line-height:1.9;padding-left:22px;font-size:15px}
+.motto{font-family:Consolas,monospace;color:#8a6e14;font-size:15px;margin:6px 0 18px}
+blockquote{margin:6px 0 20px;padding:10px 16px;border-left:3px solid #8a6e14;
+ background:rgba(138,110,20,.07);font-size:14px;line-height:1.8}
+blockquote code{font-family:Consolas,monospace;font-size:13px}
+.dynstats{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 20px}
+.dynstats img{height:137px}
+.tech{width:100%;border-collapse:collapse;margin:10px 0 14px}
+.tech td{vertical-align:top;width:50%;padding:10px 12px;border:1px solid var(--line);line-height:2.4}
+.tech img{margin:0 4px 4px 0;height:20px}
+.projlink{display:block;text-decoration:none;margin:0 0 14px}
+.thanks{text-align:center;margin:8px 0 4px;font-size:15px}
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <span class="note">v3 · 自托管 SMIL 动画 + bento 玻璃面板 · 零第三方动效依赖</span>
+  <button onclick="setTheme('light')">浅色</button>
+  <button onclick="setTheme('dark')">深色</button>
+</div>
+<div class="wrap"><div class="readme">
+<img class="asset" data-base="assets/banner-light.svg" src="assets/banner-light.svg" alt="banner">
+<img class="asset" data-base="assets/typing-light.svg" src="assets/typing-light.svg" alt="typing">
+<div class="badges"><img src="https://img.shields.io/badge/Python-F0EADA?style=for-the-badge&logo=python&logoColor=8A6E14"><img src="https://img.shields.io/badge/Go-F0EADA?style=for-the-badge&logo=go&logoColor=8A6E14"><img src="https://img.shields.io/badge/Kubernetes-F0EADA?style=for-the-badge&logo=kubernetes&logoColor=8A6E14"><img src="https://img.shields.io/badge/FastAPI-F0EADA?style=for-the-badge&logo=fastapi&logoColor=8A6E14"><img src="https://img.shields.io/badge/LangGraph-F0EADA?style=for-the-badge&logo=langchain&logoColor=8A6E14"></div>
+<img class="asset" data-base="assets/divider-light.svg" src="assets/divider-light.svg" alt="">
+<img class="asset" data-base="assets/hdr-about-light.svg" src="assets/hdr-about-light.svg" alt="">
+<h2>定位 / What I build</h2><ul class="bio"><li>定位：构建让 AI Agent 在真实基础设施上受控运行的系统 —— 不是聊天机器人 demo。</li>
+<li>关注边界：多租户隔离、最小权限、工具执行门、全链路 trace；先解决「能不能上线」，再谈能力上限。</li>
+<li>开源交付：enterprise-ai-agent-platform · enterprise-ai-sre-platform · enterprise-devops-mcp-server，Apache-2.0 / MIT，README 含架构图与部署说明。</li>
+<li>评价方式：看默认安全配置、失败恢复路径与可观测性，而不是看演示视频。</li></ul>
+<p class="motto">Systems, not demos.</p>
+<blockquote><b>Design constraint:</b> an agent that can call <code>kubectl</code> is a production system, not a prompt. Every tool call must be authorized, bounded, and replayable.</blockquote>
+<img class="asset" data-base="assets/terminal-light.svg" src="assets/terminal-light.svg" alt="">
+<img class="asset" data-base="assets/hdr-stack-light.svg" src="assets/hdr-stack-light.svg" alt="">
+<img class="asset" data-base="assets/arch-light.svg" src="assets/arch-light.svg" alt="">
+<table class="tech"><tr>
+<td><b>运行时 · 协议</b><br><img src="https://img.shields.io/badge/Python_3.11-3776AB?style=flat-square&logo=python&logoColor=white"><img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white"><img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"><img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white"><img src="https://img.shields.io/badge/MCP-8A6E14?style=flat-square&logo=anthropic&logoColor=white"></td>
+<td><b>检索 · 数据</b><br><img src="https://img.shields.io/badge/Hybrid_RAG-B08D2E?style=flat-square&logo=langchain&logoColor=white"><img src="https://img.shields.io/badge/pgvector-336791?style=flat-square&logo=postgresql&logoColor=white"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"><img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"><img src="https://img.shields.io/badge/Knowledge_Graph-5B8C7B?style=flat-square&logo=neo4j&logoColor=white"></td>
+</tr><tr><td colspan='2'><b>平台 · 交付</b><br><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"><img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white"><img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"><img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"></td></tr></table>
+<div class="dynstats"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zhifengjin050-arch&hide_title=true&hide_border=true&layout=compact&theme=graywhite&locale=cn"></div>
+<img class="asset" data-base="assets/hdr-projects-light.svg" src="assets/hdr-projects-light.svg" alt="">
+<a class="projlink" href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform"><img class="asset" data-base="assets/proj-agent-platform-light.svg" src="assets/proj-agent-platform-light.svg" alt="企业级 AI Agent 平台"></a>
+<a class="projlink" href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform"><img class="asset" data-base="assets/proj-sre-platform-light.svg" src="assets/proj-sre-platform-light.svg" alt="自治式 AIOps / SRE 平台"></a>
+<a class="projlink" href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server"><img class="asset" data-base="assets/proj-mcp-server-light.svg" src="assets/proj-mcp-server-light.svg" alt="DevOps MCP Server"></a>
+<a class="projlink" href="https://github.com/zhifengjin050-arch/new-api"><img class="asset" data-base="assets/proj-api-gateway-light.svg" src="assets/proj-api-gateway-light.svg" alt="多模型 API 网关"></a>
+<a class="projlink" href="https://github.com/zhifengjin050-arch/dujiao-next"><img class="asset" data-base="assets/proj-dujiao-next-light.svg" src="assets/proj-dujiao-next-light.svg" alt="全栈交易系统"></a>
+<a class="projlink" href="https://github.com/zhifengjin050-arch/ldap-radius-unifi-auth"><img class="asset" data-base="assets/proj-infra-automation-light.svg" src="assets/proj-infra-automation-light.svg" alt="基础设施自动化"></a>
+<img class="asset" data-base="assets/hdr-stats-light.svg" src="assets/hdr-stats-light.svg" alt="">
+<img class="asset" data-base="assets/stats-light.svg" src="assets/stats-light.svg" alt="">
+<img class="asset" data-base="assets/flow-light.svg" src="assets/flow-light.svg" alt="">
+<img class="asset" data-base="assets/hdr-focus-light.svg" src="assets/hdr-focus-light.svg" alt="">
+<img class="asset" data-base="assets/focus-light.svg" src="assets/focus-light.svg" alt="">
+<img class="asset" data-base="assets/hdr-links-light.svg" src="assets/hdr-links-light.svg" alt="">
+<img class="asset" data-base="assets/links-light.svg" src="assets/links-light.svg" alt="">
+<div class="badges"><a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform"><img src="https://img.shields.io/badge/Agent%20Platform-8A6E14?style=flat-square&labelColor=F0EADA&color=8A6E14"></a><a href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform"><img src="https://img.shields.io/badge/SRE%20Platform-8A6E14?style=flat-square&labelColor=F0EADA&color=8A6E14"></a><a href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server"><img src="https://img.shields.io/badge/MCP%20Server-8A6E14?style=flat-square&labelColor=F0EADA&color=8A6E14"></a><a href="https://github.com/zhifengjin050-arch?tab=repositories"><img src="https://img.shields.io/badge/Repositories-8A6E14?style=flat-square&labelColor=F0EADA&color=8A6E14"></a></div>
+<img class="asset" data-base="assets/divider-light.svg" src="assets/divider-light.svg" alt="">
+<p class="thanks"><b>先看默认安全配置，再看功能演示。</b></p>
+</div></div>
+<script>
+function setTheme(k){
+  document.documentElement.dataset.theme=k;
+  document.querySelectorAll('img[data-base]').forEach(function(el){
+    el.src=el.dataset.base.replace('-light.svg','-'+k+'.svg');
+  });
+}
+</script>
+</body>
+</html>

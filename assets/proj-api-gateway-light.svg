@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img">
 <rect x="0.5" y="0.5" width="999" height="149" rx="16" fill="#F0EADA" stroke="#DCCBA6" stroke-width="1"/>
+<path d="M22 1.5 L978 1.5" stroke="#FFFFFF" stroke-width="1" opacity="0.32"/>
 <rect x="20" y="22" width="4" height="106" rx="2" fill="#8A6E14"/>
 <text x="962" y="66" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="46" font-weight="800" fill="#8A6E14" text-anchor="end" opacity="0.16">04</text>
 <text x="44" y="50" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="24" font-weight="700" fill="#3A2E14" text-anchor="start">多模型 API 网关</text>

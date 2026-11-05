@@ -181,13 +181,13 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-stats-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hdr-stats-light.svg">
-  <img src="assets/hdr-stats-dark.svg" alt="工程切面" width="100%">
+  <img src="assets/hdr-stats-dark.svg" alt="工程切面与运行视图" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/stats-light.svg">
-  <img src="assets/stats-dark.svg" alt="工程维度" width="100%">
+  <img src="assets/stats-dark.svg" alt="工程指标与仓库矩阵" width="100%">
 </picture>
 
 <picture>

@@ -1,0 +1,164 @@
+{
+  "_note": "内容全部基于 zhifengjin050-arch 的真实公开仓库生成，未编造 star / follower / 获奖等可核验数据。改这里再跑 python generate.py 即可全量重生成。",
+
+  "username": "zhifengjin050-arch",
+  "display_name": "Zhifeng Jin",
+  "name_en": "ZHIFENG JIN",
+  "role": "AI Agent · AIOps · Platform Engineering",
+  "eyebrow": "PLATFORM ENGINEERING / AI SYSTEMS",
+  "motto": "Systems, not demos.",
+  "typing_line": "Building governed agents that operate real infrastructure.",
+  "year": "2026",
+  "banner_chips": ["Agent Systems", "MCP Tooling", "Cloud Native"],
+
+  "top_badges": [
+    { "label": "Python",      "logo": "python",     "logoColor": "8A6E14" },
+    { "label": "Go",          "logo": "go",         "logoColor": "8A6E14" },
+    { "label": "Kubernetes",  "logo": "kubernetes", "logoColor": "8A6E14" },
+    { "label": "FastAPI",     "logo": "fastapi",    "logoColor": "8A6E14" },
+    { "label": "LangGraph",   "logo": "langchain",  "logoColor": "8A6E14" }
+  ],
+
+  "bio": [
+    "**定位**：构建让 AI Agent 在真实基础设施上受控运行的系统 —— 不是聊天机器人 demo。",
+    "**关注边界**：多租户隔离、最小权限、工具执行门、全链路 trace；先解决「能不能上线」，再谈能力上限。",
+    "**开源交付**：[enterprise-ai-agent-platform](https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform) · [enterprise-ai-sre-platform](https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform) · [enterprise-devops-mcp-server](https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server)，Apache-2.0 / MIT，README 含架构图与部署说明。",
+    "**评价方式**：看默认安全配置、失败恢复路径与可观测性，而不是看演示视频。"
+  ],
+
+  "sections": [
+    { "key": "about",    "title": "定位",     "en": "POSITIONING", "no": "01" },
+    { "key": "stack",    "title": "技术纵深", "en": "TECH STACK",  "no": "02" },
+    { "key": "projects", "title": "系统与实践", "en": "SYSTEMS",    "no": "03" },
+    { "key": "stats",    "title": "工程切面", "en": "ENGINEERING", "no": "04" },
+    { "key": "focus",    "title": "设计原则", "en": "PRINCIPLES",  "no": "05" },
+    { "key": "links",    "title": "找到我",   "en": "CONTACT",     "no": "06" }
+  ],
+
+  "terminal_lines": [
+    { "prompt": "$ whoami",        "out": "Zhifeng Jin · AI Agent / AIOps Engineer" },
+    { "prompt": "$ cat focus.txt", "out": "Agent runtime · MCP tooling · K8s RCA · Hybrid RAG" },
+    { "prompt": "$ echo $DEFAULT", "out": "read-only · least privilege · audited" }
+  ],
+
+  "layers": [
+    { "name": "INGRESS",        "tech": "Go API Gateway · FastAPI",                   "color": "#B08D2E" },
+    { "name": "AGENT RUNTIME",  "tech": "LangGraph · Planner · Tool Calling · Memory", "color": "#8A6E14" },
+    { "name": "RETRIEVAL",      "tech": "Hybrid RAG · pgvector · Knowledge Graph",    "color": "#A8763E" },
+    { "name": "TOOL GOVERNANCE","tech": "MCP · RBAC · Execute Gate · Audit Log",      "color": "#5B8C7B" },
+    { "name": "INFRASTRUCTURE", "tech": "Kubernetes · Helm · Docker · CI",            "color": "#9C8A63" }
+  ],
+
+  "tech_groups": [
+    {
+      "title": "运行时 · 协议",
+      "badges": [
+        { "label": "Python_3.11", "color": "3776AB", "logo": "python", "logoColor": "white" },
+        { "label": "Go", "color": "00ADD8", "logo": "go", "logoColor": "white" },
+        { "label": "FastAPI", "color": "009688", "logo": "fastapi", "logoColor": "white" },
+        { "label": "LangGraph", "color": "1C3C3C", "logo": "langchain", "logoColor": "white" },
+        { "label": "MCP", "color": "8A6E14", "logo": "anthropic", "logoColor": "white" }
+      ]
+    },
+    {
+      "title": "检索 · 数据",
+      "badges": [
+        { "label": "Hybrid_RAG", "color": "B08D2E", "logo": "langchain", "logoColor": "white" },
+        { "label": "pgvector", "color": "336791", "logo": "postgresql", "logoColor": "white" },
+        { "label": "PostgreSQL", "color": "4169E1", "logo": "postgresql", "logoColor": "white" },
+        { "label": "Redis", "color": "DC382D", "logo": "redis", "logoColor": "white" },
+        { "label": "Knowledge_Graph", "color": "5B8C7B", "logo": "neo4j", "logoColor": "white" }
+      ]
+    },
+    {
+      "title": "平台 · 交付",
+      "badges": [
+        { "label": "Kubernetes", "color": "326CE5", "logo": "kubernetes", "logoColor": "white" },
+        { "label": "Helm", "color": "0F1689", "logo": "helm", "logoColor": "white" },
+        { "label": "Docker", "color": "2496ED", "logo": "docker", "logoColor": "white" },
+        { "label": "TypeScript", "color": "3178C6", "logo": "typescript", "logoColor": "white" },
+        { "label": "GitHub_Actions", "color": "2088FF", "logo": "githubactions", "logoColor": "white" }
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "slug": "agent-platform", "name": "企业级 AI Agent 平台", "en": "ENTERPRISE AI AGENT PLATFORM",
+      "desc": "混合 RAG + 知识图谱 + 工作流引擎，JWT/RBAC 多租户隔离，Helm 云原生交付。",
+      "tech": ["Python", "FastAPI", "Apache-2.0"],
+      "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform"
+    },
+    {
+      "slug": "sre-platform", "name": "自治式 AIOps / SRE 平台", "en": "AUTONOMOUS AI SRE PLATFORM",
+      "desc": "LangGraph SRE Agent：MCP 工具调用、Kubernetes 根因分析、RAG 知识中枢与记忆。",
+      "tech": ["LangGraph", "MCP", "Kubernetes"],
+      "url": "https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform"
+    },
+    {
+      "slug": "mcp-server", "name": "DevOps MCP Server", "en": "GOVERNED MCP TOOLING",
+      "desc": "17 个受治理工具：RBAC、执行门、命令过滤与审计；默认只读、最小权限。",
+      "tech": ["MCP", "Docker", "SSH"],
+      "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server"
+    },
+    {
+      "slug": "api-gateway", "name": "多模型 API 网关", "en": "MULTI-MODEL API GATEWAY",
+      "desc": "Go 实现的多模型统一接入：通道池、动态计价与智能负载均衡。",
+      "tech": ["Go", "Gateway", "AGPL-3.0"],
+      "url": "https://github.com/zhifengjin050-arch/new-api"
+    },
+    {
+      "slug": "dujiao-next", "name": "全栈交易系统", "en": "GO + VUE3 FULL-STACK",
+      "desc": "高性能自动发卡系统：多语言、多货币、多支付通道，Go + Vue 3 全栈。",
+      "tech": ["Go", "Vue 3", "MySQL"],
+      "url": "https://github.com/zhifengjin050-arch/dujiao-next"
+    },
+    {
+      "slug": "infra-automation", "name": "基础设施自动化", "en": "NETWORK & AUTH AUTOMATION",
+      "desc": "LDAP + FreeRADIUS + UniFi 企业认证；华为网络设备配置自动备份与告警。",
+      "tech": ["Docker", "Python", "FreeRADIUS"],
+      "url": "https://github.com/zhifengjin050-arch/ldap-radius-unifi-auth"
+    }
+  ],
+
+  "stats": [
+    { "label": "ISOLATION",       "value": "RBAC",     "note": "多租户隔离与最小权限" },
+    { "label": "TOOL GOVERNANCE", "value": "17 tools", "note": "执行门 / 命令过滤 / 审计" },
+    { "label": "OBSERVABILITY",   "value": "Traces",   "note": "决策与工具调用可回放" },
+    { "label": "DELIVERY",        "value": "Helm",     "note": "K8s / CI / 可重复部署" }
+  ],
+
+  "telemetry": {
+    "repos": 9,
+    "core_systems": ["Agent Platform", "SRE Platform", "MCP Server"],
+    "languages": [
+      { "name": "Python", "count": 5, "color": "#B08D2E" },
+      { "name": "Go",     "count": 2, "color": "#5B8C7B" },
+      { "name": "Other",  "count": 2, "color": "#9C8A63" }
+    ],
+    "licenses": ["Apache-2.0", "MIT", "AGPL-3.0"],
+    "topics": 21
+  },
+
+  "principles": [
+    { "tag": "01", "title": "Secure by default",    "desc": "默认只读、最小权限、全量审计",   "en": "NO IMPLICIT TRUST" },
+    { "tag": "02", "title": "Observable first",     "desc": "每一次工具调用都可追踪、可回放", "en": "TRACES OVER LOGS" },
+    { "tag": "03", "title": "Production over demo", "desc": "多租户、幂等、失败可恢复",       "en": "BUILT TO OPERATE" }
+  ],
+
+  "links": [
+    { "icon": "GH", "label": "GitHub",         "value": "@zhifengjin050-arch",   "url": "https://github.com/zhifengjin050-arch" },
+    { "icon": "RP", "label": "Repositories",   "value": "9 public repos",        "url": "https://github.com/zhifengjin050-arch?tab=repositories" },
+    { "icon": "AP", "label": "Agent Platform", "value": "RAG · Graph · Workflow", "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform" },
+    { "icon": "MS", "label": "MCP Server",     "value": "17 governed tools",     "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server" }
+  ],
+
+  "footer_badges": [
+    { "label": "Agent Platform", "url": "https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform" },
+    { "label": "SRE Platform",   "url": "https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform" },
+    { "label": "MCP Server",     "url": "https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server" },
+    { "label": "Repositories",   "url": "https://github.com/zhifengjin050-arch?tab=repositories" }
+  ],
+
+  "closing": "先看默认安全配置，再看功能演示。"
+}
