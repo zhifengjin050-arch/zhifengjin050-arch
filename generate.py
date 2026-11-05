@@ -551,6 +551,36 @@ def tech_badge_grid():
     return '\n'.join(rows)
 
 
+def portfolio_gallery(english=False):
+    u=CFG['username']
+    labels=['Knowledge Agent','SRE Diagnosis','MCP Tooling'] if english else ['知识库 Agent','SRE 故障诊断','MCP 工具治理']
+    subs=['Documents → Retrieval → Workflow','Evidence → Runbooks → Reports','Tool schemas → Gates → Audit'] if english else ['文档接入 → 混合检索 → 工作流','现场证据 → 知识检索 → 故障报告','工具协议 → 执行保护 → 审计']
+    parts=['<table width="100%"><tr>']
+    for i,pr in enumerate(CFG['projects'][:3]):
+        repo=pr['url'].rsplit('/',1)[-1]
+        demo=f'https://{u}.github.io/{repo}/'
+        img=f'https://raw.githubusercontent.com/{u}/{repo}/main/docs/videos/cover.png'
+        source='Source' if english else '源码'
+        watch='Watch demo' if english else '观看演示'
+        parts.append(f'<td width="33%" valign="top"><h4>{i+1:02d} · {labels[i]}</h4><a href="{demo}"><img src="{img}" alt="{labels[i]} demo cover" width="100%"></a><p>{esc(subs[i])}</p><p><a href="{demo}">▶ {watch}</a> · <a href="{pr["url"]}">{source} ↗</a></p></td>')
+    parts.append('</tr></table>\n')
+    return '\n'.join(parts)
+
+
+def quick_actions(english=False):
+    u=CFG['username']
+    labels=['Watch demos','Read architecture','Explore repositories'] if english else ['观看项目演示','阅读系统架构','浏览全部仓库']
+    urls=[f'https://{u}.github.io/enterprise-ai-agent-platform/',f'https://github.com/{u}/enterprise-ai-agent-platform/blob/main/docs/images/system_architecture.md',f'https://github.com/{u}?tab=repositories']
+    return '<p align="center">'+' &nbsp; '.join(f'<a href="{url}"><img src="assets/action-{i}-'+('en' if english else 'zh')+'.svg" alt="'+label+'" height="32"></a>' for i,(label,url) in enumerate(zip(labels,urls)))+'</p>\n'
+
+
+def build_action_assets():
+    for lang,labels in [('zh',['观看项目演示','阅读系统架构','浏览全部仓库']),('en',['Watch demos','Read architecture','Explore repositories'])]:
+        for i,label in enumerate(labels):
+            content=S(210,36,'<rect x=".5" y=".5" width="209" height="35" rx="8" fill="#F0EADA" stroke="#D5C28E"/>'+T(105,24,label,13,THEMES['light'],color='#806016',weight=600,anchor='middle'))
+            (ASSETS/f'action-{i}-{lang}.svg').write_text(content,encoding='utf-8')
+
+
 def section_heading(key, anchor=None):
     sec=next(x for x in CFG['sections'] if x['key']==key)
     prefix=f'<a id="{anchor}"></a>\n\n' if anchor else ''
@@ -571,6 +601,9 @@ def build_readme():
         a(f'![{b["label"]}](https://img.shields.io/badge/{b["label"]}-F0EADA?style=for-the-badge&logo={b["logo"]}&logoColor={b["logoColor"]})')
     a('\n[👋 关于我](#about) · [🚀 代表项目](#projects) · [🛠️ 技术能力](#stack) · [📚 技术笔记](#notes) · [🤝 交流合作](#contact)\n')
     a('</div>\n')
+    a(quick_actions())
+    a('### 🎬 先看作品 · Project Preview\n')
+    a(portfolio_gallery())
     a(section_heading('about','about'))
     for line in CFG['bio']: a('- ' + line)
     a('\n> ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。\n')
@@ -612,17 +645,12 @@ def build_readme():
         if i < 6:
             a(f'<a href="{pr["url"]}">\n' + pic('proj-'+pr['slug'], pr['name']) + '\n</a>\n')
         a(detail['intro'] + '\n')
-        a('<details open>\n<summary>🔬 技术实现与工程细节</summary>\n')
+        a('<details>\n<summary>🔬 展开技术实现与工程细节</summary>\n')
         for line in detail['highlights']: a('- ' + line)
         a('\n</details>\n')
         a('\n> 🔧 ' + detail['focus'] + '\n')
         links=[('💻 源码',pr['url'])]+detail['links']
         a(' · '.join(f'[{label}]({url})' for label,url in links)+'\n')
-        if i < 2:
-            repo=pr['url'].rsplit('/',1)[-1]
-            a('<details>\n<summary>🖼️ 展开项目演示入口</summary>\n')
-            a(f'[![{pr["name"]} 演示封面](https://raw.githubusercontent.com/{u}/{repo}/main/docs/videos/cover.png)](https://{u}.github.io/{repo}/)\n')
-            a('点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。\n\n</details>\n')
         a('---\n')
     a(section_heading('notes','notes'))
     a('将项目文档作为技术笔记入口，沿着一个问题读到设计与实现：\n')
@@ -656,7 +684,7 @@ def build_preview():
     source=(ROOT/'README.md').read_text(encoding='utf-8').replace('<div align="center">', '<div align="center" markdown="1">').replace('<details>', '<details markdown="1">').replace('<details open>', '<details open markdown="1">')
     content=markdown.markdown(source,extensions=['extra','sane_lists','md_in_html'])
     page='''<!doctype html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zhifeng Jin · Profile v5</title><style>
-:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}table{width:100%;border-collapse:collapse;table-layout:fixed}td{border:1px solid var(--line);padding:12px;vertical-align:top}td h4{margin:0 0 12px}td p{margin:0}td img{margin:3px 2px 3px 0}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #B29A58;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
+:root{--bg:#fff;--fg:#1f2328;--sub:#59636e;--line:#d1d9e0;--card:#f6f8fa;--link:#0969da}html[data-theme=dark]{--bg:#0d1117;--fg:#e6edf3;--sub:#9198a1;--line:#30363d;--card:#161b22;--link:#58a6ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}.toolbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);padding:10px 24px;z-index:2;display:flex;justify-content:space-between;gap:12px}button{border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--fg);padding:5px 12px;cursor:pointer}.readme{max-width:980px;margin:28px auto;padding:28px;border:1px solid var(--line);border-radius:6px}table{width:100%;border-collapse:collapse;table-layout:fixed}td{border:1px solid var(--line);padding:12px;vertical-align:top}td h4{margin:0 0 12px}td p{overflow-wrap:anywhere}td p{margin:0}td img{margin:3px 2px 3px 0}img{max-width:100%;vertical-align:middle}picture img{display:block;width:100%;height:auto}h2{margin-top:32px;padding-bottom:8px;border-bottom:1px solid var(--line);font-size:24px}h3{font-size:20px;margin:26px 0 14px}a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}li{margin:8px 0}p{margin:14px 0}code{background:var(--card);border-radius:5px;padding:2px 5px;font:85% Consolas,monospace}blockquote{margin:18px 0;border-left:3px solid #B29A58;padding:2px 16px;color:var(--sub);background:var(--card)}hr{border:0;border-top:1px solid var(--line);margin:30px 0}summary{cursor:pointer;color:var(--sub)}details{border:1px solid var(--line);border-radius:8px;padding:12px 16px}details[open] img{margin-top:16px}@media(max-width:650px){.readme{margin:0;border:0;padding:18px;font-size:15px}.toolbar{font-size:12px}}
 </style></head><body><div class="toolbar"><span>Profile v5 · GitHub README 内容预览</span><span><button onclick="setTheme('light')">浅色</button> <button onclick="setTheme('dark')">深色</button></span></div><article class="readme">__BODY__</article><script>function setTheme(t){document.documentElement.dataset.theme=t;document.querySelectorAll('picture').forEach(p=>{let i=p.querySelector('img');if(!i.dataset.light)i.dataset.light=i.src.replace('-dark.svg','-light.svg');i.src=i.dataset.light.replace('-light.svg','-'+t+'.svg');p.querySelectorAll('source').forEach(s=>s.media='not all')})}</script></body></html>'''
     (ROOT/'preview.html').write_text(page.replace('__BODY__',content),encoding='utf-8')
 
@@ -680,6 +708,9 @@ def build_english():
     a=L.append
     def heading(k,anchor=None):
         a((f'<a id="{anchor}"></a>\n\n' if anchor else '')+'<h2>'+pic('hdr-'+k+'-en',titles[k]).replace('\n','')+'</h2>\n')
+    a(quick_actions(True))
+    a('### 🎬 Project Preview\n')
+    a(portfolio_gallery(True))
     heading('about','about')
     for line in en['about']:a('- '+line)
     a('\n> ✨ My engineering interest: connect documents, models, tools and infrastructure into systems that are understandable, deployable and maintainable.\n')
@@ -702,7 +733,7 @@ def build_english():
         a(f'### {i+1:02d} · [{d["name"]}]({pr["url"]})\n')
         a('<a href="'+pr['url']+'">'+pic('proj-'+pr['slug']+'-en',d['name']).replace('\n','')+'</a>\n')
         a(d['intro']+'\n')
-        a('<details open>\n<summary>🔬 Technical implementation</summary>\n')
+        a('<details>\n<summary>🔬 Explore technical implementation</summary>\n')
         for line in d['bullets']:a('- '+line)
         a('\n</details>\n\n> 🔧 Engineering focus: '+d['focus']+'\n')
         links=[('Source',pr['url'])]
@@ -732,6 +763,7 @@ def main():
     for key,t in THEMES.items():
         (ASSETS/f'languages-{key}.svg').write_text(language_panel(t),encoding='utf-8')
         (ASSETS/f'capability-{key}.svg').write_text(capability_map(t),encoding='utf-8')
+    build_action_assets()
     build_readme()
     build_english()
     build_preview()

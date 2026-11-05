@@ -27,6 +27,16 @@
 
 </div>
 
+<p align="center"><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="assets/action-0-zh.svg" alt="观看项目演示" height="32"></a> &nbsp; <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform/blob/main/docs/images/system_architecture.md"><img src="assets/action-1-zh.svg" alt="阅读系统架构" height="32"></a> &nbsp; <a href="https://github.com/zhifengjin050-arch?tab=repositories"><img src="assets/action-2-zh.svg" alt="浏览全部仓库" height="32"></a></p>
+
+### 🎬 先看作品 · Project Preview
+
+<table width="100%"><tr>
+<td width="33%" valign="top"><h4>01 · 知识库 Agent</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-agent-platform/main/docs/videos/cover.png" alt="知识库 Agent demo cover" width="100%"></a><p>文档接入 → 混合检索 → 工作流</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform">源码 ↗</a></p></td>
+<td width="33%" valign="top"><h4>02 · SRE 故障诊断</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-sre-platform/main/docs/videos/cover.png" alt="SRE 故障诊断 demo cover" width="100%"></a><p>现场证据 → 知识检索 → 故障报告</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform">源码 ↗</a></p></td>
+<td width="33%" valign="top"><h4>03 · MCP 工具治理</h4><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-devops-mcp-server/main/docs/videos/cover.png" alt="MCP 工具治理 demo cover" width="100%"></a><p>工具协议 → 执行保护 → 审计</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server">源码 ↗</a></p></td>
+</tr></table>
+
 <a id="about"></a>
 
 <h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-about-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-about-light.svg">  <img src="assets/hdr-about-dark.svg" alt="关于我" width="100%"></picture></h2>
@@ -177,8 +187,8 @@
 
 面向企业内部文档分散、知识检索与流程执行割裂的问题，组织连接器、知识处理、检索增强与 Agent 工作流，形成可私有化部署的知识自动化平台。
 
-<details open>
-<summary>🔬 技术实现与工程细节</summary>
+<details>
+<summary>🔬 展开技术实现与工程细节</summary>
 
 - **文档接入与同步**：飞书 / 语雀 / GitLab 连接器统一接入，配合全量与增量同步、作业调度和失败重试，管理知识进入系统的过程。
 - **混合检索链路**：文档分块与 Embedding 后，融合向量检索、全文检索与知识图谱，支持可选 Rerank 和带引用回答，兼顾语义召回与事实定位。
@@ -191,15 +201,6 @@
 > 🔧 重点关注：检索融合、权限约束与异步任务生命周期，避免知识链路和执行链路各自孤立。
 
 [💻 源码](https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform) · [🎬 演示](https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/) · [📐 架构](https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform/blob/main/docs/images/system_architecture.md) · [🧩 功能矩阵](https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform/blob/main/docs/showcase/FEATURE_MATRIX.md)
-
-<details>
-<summary>🖼️ 展开项目演示入口</summary>
-
-[![企业级 AI Agent 平台 演示封面](https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-agent-platform/main/docs/videos/cover.png)](https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/)
-
-点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。
-
-</details>
 
 ---
 
@@ -217,8 +218,8 @@
 
 面向 SRE / DevOps 的故障诊断场景，将自然语言故障描述转为工具规划、现场证据采集、Runbook 检索与结构化 Incident Report。
 
-<details open>
-<summary>🔬 技术实现与工程细节</summary>
+<details>
+<summary>🔬 展开技术实现与工程细节</summary>
 
 - **多步诊断**：LangGraph 组织 agent → tools → agent 循环，结合会话与工作记忆推进根因分析，支持 Kubernetes、Docker 与 SSH 工具发现和调用。
 - **典型故障场景**：覆盖 CrashLoopBackOff、OOMKilled、ImagePullBackOff 与 502 / 503 等排查入口，将资源状态、日志与知识库信息放入同一诊断上下文。
@@ -231,15 +232,6 @@
 > 🔧 重点关注：诊断结论与证据之间的对应关系，以及多步工具调用过程的可追踪性。
 
 [💻 源码](https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform) · [🎬 演示](https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/) · [📐 架构](https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform/blob/main/docs/ARCHITECTURE.md) · [🚀 部署](https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform/blob/main/docs/DEPLOYMENT.md)
-
-<details>
-<summary>🖼️ 展开项目演示入口</summary>
-
-[![自治式 AIOps / SRE 平台 演示封面](https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-sre-platform/main/docs/videos/cover.png)](https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/)
-
-点击封面前往演示页，项目架构、部署方法与功能边界见仓库文档。
-
-</details>
 
 ---
 
@@ -257,8 +249,8 @@
 
 为 MCP 客户端提供 Linux、Docker、Kubernetes 与 SSH 运维工具，把基础设施能力封装为有明确权限与风险分级的协议接口。
 
-<details open>
-<summary>🔬 技术实现与工程细节</summary>
+<details>
+<summary>🔬 展开技术实现与工程细节</summary>
 
 - **18 个工具**：包含健康检查、CPU / 内存 / 磁盘、进程、容器日志、Kubernetes 资源与 SSH 等工具，目录显式标注风险级别和权限要求。
 - **默认只读**：EXECUTE_TOOLS_ENABLED=false；通过模块白名单、执行保护与命令过滤约束操作范围，将只读检查与高风险动作分开处理。
@@ -292,8 +284,8 @@
 
 多模型统一接入与 AI 资产管理实践，围绕模型渠道、通道池、动态计价与负载均衡梳理 AI 服务网关的核心能力。
 
-<details open>
-<summary>🔬 技术实现与工程细节</summary>
+<details>
+<summary>🔬 展开技术实现与工程细节</summary>
 
 - **系统视角**：关注请求从统一 API 入口到模型渠道的路由过程，以及渠道管理、计费规则与可用性之间的关系。
 - **阅读入口**：仓库包含中文说明、完整英文文档与 web/ 前端；保留仓库及上游许可声明。
@@ -321,8 +313,8 @@
 
 Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆盖用户前台、管理后台与 API 服务。
 
-<details open>
-<summary>🔬 技术实现与工程细节</summary>
+<details>
+<summary>🔬 展开技术实现与工程细节</summary>
 
 - **交易链路**：围绕商品、购物车、订单、支付与自动发货组织业务模块，支持多支付渠道与多语言、多币种场景。
 - **后端与安全**：按公开、用户、管理、上游与渠道划分 API；使用独立用户 / 管理员 JWT、登录限流与敏感数据加密。
@@ -351,8 +343,8 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 
 将 Go-Ldap-Admin、OpenLDAP、FreeRADIUS 与 UniFi 组合为企业无线网络认证方案，围绕统一账号、802.1X 接入与部门网络隔离整理部署实践。
 
-<details open>
-<summary>🔬 技术实现与工程细节</summary>
+<details>
+<summary>🔬 展开技术实现与工程细节</summary>
 
 - **统一身份**：通过 LDAP 管理账号与组织信息，由 FreeRADIUS 对接认证，再接入 UniFi 无线网络。
 - **动态 VLAN**：将 LDAP 部门属性映射到 RADIUS 响应，按部门下发 VLAN，减少为每个组织单独配置 SSID 的复杂度。

@@ -12,6 +12,16 @@ Make knowledge searchable, tools governed, and systems observable.
 
 [About](#about) · [Tech Stack](#stack) · [Projects](#projects) · [Notes](#notes) · [Connect](#contact)
 
+<p align="center"><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="assets/action-0-en.svg" alt="Watch demos" height="32"></a> &nbsp; <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform/blob/main/docs/images/system_architecture.md"><img src="assets/action-1-en.svg" alt="Read architecture" height="32"></a> &nbsp; <a href="https://github.com/zhifengjin050-arch?tab=repositories"><img src="assets/action-2-en.svg" alt="Explore repositories" height="32"></a></p>
+
+### 🎬 Project Preview
+
+<table width="100%"><tr>
+<td width="33%" valign="top"><h4>01 · Knowledge Agent</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-agent-platform/main/docs/videos/cover.png" alt="Knowledge Agent demo cover" width="100%"></a><p>Documents → Retrieval → Workflow</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform">Source ↗</a></p></td>
+<td width="33%" valign="top"><h4>02 · SRE Diagnosis</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-sre-platform/main/docs/videos/cover.png" alt="SRE Diagnosis demo cover" width="100%"></a><p>Evidence → Runbooks → Reports</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform">Source ↗</a></p></td>
+<td width="33%" valign="top"><h4>03 · MCP Tooling</h4><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-devops-mcp-server/main/docs/videos/cover.png" alt="MCP Tooling demo cover" width="100%"></a><p>Tool schemas → Gates → Audit</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server">Source ↗</a></p></td>
+</tr></table>
+
 <a id="about"></a>
 
 <h2><picture>  <source media="(prefers-color-scheme: dark)" srcset="assets/hdr-about-en-dark.svg">  <source media="(prefers-color-scheme: light)" srcset="assets/hdr-about-en-light.svg">  <img src="assets/hdr-about-en-dark.svg" alt="About Me" width="100%"></picture></h2>
@@ -107,8 +117,8 @@ The core portfolio follows **knowledge automation → incident diagnosis → too
 
 A private-deployment knowledge automation platform that connects scattered enterprise documents with retrieval, Agent planning and workflows.
 
-<details open>
-<summary>🔬 Technical implementation</summary>
+<details>
+<summary>🔬 Explore technical implementation</summary>
 
 - **Document ingestion**: Feishu, Yuque and GitLab connectors with full / incremental synchronization, scheduled jobs and failure retries.
 - **Hybrid retrieval**: document chunking and embeddings, vector and full-text retrieval, knowledge graphs, optional reranking and answers with citations.
@@ -129,8 +139,8 @@ A private-deployment knowledge automation platform that connects scattered enter
 
 An incident-diagnosis application for SRE / DevOps: turn a natural-language incident into tool planning, infrastructure evidence, runbook retrieval and a structured incident report.
 
-<details open>
-<summary>🔬 Technical implementation</summary>
+<details>
+<summary>🔬 Explore technical implementation</summary>
 
 - **Multi-step diagnosis**: a LangGraph agent → tools → agent loop with conversation and working memory; Kubernetes, Docker and SSH tool discovery.
 - **Troubleshooting scenarios**: CrashLoopBackOff, OOMKilled, ImagePullBackOff and 502 / 503, bringing resource status, logs and knowledge into a shared context.
@@ -151,8 +161,8 @@ An incident-diagnosis application for SRE / DevOps: turn a natural-language inci
 
 MCP interfaces for Linux, Docker, Kubernetes and SSH operations, with explicit permissions and risk classification for infrastructure tools.
 
-<details open>
-<summary>🔬 Technical implementation</summary>
+<details>
+<summary>🔬 Explore technical implementation</summary>
 
 - **18 tools**: health, CPU, memory, disk, processes, container logs, Kubernetes resources and SSH, with risk and permission annotations.
 - **Read-only by default**: EXECUTE_TOOLS_ENABLED=false; module allowlists, execution protection and command filtering constrain operations.
@@ -177,8 +187,8 @@ Additional open-source practice in gateways, commerce and network authentication
 
 An open-source gateway practice area covering unified model access, channel pools, dynamic pricing and load balancing.
 
-<details open>
-<summary>🔬 Technical implementation</summary>
+<details>
+<summary>🔬 Explore technical implementation</summary>
 
 - **System perspective**: follow a request from a shared API entry through routing to a model provider, and explore the relationship between channel management, pricing and availability.
 - **Reading path**: Chinese and English documentation and the web console. Project identity, upstream attribution and license declarations remain with the original project.
@@ -197,8 +207,8 @@ An open-source gateway practice area covering unified model access, channel pool
 
 A Go + Vue 3 / TypeScript virtual-goods commerce application with customer pages, an administration console and an API service.
 
-<details open>
-<summary>🔬 Technical implementation</summary>
+<details>
+<summary>🔬 Explore technical implementation</summary>
 
 - **Transaction flow**: products, carts, orders, payments and automated delivery, with multiple payment channels and localization.
 - **API boundaries**: public, user, administration, upstream and channel routes; separate user / administrator JWTs, login limits and sensitive-data encryption.
@@ -218,8 +228,8 @@ A Go + Vue 3 / TypeScript virtual-goods commerce application with customer pages
 
 An enterprise Wi-Fi authentication integration using Go-Ldap-Admin, OpenLDAP, FreeRADIUS and UniFi, with unified accounts and department-based network segmentation.
 
-<details open>
-<summary>🔬 Technical implementation</summary>
+<details>
+<summary>🔬 Explore technical implementation</summary>
 
 - **Shared identity**: LDAP manages users and organization attributes; FreeRADIUS connects authentication to the UniFi network.
 - **Dynamic VLANs**: map LDAP department attributes to RADIUS replies to assign VLANs without a separate SSID for each organization.
