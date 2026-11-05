@@ -63,52 +63,52 @@
 <table width="100%">
 <tr>
 <td valign="top" width="50%"><h4>⚙️ 后端 · 服务</h4><p>
-<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white" height="22"> 
-<img alt="Go" src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&amp;logo=go&amp;logoColor=white" height="22"> 
-<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&amp;logo=fastapi&amp;logoColor=white" height="22"> 
-<img alt="Flask" src="https://img.shields.io/badge/Flask-303030?style=flat-square&amp;logo=flask&amp;logoColor=white" height="22"> 
-<img alt="SQLAlchemy" src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=flat-square&amp;logo=sqlalchemy&amp;logoColor=white" height="22"> 
+<img alt="Python" src="https://img.shields.io/badge/Python-8A6914?style=flat-square&amp;logo=python&amp;logoColor=white" height="22"> 
+<img alt="Go" src="https://img.shields.io/badge/Go-8A6914?style=flat-square&amp;logo=go&amp;logoColor=white" height="22"> 
+<img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-8A6914?style=flat-square&amp;logo=fastapi&amp;logoColor=white" height="22"> 
+<img alt="Flask" src="https://img.shields.io/badge/Flask-8A6914?style=flat-square&amp;logo=flask&amp;logoColor=white" height="22"> 
+<img alt="SQLAlchemy" src="https://img.shields.io/badge/SQLAlchemy-8A6914?style=flat-square&amp;logo=sqlalchemy&amp;logoColor=white" height="22"> 
 </p></td>
 <td valign="top" width="50%"><h4>🎨 前端 · 工程</h4><p>
-<img alt="Vue 3" src="https://img.shields.io/badge/Vue%203-42B883?style=flat-square&amp;logo=vuedotjs&amp;logoColor=white" height="22"> 
-<img alt="React" src="https://img.shields.io/badge/React-149ECA?style=flat-square&amp;logo=react&amp;logoColor=white" height="22"> 
-<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white" height="22"> 
-<img alt="Vite" src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&amp;logo=vite&amp;logoColor=white" height="22"> 
-<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-0891B2?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white" height="22"> 
+<img alt="Vue 3" src="https://img.shields.io/badge/Vue%203-8A6914?style=flat-square&amp;logo=vuedotjs&amp;logoColor=white" height="22"> 
+<img alt="React" src="https://img.shields.io/badge/React-8A6914?style=flat-square&amp;logo=react&amp;logoColor=white" height="22"> 
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-8A6914?style=flat-square&amp;logo=typescript&amp;logoColor=white" height="22"> 
+<img alt="Vite" src="https://img.shields.io/badge/Vite-8A6914?style=flat-square&amp;logo=vite&amp;logoColor=white" height="22"> 
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-8A6914?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white" height="22"> 
 </p></td>
 </tr>
 <tr>
 <td valign="top" width="50%"><h4>🧠 AI · 智能体</h4><p>
-<img alt="LangGraph" src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&amp;logo=langgraph&amp;logoColor=white" height="22"> 
-<img alt="LangChain" src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&amp;logo=langchain&amp;logoColor=white" height="22"> 
-<img alt="MCP" src="https://img.shields.io/badge/MCP-96781A?style=flat-square&amp;logo=modelcontextprotocol&amp;logoColor=white" height="22"> 
-<img alt="Hybrid RAG" src="https://img.shields.io/badge/Hybrid%20RAG-96781A?style=flat-square" height="22"> 
-<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&amp;logo=pytorch&amp;logoColor=white" height="22"> 
+<img alt="LangGraph" src="https://img.shields.io/badge/LangGraph-8A6914?style=flat-square&amp;logo=langgraph&amp;logoColor=white" height="22"> 
+<img alt="LangChain" src="https://img.shields.io/badge/LangChain-8A6914?style=flat-square&amp;logo=langchain&amp;logoColor=white" height="22"> 
+<img alt="MCP" src="https://img.shields.io/badge/MCP-8A6914?style=flat-square&amp;logo=modelcontextprotocol&amp;logoColor=white" height="22"> 
+<img alt="Hybrid RAG" src="https://img.shields.io/badge/Hybrid%20RAG-8A6914?style=flat-square" height="22"> 
+<img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-8A6914?style=flat-square&amp;logo=pytorch&amp;logoColor=white" height="22"> 
 </p></td>
 <td valign="top" width="50%"><h4>🗄️ 数据 · 缓存</h4><p>
-<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&amp;logo=postgresql&amp;logoColor=white" height="22"> 
-<img alt="Redis" src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&amp;logo=redis&amp;logoColor=white" height="22"> 
-<img alt="ChromaDB" src="https://img.shields.io/badge/ChromaDB-96781A?style=flat-square" height="22"> 
-<img alt="SQLite" src="https://img.shields.io/badge/SQLite-003B57?style=flat-square&amp;logo=sqlite&amp;logoColor=white" height="22"> 
-<img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&amp;logo=mysql&amp;logoColor=white" height="22"> 
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-8A6914?style=flat-square&amp;logo=postgresql&amp;logoColor=white" height="22"> 
+<img alt="Redis" src="https://img.shields.io/badge/Redis-8A6914?style=flat-square&amp;logo=redis&amp;logoColor=white" height="22"> 
+<img alt="ChromaDB" src="https://img.shields.io/badge/ChromaDB-8A6914?style=flat-square" height="22"> 
+<img alt="SQLite" src="https://img.shields.io/badge/SQLite-8A6914?style=flat-square&amp;logo=sqlite&amp;logoColor=white" height="22"> 
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-8A6914?style=flat-square&amp;logo=mysql&amp;logoColor=white" height="22"> 
 </p></td>
 </tr>
 <tr>
 <td valign="top" width="50%"><h4>☁️ 云原生 · 工具链</h4><p>
-<img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white" height="22"> 
-<img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&amp;logo=kubernetes&amp;logoColor=white" height="22"> 
-<img alt="Linux" src="https://img.shields.io/badge/Linux-444444?style=flat-square&amp;logo=linux&amp;logoColor=white" height="22"> 
-<img alt="Helm" src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&amp;logo=helm&amp;logoColor=white" height="22"> 
-<img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white" height="22"> 
-<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white" height="22"> 
+<img alt="Docker" src="https://img.shields.io/badge/Docker-8A6914?style=flat-square&amp;logo=docker&amp;logoColor=white" height="22"> 
+<img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-8A6914?style=flat-square&amp;logo=kubernetes&amp;logoColor=white" height="22"> 
+<img alt="Linux" src="https://img.shields.io/badge/Linux-8A6914?style=flat-square&amp;logo=linux&amp;logoColor=white" height="22"> 
+<img alt="Helm" src="https://img.shields.io/badge/Helm-8A6914?style=flat-square&amp;logo=helm&amp;logoColor=white" height="22"> 
+<img alt="Git" src="https://img.shields.io/badge/Git-8A6914?style=flat-square&amp;logo=git&amp;logoColor=white" height="22"> 
+<img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-8A6914?style=flat-square&amp;logo=githubactions&amp;logoColor=white" height="22"> 
 </p></td>
 <td valign="top" width="50%"><h4>🔎 观测 · 权限</h4><p>
-<img alt="Prometheus" src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&amp;logo=prometheus&amp;logoColor=white" height="22"> 
-<img alt="Grafana" src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&amp;logo=grafana&amp;logoColor=white" height="22"> 
-<img alt="OpenTelemetry" src="https://img.shields.io/badge/OpenTelemetry-425CC7?style=flat-square&amp;logo=opentelemetry&amp;logoColor=white" height="22"> 
-<img alt="JWT" src="https://img.shields.io/badge/JWT-333333?style=flat-square&amp;logo=jsonwebtokens&amp;logoColor=white" height="22"> 
-<img alt="RBAC" src="https://img.shields.io/badge/RBAC-96781A?style=flat-square" height="22"> 
-<img alt="LDAP" src="https://img.shields.io/badge/LDAP-96781A?style=flat-square" height="22"> 
+<img alt="Prometheus" src="https://img.shields.io/badge/Prometheus-8A6914?style=flat-square&amp;logo=prometheus&amp;logoColor=white" height="22"> 
+<img alt="Grafana" src="https://img.shields.io/badge/Grafana-8A6914?style=flat-square&amp;logo=grafana&amp;logoColor=white" height="22"> 
+<img alt="OpenTelemetry" src="https://img.shields.io/badge/OpenTelemetry-8A6914?style=flat-square&amp;logo=opentelemetry&amp;logoColor=white" height="22"> 
+<img alt="JWT" src="https://img.shields.io/badge/JWT-8A6914?style=flat-square&amp;logo=jsonwebtokens&amp;logoColor=white" height="22"> 
+<img alt="RBAC" src="https://img.shields.io/badge/RBAC-8A6914?style=flat-square" height="22"> 
+<img alt="LDAP" src="https://img.shields.io/badge/LDAP-8A6914?style=flat-square" height="22"> 
 </p></td>
 </tr>
 </table>

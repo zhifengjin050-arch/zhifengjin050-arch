@@ -1,40 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="214" viewBox="0 0 1000 214" role="img">
-<rect x="0.5" y="0.5" width="999" height="213" rx="16" fill="#17140D" stroke="#51452B" stroke-width="1"/>
+<rect x="0.5" y="0.5" width="999" height="213" rx="16" fill="#17140D" stroke="#705B2B" stroke-width="1"/>
 <path d="M22 1.5 L978 1.5" stroke="#FFE9A8" stroke-width="1" opacity="0.32"/>
-<text x="28" y="30" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="600" fill="#D6B85C" text-anchor="start" letter-spacing="2">REQUEST PATH</text>
+<text x="28" y="30" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="600" fill="#E4C260" text-anchor="start" letter-spacing="2">REQUEST PATH</text>
 <text x="972" y="30" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#B8AC90" text-anchor="end">一次受治理的工具调用如何穿过系统</text>
-<rect x="28" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#51452B" stroke-width="1"/>
-<rect x="38" y="56" width="148" height="2" rx="1" fill="#D6B85C"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="0.0s" repeatCount="indefinite"/></rect>
-<text x="42" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#D6B85C" text-anchor="start">01</text>
+<rect x="28" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="38" y="56" width="148" height="2" rx="1" fill="#E4C260"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="0.0s" repeatCount="indefinite"/></rect>
+<text x="42" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#E4C260" text-anchor="start">01</text>
 <text x="42" y="102" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="700" fill="#F5EEDB" text-anchor="start">INGRESS</text>
 <text x="42" y="120" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#B8AC90" text-anchor="start">Go / FastAPI</text>
-<text x="209.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#D6B85C" text-anchor="middle">→</text>
-<rect x="222" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#51452B" stroke-width="1"/>
-<rect x="232" y="56" width="148" height="2" rx="1" fill="#D6B85C"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="0.5s" repeatCount="indefinite"/></rect>
-<text x="236" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#D6B85C" text-anchor="start">02</text>
+<text x="209.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#E4C260" text-anchor="middle">→</text>
+<rect x="222" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="232" y="56" width="148" height="2" rx="1" fill="#E4C260"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="0.5s" repeatCount="indefinite"/></rect>
+<text x="236" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#E4C260" text-anchor="start">02</text>
 <text x="236" y="102" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="700" fill="#F5EEDB" text-anchor="start">AGENT</text>
 <text x="236" y="120" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#B8AC90" text-anchor="start">LangGraph planner</text>
-<text x="403.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#D6B85C" text-anchor="middle">→</text>
-<rect x="416" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#51452B" stroke-width="1"/>
-<rect x="426" y="56" width="148" height="2" rx="1" fill="#D6B85C"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="1.0s" repeatCount="indefinite"/></rect>
-<text x="430" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#D6B85C" text-anchor="start">03</text>
+<text x="403.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#E4C260" text-anchor="middle">→</text>
+<rect x="416" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="426" y="56" width="148" height="2" rx="1" fill="#E4C260"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="1.0s" repeatCount="indefinite"/></rect>
+<text x="430" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#E4C260" text-anchor="start">03</text>
 <text x="430" y="102" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="700" fill="#F5EEDB" text-anchor="start">RETRIEVAL</text>
 <text x="430" y="120" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#B8AC90" text-anchor="start">Hybrid RAG / Graph</text>
-<text x="597.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#D6B85C" text-anchor="middle">→</text>
-<rect x="610" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#51452B" stroke-width="1"/>
-<rect x="620" y="56" width="148" height="2" rx="1" fill="#D6B85C"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="1.5s" repeatCount="indefinite"/></rect>
-<text x="624" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#D6B85C" text-anchor="start">04</text>
+<text x="597.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#E4C260" text-anchor="middle">→</text>
+<rect x="610" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="620" y="56" width="148" height="2" rx="1" fill="#E4C260"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="1.5s" repeatCount="indefinite"/></rect>
+<text x="624" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#E4C260" text-anchor="start">04</text>
 <text x="624" y="102" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="700" fill="#F5EEDB" text-anchor="start">MCP GATE</text>
 <text x="624" y="120" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#B8AC90" text-anchor="start">RBAC · execute gate</text>
-<text x="791.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#D6B85C" text-anchor="middle">→</text>
-<rect x="804" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#51452B" stroke-width="1"/>
-<rect x="814" y="56" width="148" height="2" rx="1" fill="#D6B85C"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="2.0s" repeatCount="indefinite"/></rect>
-<text x="818" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#D6B85C" text-anchor="start">05</text>
+<text x="791.0" y="99" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#E4C260" text-anchor="middle">→</text>
+<rect x="804" y="56" width="168" height="76" rx="10" fill="#211C13" stroke="#705B2B" stroke-width="1"/>
+<rect x="814" y="56" width="148" height="2" rx="1" fill="#E4C260"><animate attributeName="opacity" values="0.25;1;0.25" dur="3s" begin="2.0s" repeatCount="indefinite"/></rect>
+<text x="818" y="78" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="700" fill="#E4C260" text-anchor="start">05</text>
 <text x="818" y="102" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="700" fill="#F5EEDB" text-anchor="start">INFRA</text>
 <text x="818" y="120" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="10" font-weight="400" fill="#B8AC90" text-anchor="start">K8s · Docker · SSH</text>
-<line x1="28" y1="162" x2="972" y2="162" stroke="#51452B" stroke-width="1" stroke-dasharray="4 6"/>
-<circle cx="28" cy="94" r="4" fill="#D6B85C" opacity="0.9"><animate attributeName="cx" values="28;972" dur="4.5s" repeatCount="indefinite"/></circle>
-<circle cx="28" cy="162" r="3" fill="#D6B85C"/>
-<circle cx="972" cy="162" r="3" fill="#D6B85C"/>
-<text x="500" y="190" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#D6B85C" text-anchor="middle">←  traces · metrics · audit logs  /  全链路可观测回路  →</text>
+<line x1="28" y1="162" x2="972" y2="162" stroke="#705B2B" stroke-width="1" stroke-dasharray="4 6"/>
+<circle cx="28" cy="94" r="4" fill="#E4C260" opacity="0.9"><animate attributeName="cx" values="28;972" dur="4.5s" repeatCount="indefinite"/></circle>
+<circle cx="28" cy="162" r="3" fill="#E4C260"/>
+<circle cx="972" cy="162" r="3" fill="#E4C260"/>
+<text x="500" y="190" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="12" font-weight="400" fill="#E4C260" text-anchor="middle">←  traces · metrics · audit logs  /  全链路可观测回路  →</text>
 </svg>

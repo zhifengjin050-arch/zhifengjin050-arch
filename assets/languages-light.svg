@@ -1,45 +1,45 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img">
-<rect x="0.5" y="0.5" width="999" height="259" rx="18" fill="#FAF8F3" stroke="#DFD8C8" stroke-width="1"/>
+<rect x="0.5" y="0.5" width="999" height="259" rx="18" fill="#F8F2E4" stroke="#D5BE80" stroke-width="1"/>
 <style>@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes orbit{to{transform:rotate(360deg)}}.bar{transform-box:fill-box;transform-origin:left;animation:grow 1.8s ease-out both}.orbit{transform-origin:150px 125px;animation:orbit 28s linear infinite}@media(prefers-reduced-motion:reduce){.bar,.orbit{animation:none!important}}</style>
-<text x="310" y="36" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="600" fill="#96781A" text-anchor="start">CODE / LANGUAGE COMPOSITION</text>
+<text x="310" y="36" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="600" fill="#8A6914" text-anchor="start">CODE / LANGUAGE COMPOSITION</text>
 <text x="310" y="61" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="13" font-weight="400" fill="#71674F" text-anchor="start">6 个展示仓库 · GitHub 代码字节统计</text>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#96781A" stroke-width="19" pathLength="100" stroke-dasharray="53.2183 46.7817" stroke-dashoffset="0.0000" transform="rotate(-90 150 125)"/>
-<rect x="310" y="93" width="8" height="8" rx="2" fill="#96781A"/>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#B18C24" stroke-width="19" pathLength="100" stroke-dasharray="53.2183 46.7817" stroke-dashoffset="0.0000" transform="rotate(-90 150 125)"/>
+<rect x="310" y="93" width="8" height="8" rx="2" fill="#B18C24"/>
 <text x="328" y="103" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#302A1C" text-anchor="start">Go</text>
 <text x="600" y="103" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#71674F" text-anchor="end">53.6%</text>
-<rect x="310" y="115" width="290" height="3" rx="1" fill="#DFD8C8"/>
-<g class="bar" style="animation-delay:0.0s"><rect x="310" y="115" width="155.34799302646314" height="3" rx="1" fill="#96781A"/></g>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#A8862A" stroke-width="19" pathLength="100" stroke-dasharray="21.0127 78.9873" stroke-dashoffset="-53.5683" transform="rotate(-90 150 125)"/>
-<rect x="645" y="93" width="8" height="8" rx="2" fill="#A8862A"/>
+<rect x="310" y="115" width="290" height="3" rx="1" fill="#D5BE80"/>
+<g class="bar" style="animation-delay:0.0s"><rect x="310" y="115" width="155.34799302646314" height="3" rx="1" fill="#B18C24"/></g>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#D0AD4F" stroke-width="19" pathLength="100" stroke-dasharray="21.0127 78.9873" stroke-dashoffset="-53.5683" transform="rotate(-90 150 125)"/>
+<rect x="645" y="93" width="8" height="8" rx="2" fill="#D0AD4F"/>
 <text x="663" y="103" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#302A1C" text-anchor="start">Python</text>
 <text x="935" y="103" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#71674F" text-anchor="end">21.4%</text>
-<rect x="645" y="115" width="290" height="3" rx="1" fill="#DFD8C8"/>
-<g class="bar" style="animation-delay:0.12s"><rect x="645" y="115" width="61.95182298506072" height="3" rx="1" fill="#A8862A"/></g>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#4BAF9C" stroke-width="19" pathLength="100" stroke-dasharray="15.2914 84.7086" stroke-dashoffset="-74.9310" transform="rotate(-90 150 125)"/>
-<rect x="310" y="144" width="8" height="8" rx="2" fill="#4BAF9C"/>
+<rect x="645" y="115" width="290" height="3" rx="1" fill="#D5BE80"/>
+<g class="bar" style="animation-delay:0.12s"><rect x="645" y="115" width="61.95182298506072" height="3" rx="1" fill="#D0AD4F"/></g>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#8E7436" stroke-width="19" pathLength="100" stroke-dasharray="15.2914 84.7086" stroke-dashoffset="-74.9310" transform="rotate(-90 150 125)"/>
+<rect x="310" y="144" width="8" height="8" rx="2" fill="#8E7436"/>
 <text x="328" y="154" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#302A1C" text-anchor="start">Vue</text>
 <text x="600" y="154" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#71674F" text-anchor="end">15.6%</text>
-<rect x="310" y="166" width="290" height="3" rx="1" fill="#DFD8C8"/>
-<g class="bar" style="animation-delay:0.24s"><rect x="310" y="166" width="45.36020244461081" height="3" rx="1" fill="#4BAF9C"/></g>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#BC82CD" stroke-width="19" pathLength="100" stroke-dasharray="7.8719 92.1281" stroke-dashoffset="-90.5724" transform="rotate(-90 150 125)"/>
-<rect x="645" y="144" width="8" height="8" rx="2" fill="#BC82CD"/>
+<rect x="310" y="166" width="290" height="3" rx="1" fill="#D5BE80"/>
+<g class="bar" style="animation-delay:0.24s"><rect x="310" y="166" width="45.36020244461081" height="3" rx="1" fill="#8E7436"/></g>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#E3CA85" stroke-width="19" pathLength="100" stroke-dasharray="7.8719 92.1281" stroke-dashoffset="-90.5724" transform="rotate(-90 150 125)"/>
+<rect x="645" y="144" width="8" height="8" rx="2" fill="#E3CA85"/>
 <text x="663" y="154" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#302A1C" text-anchor="start">TypeScript</text>
 <text x="935" y="154" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#71674F" text-anchor="end">8.2%</text>
-<rect x="645" y="166" width="290" height="3" rx="1" fill="#DFD8C8"/>
-<g class="bar" style="animation-delay:0.36s"><rect x="645" y="166" width="23.843614717173896" height="3" rx="1" fill="#BC82CD"/></g>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#DBA25D" stroke-width="19" pathLength="100" stroke-dasharray="0.1815 99.8185" stroke-dashoffset="-98.7944" transform="rotate(-90 150 125)"/>
-<rect x="310" y="195" width="8" height="8" rx="2" fill="#DBA25D"/>
+<rect x="645" y="166" width="290" height="3" rx="1" fill="#D5BE80"/>
+<g class="bar" style="animation-delay:0.36s"><rect x="645" y="166" width="23.843614717173896" height="3" rx="1" fill="#E3CA85"/></g>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#B59965" stroke-width="19" pathLength="100" stroke-dasharray="0.1815 99.8185" stroke-dashoffset="-98.7944" transform="rotate(-90 150 125)"/>
+<rect x="310" y="195" width="8" height="8" rx="2" fill="#B59965"/>
 <text x="328" y="205" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#302A1C" text-anchor="start">CSS</text>
 <text x="600" y="205" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#71674F" text-anchor="end">0.5%</text>
-<rect x="310" y="217" width="290" height="3" rx="1" fill="#DFD8C8"/>
-<g class="bar" style="animation-delay:0.48s"><rect x="310" y="217" width="1.5413833677419138" height="3" rx="1" fill="#DBA25D"/></g>
-<circle cx="150" cy="125" r="76" fill="none" stroke="#8194B3" stroke-width="19" pathLength="100" stroke-dasharray="0.3241 99.6759" stroke-dashoffset="-99.3259" transform="rotate(-90 150 125)"/>
-<rect x="645" y="195" width="8" height="8" rx="2" fill="#8194B3"/>
+<rect x="310" y="217" width="290" height="3" rx="1" fill="#D5BE80"/>
+<g class="bar" style="animation-delay:0.48s"><rect x="310" y="217" width="1.5413833677419138" height="3" rx="1" fill="#B59965"/></g>
+<circle cx="150" cy="125" r="76" fill="none" stroke="#80745B" stroke-width="19" pathLength="100" stroke-dasharray="0.3241 99.6759" stroke-dashoffset="-99.3259" transform="rotate(-90 150 125)"/>
+<rect x="645" y="195" width="8" height="8" rx="2" fill="#80745B"/>
 <text x="663" y="205" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="14" font-weight="400" fill="#302A1C" text-anchor="start">Other</text>
 <text x="935" y="205" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="13" font-weight="400" fill="#71674F" text-anchor="end">0.7%</text>
-<rect x="645" y="217" width="290" height="3" rx="1" fill="#DFD8C8"/>
-<g class="bar" style="animation-delay:0.6s"><rect x="645" y="217" width="1.9549834589494623" height="3" rx="1" fill="#8194B3"/></g>
-<circle class="orbit" cx="150" cy="125" r="94" fill="none" stroke="#A8862A" stroke-width="1.5" stroke-dasharray="26 564" opacity=".7"/>
+<rect x="645" y="217" width="290" height="3" rx="1" fill="#D5BE80"/>
+<g class="bar" style="animation-delay:0.6s"><rect x="645" y="217" width="1.9549834589494623" height="3" rx="1" fill="#80745B"/></g>
+<circle class="orbit" cx="150" cy="125" r="94" fill="none" stroke="#A17B22" stroke-width="1.5" stroke-dasharray="26 564" opacity=".7"/>
 <text x="150" y="124" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="34" font-weight="800" fill="#302A1C" text-anchor="middle">54%</text>
 <text x="150" y="150" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="400" fill="#71674F" text-anchor="middle">Go</text>
 <text x="310" y="243" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="11" font-weight="400" fill="#71674F" text-anchor="start">快照 2026-11-05 · 代码占比，不代表熟练度</text>

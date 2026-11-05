@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="26" viewBox="0 0 1000 26" role="img">
-<line x1="8" y1="13" x2="468" y2="13" stroke="#DFD8C8" stroke-width="1"/>
-<line x1="532" y1="13" x2="992" y2="13" stroke="#DFD8C8" stroke-width="1"/>
-<path d="M500 4 L509 13 L500 22 L491 13 Z" fill="#96781A" opacity="0.75"/>
-<circle cx="8" cy="13" r="2.6" fill="#96781A"><animate attributeName="cx" values="8;992" dur="4.5s" repeatCount="indefinite"/></circle>
+<line x1="8" y1="13" x2="468" y2="13" stroke="#D5BE80" stroke-width="1"/>
+<line x1="532" y1="13" x2="992" y2="13" stroke="#D5BE80" stroke-width="1"/>
+<path d="M500 4 L509 13 L500 22 L491 13 Z" fill="#8A6914" opacity="0.75"/>
+<circle cx="8" cy="13" r="2.6" fill="#8A6914"><animate attributeName="cx" values="8;992" dur="4.5s" repeatCount="indefinite"/></circle>
 </svg>

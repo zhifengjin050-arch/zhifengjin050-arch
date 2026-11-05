@@ -24,13 +24,13 @@ CFG = json.loads((ROOT / "profile.config.json").read_text(encoding="utf-8"))
 
 THEMES = {
     "light": dict(
-        card="#FAF8F3", card2="#F7F4EE", ink="#302A1C", sub="#71674F",
-        accent="#96781A", accent2="#A8862A", line="#DFD8C8", chip="#F0EBDF",
+        card="#F8F2E4", card2="#FFFBF2", ink="#302A1C", sub="#71674F",
+        accent="#8A6914", accent2="#A17B22", line="#D5BE80", chip="#EBDCAB",
         green="#628571", glow="#FFFFFF",
     ),
     "dark": dict(
         card="#17140D", card2="#211C13", ink="#F5EEDB", sub="#B8AC90",
-        accent="#D6B85C", accent2="#E7CD86", line="#51452B", chip="#30291A",
+        accent="#E4C260", accent2="#F0D68C", line="#705B2B", chip="#3B3018",
         green="#8FAE92", glow="#FFE9A8",
     ),
 }
@@ -173,7 +173,7 @@ def banner(t, c):
         for x in range(640,975,28):
             p.append(f'<circle cx="{x}" cy="{y}" r=".8" fill="{A}" opacity=".2"/>')
     p.append(T(42,44,'ZF / ENGINEERING NOTEBOOK',12,t,color=A,mono=True,spacing=2))
-    p.append(T(42,112,'ZHIFENG JIN',55,t,weight=800))
+    p.append(T(42,112,'ZHIFENG JIN',55,t,color=A,weight=800))
     p.append(T(44,147,'AI AGENT  /  AIOPS  /  PLATFORM',15,t,color=B,mono=True,spacing=1))
     p.append(T(44,191,'从知识到行动，从代码到系统。',24,t,weight=600))
     p.append(T(44,222,'Build with context. Execute with boundaries.',14,t,color=t['sub'],mono=True))
@@ -199,7 +199,7 @@ def capability_map(t):
     for i,(n,title,desc) in enumerate(items):
         x=26+i*328
         p.append(T(x,34,n,12,t,color=t['accent'],mono=True))
-        p.append(T(x,72,title,22,t,weight=700,mono=True))
+        p.append(T(x,72,title,22,t,color=t['accent'],weight=700,mono=True))
         p.append(T(x,106,desc,13,t,color=t['sub']))
         p.append(f'<line x1="{x}" y1="127" x2="{x+285}" y2="127" stroke="{t["accent"]}" opacity=".4"/>')
     return S(1000,148,'\n'.join(p))
@@ -301,7 +301,7 @@ def language_panel(t):
         for lang,size in repo.items(): totals[lang]=totals.get(lang,0)+size
     ranked=sorted(totals.items(),key=lambda x:-x[1]); total=sum(totals.values())
     ranked=ranked[:5]+[('Other',sum(v for _,v in ranked[5:]))]
-    colors=[t['accent'],t['accent2'],'#4BAF9C','#BC82CD','#DBA25D','#8194B3']
+    colors=['#B18C24','#D0AD4F','#8E7436','#E3CA85','#B59965','#80745B']
     p=[bg(t,1000,260,18),'<style>@keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}@keyframes orbit{to{transform:rotate(360deg)}}.bar{transform-box:fill-box;transform-origin:left;animation:grow 1.8s ease-out both}.orbit{transform-origin:150px 125px;animation:orbit 28s linear infinite}@media(prefers-reduced-motion:reduce){.bar,.orbit{animation:none!important}}</style>']
     p.append(T(310,36,'CODE / LANGUAGE COMPOSITION',13,t,color=t['accent'],mono=True,weight=600))
     p.append(T(310,61,'6 个展示仓库 · GitHub 代码字节统计',13,t,color=t['sub']))
@@ -334,7 +334,7 @@ def project(t, p_, idx):
     p.append(R(20, 22, 4, 106, 2, A))
     p.append(T(962, 66, f"{idx:02d}", 46, t, color=A, weight=800, mono=True,
                anchor="end", opacity=0.16))
-    p.append(T(44, 50, p_["name"], 24, t, color=INK, weight=700))
+    p.append(T(44, 50, p_["name"], 24, t, color=A, weight=700))
     p.append(T(45, 72, p_["en"], 11, t, color=A, weight=600, mono=True, spacing=1.6))
     p.append(T(44, 102, clip(p_["desc"]), 14, t, color=SUB))
     x = 44
@@ -535,7 +535,7 @@ def tech_badge_grid():
         if i%2==0:rows.append('<tr>')
         rows.append('<td valign="top" width="50%"><h4>'+esc(g['title'])+'</h4><p>')
         for label,color,logo in g['items']:
-            url='https://img.shields.io/badge/'+quote(label.replace('-', '--'),safe='')+'-'+color+'?style=flat-square'
+            url='https://img.shields.io/badge/'+quote(label.replace('-', '--'),safe='')+'-8A6914?style=flat-square'
             if logo:url+='&logo='+logo+'&logoColor=white'
             rows.append('<img alt="'+esc(label)+'" src="'+esc(url)+'" height="22"> ')
         rows.append('</p></td>')
