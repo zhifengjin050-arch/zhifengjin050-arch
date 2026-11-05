@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="176" viewBox="0 0 1000 176" role="img">
+<rect x="0.5" y="0.5" width="999" height="175" rx="16" fill="#F0EADA" stroke="#DCCBA6" stroke-width="1"/>
+<rect x="20" y="16" width="308" height="144" rx="12" fill="#F8F3E6" stroke="#DCCBA6" stroke-width="1"/>
+<text x="308" y="52" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="26" font-weight="800" fill="#8A6E14" text-anchor="end" opacity="0.3">01</text>
+<text x="40" y="76" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="700" fill="#3A2E14" text-anchor="start">Secure by default</text>
+<text x="40" y="98" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#8A6E14" text-anchor="start" letter-spacing="1.4">NO IMPLICIT TRUST</text>
+<text x="40" y="128" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#6B5A33" text-anchor="start">默认只读、最小权限、全量审计</text>
+<rect x="40" y="142" width="42" height="3" rx="1" fill="#8A6E14"/>
+<rect x="346" y="16" width="308" height="144" rx="12" fill="#F8F3E6" stroke="#DCCBA6" stroke-width="1"/>
+<text x="634" y="52" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="26" font-weight="800" fill="#8A6E14" text-anchor="end" opacity="0.3">02</text>
+<text x="366" y="76" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="700" fill="#3A2E14" text-anchor="start">Observable first</text>
+<text x="366" y="98" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#8A6E14" text-anchor="start" letter-spacing="1.4">TRACES OVER LOGS</text>
+<text x="366" y="128" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#6B5A33" text-anchor="start">每一次工具调用都可追踪、可回放</text>
+<rect x="366" y="142" width="42" height="3" rx="1" fill="#8A6E14"/>
+<rect x="672" y="16" width="308" height="144" rx="12" fill="#F8F3E6" stroke="#DCCBA6" stroke-width="1"/>
+<text x="960" y="52" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="26" font-weight="800" fill="#8A6E14" text-anchor="end" opacity="0.3">03</text>
+<text x="692" y="76" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="18" font-weight="700" fill="#3A2E14" text-anchor="start">Production over demo</text>
+<text x="692" y="98" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="#8A6E14" text-anchor="start" letter-spacing="1.4">BUILT TO OPERATE</text>
+<text x="692" y="128" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="12" font-weight="400" fill="#6B5A33" text-anchor="start">多租户、幂等、失败可恢复</text>
+<rect x="692" y="142" width="42" height="3" rx="1" fill="#8A6E14"/>
+</svg>

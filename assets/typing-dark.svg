@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="66" viewBox="0 0 1000 66" role="img">
+<rect x="0.5" y="0.5" width="999" height="65" rx="14" fill="#282216" stroke="#5A4A2A" stroke-width="1"/>
+<circle cx="30" cy="33" r="5" fill="#E3B341" opacity="0.85"/>
+<text x="48" y="39" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="17" font-weight="700" fill="#E3B341" text-anchor="start">&gt;</text>
+<text x="70" y="39" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="15" font-weight="400" fill="#F0EADA" text-anchor="start">Building governed agents that operate real infrastructure.</text>
+<rect x="601.0" y="22" width="9" height="21" rx="2" fill="#E3B341"><animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/></rect>
+<text x="972" y="39" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="13" font-weight="400" fill="#A99B7B" text-anchor="end" opacity="0.5">▌</text>
+</svg>
