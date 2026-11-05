@@ -219,7 +219,11 @@ def banner(t, c):
         for x in range(640,975,28):
             p.append(f'<circle cx="{x}" cy="{y}" r=".8" fill="{A}" opacity=".2"/>')
     p.append(T(42,44,'ZF / ENGINEERING NOTEBOOK',12,t,color=A,mono=True,spacing=2))
-    p.append(T(42,112,'ZHIFENG JIN',55,t,weight=800))
+    gold=['#765018','#BA8B24','#8B641A'] if t['card']=='#FAF8F3' else ['#C59938','#F8DF97','#D2AE50']
+    p.append('<defs><linearGradient id="nameGold" x1="0%" y1="0%" x2="100%" y2="20%">'+''.join(f'<stop offset="{offset}" stop-color="{color}"/>' for offset,color in zip(['0%','48%','100%'],gold))+'</linearGradient><linearGradient id="nameSpecular"><stop stop-color="#FFF5D2" stop-opacity="0"/><stop offset=".44" stop-color="#FFE5A0" stop-opacity=".2"/><stop offset=".5" stop-color="#FFF9E8" stop-opacity=".95"/><stop offset=".58" stop-color="#FFE5A0" stop-opacity=".2"/><stop offset="1" stop-color="#FFF5D2" stop-opacity="0"/></linearGradient><clipPath id="nameClip">'+T(42,112,'ZHIFENG JIN',55,t,weight=800)+'</clipPath></defs>')
+    p.append('<style>@keyframes nameSweep{0%{transform:translateX(-150px)}100%{transform:translateX(620px)}}.name-reflection{animation:nameSweep 8s linear infinite}@media(prefers-reduced-motion:reduce){.name-reflection{display:none}}</style>')
+    p.append(T(42,112,'ZHIFENG JIN',55,t,color='url(#nameGold)',weight=800))
+    p.append('<g clip-path="url(#nameClip)" aria-hidden="true"><g class="name-reflection"><rect x="0" y="50" width="170" height="80" transform="skewX(-18)" fill="url(#nameSpecular)"/></g></g>')
     p.append(T(44,147,'AI AGENT  /  AIOPS  /  PLATFORM',15,t,color=B,mono=True,spacing=1))
     p.append(T(44,191,'从知识到行动，从代码到系统。',24,t,weight=600))
     p.append(T(44,222,'Build with context. Execute with boundaries.',14,t,color=t['sub'],mono=True))
