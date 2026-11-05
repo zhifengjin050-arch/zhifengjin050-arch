@@ -35,6 +35,12 @@ Make knowledge searchable, tools governed, and systems observable.
 
 > ✨ My engineering interest: connect documents, models, tools and infrastructure into systems that are understandable, deployable and maintainable.
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/spatial-en-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/spatial-en-light.svg">
+  <img src="assets/spatial-en-dark.svg" alt="Isometric systems architecture concept" width="100%">
+</picture>
+
 ### Where to start
 
 - **AI application engineering** → the knowledge Agent platform: connectors, retrieval, graphs and workflows.

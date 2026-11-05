@@ -10,3 +10,11 @@ This portfolio uses original SVG assets and project-specific writing. The refere
 ## Maintenance
 
 Edit profile.config.json and profile.en.json, then run python generate.py. Both language editions include the same core project gallery and navigation structure. Gallery images come from each project's existing demo covers; they link to the corresponding GitHub Pages demo.
+
+## Isometric visual references
+
+- https://github.com/yoshi389111/github-profile-3d-contrib — raised blocks and dimensional contribution layouts.
+- https://github.com/colincode0/github-readme — isometric SVG projection and separate light/dark outputs.
+- https://github.com/pmndrs/react-three-fiber — layered spatial composition. Its WebGL runtime is not embedded in this README.
+
+The gold block geometry is an original SVG implementation. The system illustration depicts portfolio concepts, not contribution statistics or live infrastructure. CSS motion respects prefers-reduced-motion; essential labels remain visible without animation.

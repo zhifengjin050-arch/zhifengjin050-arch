@@ -51,9 +51,9 @@
 > ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/capability-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/capability-light.svg">
-  <img src="assets/capability-dark.svg" alt="知识检索、故障诊断、工具治理：三个核心工程方向" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/spatial-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/spatial-light.svg">
+  <img src="assets/spatial-dark.svg" alt="知识检索、故障诊断与工具治理的等距系统示意" width="100%">
 </picture>
 
 ### 🧭 从哪里开始看？

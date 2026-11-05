@@ -161,6 +161,52 @@ def pulse(cx, cy, r, color, begin, dur="2.6s"):
 # 各区块 SVG
 # --------------------------------------------------------------------------
 
+def iso_block(t,x,y,w,h,depth,label=None):
+    # Original isometric geometry. Coordinates refer to the front vertex of the top face.
+    a=w/2; b=w/4
+    top=f'{x},{y-b} {x+a},{y} {x},{y+b} {x-a},{y}'
+    left=f'{x-a},{y} {x},{y+b} {x},{y+b+depth} {x-a},{y+depth}'
+    right=f'{x},{y+b} {x+a},{y} {x+a},{y+depth} {x},{y+b+depth}'
+    dark=t['card']=='#17140D'
+    light='#E7CC7E' if dark else '#F2DFA4'
+    mid='#92702D' if dark else '#B6954B'
+    shade='#5B4525' if dark else '#95722F'
+    parts=[f'<polygon points="{left}" fill="{mid}" stroke="{t["accent"]}" stroke-width=".8"/>',f'<polygon points="{right}" fill="{shade}" stroke="{t["accent"]}" stroke-width=".8"/>',f'<polygon points="{top}" fill="{light}" stroke="{t["accent"]}" stroke-width=".8"/>']
+    parts.append(f'<path d="M{x-a+5} {y}L{x} {y-b+3}L{x+a-5} {y}" fill="none" stroke="{t["glow"]}" opacity=".65"/>')
+    if label:parts.append(T(x,y+4,label,12,t,color='#554013',weight=700,anchor='middle',mono=True))
+    return ''.join(parts)
+
+
+def iso_styles():
+    return '<style>@keyframes levitate{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes wireflow{to{stroke-dashoffset:-40}}.iso-float{animation:levitate 7s ease-in-out infinite}.iso-wire{animation:wireflow 3s linear infinite}@media(prefers-reduced-motion:reduce){.iso-float,.iso-wire{animation:none}.iso-packet{display:none}}</style>'
+
+
+def spatial_systems(t,english=False):
+    p=[bg(t,1000,350,18),iso_styles()]
+    p.append(T(30,35,'SYSTEMS / ISOMETRIC VIEW',12,t,color=t['accent'],mono=True,spacing=2))
+    label='Architecture concept · not live telemetry' if english else '系统关系示意 · 非实时运行数据'
+    p.append(T(970,35,label,11,t,color=t['sub'],anchor='end'))
+    # Ground plane with parallel isometric grid lines.
+    for i in range(9):
+        x=100+i*55
+        p.append(f'<path d="M{x} 192l260 100 M{x+260} 92l-260 100" stroke="{t["line"]}" fill="none" opacity=".35"/>')
+    centers=[(205,150,'RAG'),(500,125,'SRE'),(795,150,'MCP')]
+    p.append(f'<path class="iso-wire" d="M205 192L500 165L795 192" fill="none" stroke="{t["accent"]}" stroke-dasharray="3 7" stroke-width="1.8"/>')
+    for i,(x,y,tag) in enumerate(centers):
+        p.append(f'<ellipse cx="{x}" cy="{y+65}" rx="95" ry="23" fill="{t["accent"]}" opacity=".10"/>')
+        p.append(iso_block(t,x,y+35,180,0,12))
+        p.append(f'<g class="iso-float" style="animation-delay:-{i*2}s">')
+        p.append(iso_block(t,x,y+4,116,0,18))
+        p.append(iso_block(t,x,y-22,84,0,22,tag))
+        p.append('</g>')
+    texts=[('KNOWLEDGE','文档 · 检索 · 工作流'),('DIAGNOSIS','证据 · 推理 · 故障报告'),('GOVERNANCE','权限 · 执行门 · 审计')]
+    english_sub=['Documents · Retrieval · Workflows','Evidence · Reasoning · Reports','Permissions · Gates · Audit']
+    for i,((x,y,tag),(title,sub)) in enumerate(zip(centers,texts)):
+        p.append(T(x,284,title,16,t,color=t['accent'],weight=700,anchor='middle',mono=True))
+        p.append(T(x,311,english_sub[i] if english else sub,12,t,color=t['sub'],anchor='middle'))
+    return S(1000,350,'\n'.join(p))
+
+
 def banner(t, c):
     W,H=1000,340
     A=t['accent']; B=t['accent2']
@@ -181,15 +227,18 @@ def banner(t, c):
     for label in ['Hybrid RAG','MCP Tools','Cloud Native']:
         part,w=chip(x,246,label,t,12);p.append(part);x+=w+10
     p.append(T(44,315,'@'+c['username'],12,t,color=t['sub'],mono=True))
-    cx,cy=810,156
-    for r in [57,90,123]:
-        p.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{r}" ry="{r*.62}" transform="rotate(-28 {cx} {cy})" fill="none" stroke="url(#aurora)" opacity=".5"/>')
-    p.append(f'<circle cx="{cx}" cy="{cy}" r="39" fill="{t["chip"]}" stroke="{A}"/>')
-    p.append(T(cx,cy+9,'ZF',28,t,color=A,weight=800,mono=True,anchor='middle'))
-    for i in range(3):
-        p.append(f'<g class="orbit"><animateTransform attributeName="transform" type="rotate" from="{i*120} {cx} {cy}" to="{i*120+360} {cx} {cy}" dur="{18+i*6}s" repeatCount="indefinite"/><circle cx="{cx+90}" cy="{cy}" r="4" fill="{B}"/></g>')
-    for x,y,label in [(700,55,'RETRIEVE'),(902,220,'REASON'),(765,285,'EXECUTE')]:
-        p.append(T(x,y,label,11,t,color=A,mono=True,anchor='middle',spacing=1.5))
+    p.append(iso_styles())
+    p.append(f'<ellipse cx="810" cy="251" rx="120" ry="27" fill="{A}" opacity=".10"/>')
+    for i in range(5):
+        yy=203+i*12
+        p.append(f'<path d="M675 {yy}l135 55 135-55" fill="none" stroke="{A}" opacity=".12"/>')
+    p.append(iso_block(t,810,214,218,0,14))
+    p.append('<g class="iso-float">')
+    p.append(iso_block(t,810,165,160,0,21))
+    p.append(iso_block(t,810,118,118,0,25))
+    p.append(iso_block(t,810,76,78,0,29,'ZF'))
+    p.append('</g>')
+    p.append(T(810,303,'KNOWLEDGE → ACTION',11,t,color=A,mono=True,anchor='middle',spacing=1.4))
     return S(W,H,'\n'.join(p))
 
 
@@ -607,7 +656,7 @@ def build_readme():
     a(section_heading('about','about'))
     for line in CFG['bio']: a('- ' + line)
     a('\n> ✨ **我的工程兴趣**：把文档、模型、工具和基础设施连接起来，做出能解释、能部署、能继续演进的系统。\n')
-    a(pic('capability', '知识检索、故障诊断、工具治理：三个核心工程方向')+'\n')
+    a(pic('spatial', '知识检索、故障诊断与工具治理的等距系统示意')+'\n')
     a('### 🧭 从哪里开始看？\n')
     a('- **想了解 AI 应用开发** → 从企业知识库 Agent 入手，看连接器、Hybrid RAG、知识图谱与工作流。')
     a('- **想了解 AIOps / SRE** → 从故障诊断 Agent 入手，看 Kubernetes 现场证据、Runbook 与 Trace。')
@@ -714,6 +763,7 @@ def build_english():
     heading('about','about')
     for line in en['about']:a('- '+line)
     a('\n> ✨ My engineering interest: connect documents, models, tools and infrastructure into systems that are understandable, deployable and maintainable.\n')
+    a(pic('spatial-en','Isometric systems architecture concept')+'\n')
     a('### Where to start\n\n- **AI application engineering** → the knowledge Agent platform: connectors, retrieval, graphs and workflows.\n- **AIOps / SRE** → the diagnosis platform: infrastructure evidence, runbooks and execution traces.\n- **MCP engineering** → the DevOps server: tool schemas, risk classification and execution gates.\n')
     heading('stack','stack')
     original=copy.deepcopy(CFG['badge_groups'])
@@ -761,6 +811,8 @@ def build_english():
 def main():
     n = build_assets()
     for key,t in THEMES.items():
+        (ASSETS/f'spatial-{key}.svg').write_text(spatial_systems(t),encoding='utf-8')
+        (ASSETS/f'spatial-en-{key}.svg').write_text(spatial_systems(t,True),encoding='utf-8')
         (ASSETS/f'languages-{key}.svg').write_text(language_panel(t),encoding='utf-8')
         (ASSETS/f'capability-{key}.svg').write_text(capability_map(t),encoding='utf-8')
     build_action_assets()
