@@ -1,0 +1,102 @@
+{
+  "about": [
+    "👋 Hi, I'm **Zhifeng Jin**. I work on **AI Agent applications, AIOps and platform engineering**, connecting knowledge retrieval, tool calling and infrastructure automation.",
+    "🧠 **AI applications**: document connectors, Hybrid RAG, knowledge graphs and Agent runtimes that connect information with actionable workflows.",
+    "☁️ **Infrastructure**: Kubernetes diagnosis, governed MCP tools and observability, with attention to evidence, permissions and execution boundaries.",
+    "🛠️ **Engineering**: Python / FastAPI, Go, React / Vue and TypeScript across APIs, data layers, dashboards and deployment.",
+    "📦 **Portfolio**: three core AI / operations projects, plus gateway, full-stack commerce and network authentication practice.",
+    "🌱 **Exploring**: retrieval evaluation, reliable Agent execution, tenant boundaries and failure recovery."
+  ],
+  "projects": [
+    {
+      "name": "Enterprise AI Agent Platform",
+      "intro": "A private-deployment knowledge automation platform that connects scattered enterprise documents with retrieval, Agent planning and workflows.",
+      "bullets": [
+        "**Document ingestion**: Feishu, Yuque and GitLab connectors with full / incremental synchronization, scheduled jobs and failure retries.",
+        "**Hybrid retrieval**: document chunking and embeddings, vector and full-text retrieval, knowledge graphs, optional reranking and answers with citations.",
+        "**Agent and workflows**: Planner, Tool Registry, Memory and LLM Gateway, alongside DAG workflows, approvals and API / webhook / schedule triggers.",
+        "**Platform foundations**: JWT, RBAC and tenant isolation; OpenTelemetry, Prometheus and Grafana; Compose, Kubernetes manifests and Helm."
+      ],
+      "focus": "Retrieval fusion, permission constraints and asynchronous task lifecycles."
+    },
+    {
+      "name": "AI SRE Platform",
+      "intro": "An incident-diagnosis application for SRE / DevOps: turn a natural-language incident into tool planning, infrastructure evidence, runbook retrieval and a structured incident report.",
+      "bullets": [
+        "**Multi-step diagnosis**: a LangGraph agent → tools → agent loop with conversation and working memory; Kubernetes, Docker and SSH tool discovery.",
+        "**Troubleshooting scenarios**: CrashLoopBackOff, OOMKilled, ImagePullBackOff and 502 / 503, bringing resource status, logs and knowledge into a shared context.",
+        "**Knowledge and access**: runbook / SOP retrieval and Feishu synchronization, scoped by organization_id and exposed through JWT / RBAC.",
+        "**Visible execution**: Agent Trace records tool calls and timing; SSE streams progress to the React console, with PostgreSQL and Compose deployment."
+      ],
+      "focus": "Connecting diagnosis to evidence and tracing multi-step tool execution."
+    },
+    {
+      "name": "Enterprise DevOps MCP Server",
+      "intro": "MCP interfaces for Linux, Docker, Kubernetes and SSH operations, with explicit permissions and risk classification for infrastructure tools.",
+      "bullets": [
+        "**18 tools**: health, CPU, memory, disk, processes, container logs, Kubernetes resources and SSH, with risk and permission annotations.",
+        "**Read-only by default**: EXECUTE_TOOLS_ENABLED=false; module allowlists, execution protection and command filtering constrain operations.",
+        "**Confirmation and audit**: confirm_execute_action and get_audit_logs provide confirmation and recording interfaces for clients.",
+        "**Integration**: Cursor MCP configuration examples, tool discovery scripts, Docker Compose and CI configuration."
+      ],
+      "focus": "Tool schemas, risk classes, execution gates and audit records."
+    },
+    {
+      "name": "New API · Multi-model Gateway",
+      "intro": "An open-source gateway practice area covering unified model access, channel pools, dynamic pricing and load balancing.",
+      "bullets": [
+        "**System perspective**: follow a request from a shared API entry through routing to a model provider, and explore the relationship between channel management, pricing and availability.",
+        "**Reading path**: Chinese and English documentation and the web console. Project identity, upstream attribution and license declarations remain with the original project."
+      ],
+      "focus": "Model service integration, gateway routing and administration interfaces."
+    },
+    {
+      "name": "Dujiao-Next · Full-stack Commerce",
+      "intro": "A Go + Vue 3 / TypeScript virtual-goods commerce application with customer pages, an administration console and an API service.",
+      "bullets": [
+        "**Transaction flow**: products, carts, orders, payments and automated delivery, with multiple payment channels and localization.",
+        "**API boundaries**: public, user, administration, upstream and channel routes; separate user / administrator JWTs, login limits and sensitive-data encryption.",
+        "**Data and delivery**: SQLite / PostgreSQL, Redis, asynchronous queue configuration, container deployment and production setup documentation."
+      ],
+      "focus": "Business state transitions, layered API permissions and full-stack delivery."
+    },
+    {
+      "name": "LDAP / RADIUS / UniFi Authentication",
+      "intro": "An enterprise Wi-Fi authentication integration using Go-Ldap-Admin, OpenLDAP, FreeRADIUS and UniFi, with unified accounts and department-based network segmentation.",
+      "bullets": [
+        "**Shared identity**: LDAP manages users and organization attributes; FreeRADIUS connects authentication to the UniFi network.",
+        "**Dynamic VLANs**: map LDAP department attributes to RADIUS replies to assign VLANs without a separate SSID for each organization.",
+        "**Deployment and diagnosis**: Compose configuration, file permissions, RADIUS debug mode and radtest troubleshooting instructions."
+      ],
+      "focus": "Identity integration, protocol configuration and reproducible troubleshooting."
+    }
+  ],
+  "skills": [
+    [
+      "Backend / Services",
+      "Frontend / Engineering",
+      "AI / Agents",
+      "Data / Cache",
+      "Cloud Native / Tooling",
+      "Observability / Access"
+    ],
+    [
+      "**Agents and retrieval**: LangGraph, Planner, Tool Calling, Memory, MCP discovery, document chunking, embeddings, Hybrid RAG, knowledge graphs, reranking and citations.",
+      "**Application engineering**: Python, FastAPI, async SQLAlchemy and Alembic; Go services and gateways; React / Vue 3, TypeScript, Vite and Tailwind.",
+      "**Platform foundations**: PostgreSQL, Redis, ChromaDB, Docker, Kubernetes, Helm, GitHub Actions, OpenTelemetry, Prometheus and Grafana.",
+      "**Security and integration**: JWT, RBAC, tenant isolation, tool risk classification, execution protection, audit logs and LDAP / RADIUS integration."
+    ]
+  ],
+  "next": [
+    "**Retrieval quality**: organize evaluation samples and distinguish recall, ranking and grounding problems.",
+    "**Execution reliability**: handle timeouts, retries, partial failures and long-running task state.",
+    "**Observability**: connect model decisions, tool calls, latency and cost in a shared analysis context.",
+    "**Platform experience**: reduce friction in configuration, knowledge ingestion and tool integration."
+  ],
+  "principles": [
+    "🛡️ **Explicit boundaries**: make permissions, tenancy, data access and execution scope visible in interfaces and implementation.",
+    "🔎 **Traceable behavior**: make errors diagnosable, tool calls inspectable and conclusions evidence-backed.",
+    "📦 **Complete delivery**: include configuration templates, startup instructions, deployment entry points and technical documentation.",
+    "🧱 **Continuous evolution**: clarify module responsibilities so the system remains approachable to readers and contributors."
+  ]
+}

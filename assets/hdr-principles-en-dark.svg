@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="88" viewBox="0 0 1000 88" role="img">
+<rect x="1" y="9" width="58" height="58" rx="14" fill="#211C13" stroke="#51452B"/>
+<path d="M30 19l13 5v11c0 7-7 12-13 15-6-3-13-8-13-15V24z M23 34l5 5 9-10" fill="none" stroke="#D6B85C" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+<defs><linearGradient id="titleGold" x1="0%" y1="0%" x2="100%" y2="25%"><stop offset="0%" stop-color="#C59938"/><stop offset="48%" stop-color="#F6D98D"/><stop offset="100%" stop-color="#D2AE50"/></linearGradient></defs>
+<text x="80" y="39" font-family="'Inter','Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" font-size="27" font-weight="700" fill="url(#titleGold)" text-anchor="start">Engineering Principles</text>
+<text x="82" y="61" font-family="'Fira Code','SFMono-Regular',Consolas,monospace" font-size="10" font-weight="400" fill="url(#titleGold)" text-anchor="start" letter-spacing="3">PRINCIPLES</text>
+<defs><linearGradient id="rule"><stop stop-color="#D6B85C"/><stop offset="1" stop-color="#51452B" stop-opacity=".2"/></linearGradient></defs><path d="M1 83H999" stroke="url(#rule)"/>
+</svg>

@@ -561,6 +561,7 @@ def build_readme():
     u = CFG['username']
     L = []
     a = L.append
+    a(f'<p align="center"><strong>简体中文</strong> &nbsp;|&nbsp; <a href="https://github.com/{u}/{u}/blob/main/README_EN.md">English</a></p>\n')
     a('<div align="center">\n')
     a(pic('banner', f'Zhifeng Jin · @{u}'))
     a(pic('typing', '构建知识库 Agent、探索 AIOps、打磨 MCP 工具'))
@@ -660,12 +661,79 @@ def build_preview():
     (ROOT/'preview.html').write_text(page.replace('__BODY__',content),encoding='utf-8')
 
 
+def build_english():
+    import copy
+    en=json.loads((ROOT/'profile.en.json').read_text(encoding='utf-8'))
+    u=CFG['username']; base=f'https://github.com/{u}/{u}/blob/main'
+    language=f'<p align="center"><a href="https://github.com/{u}">简体中文</a> &nbsp;|&nbsp; <a href="{base}/README_EN.md">English</a></p>\n'
+    titles={'about':'About Me','stack':'Tech Stack','projects':'Selected Work','portfolio':'More Projects','notes':'Technical Notes','focus':'Focus & Exploration','principles':'Engineering Principles','links':'Let’s Connect'}
+    for key,t in THEMES.items():
+        hero=banner(t,CFG).replace('从知识到行动，从代码到系统。','From knowledge to action.').replace('Build with context. Execute with boundaries.','Build with context. Execute with boundaries.')
+        (ASSETS/f'banner-en-{key}.svg').write_text(hero,encoding='utf-8')
+        for sec in CFG['sections']:
+            translated=dict(sec,title=titles[sec['key']])
+            (ASSETS/f'hdr-{sec["key"]}-en-{key}.svg').write_text(header(t,translated),encoding='utf-8')
+        for i,(pr,d) in enumerate(zip(CFG['projects'],en['projects']),1):
+            translated=dict(pr,name=d['name'],desc=d['focus'],tech=pr['tech'])
+            (ASSETS/f'proj-{pr["slug"]}-en-{key}.svg').write_text(project(t,translated,i),encoding='utf-8')
+    L=[language,pic('banner-en','Zhifeng Jin — AI Agent / AIOps / Platform Engineering'),'\n**AI Agent · AIOps · Platform Engineering**\n','Make knowledge searchable, tools governed, and systems observable.\n','[About](#about) · [Tech Stack](#stack) · [Projects](#projects) · [Notes](#notes) · [Connect](#contact)\n']
+    a=L.append
+    def heading(k,anchor=None):
+        a((f'<a id="{anchor}"></a>\n\n' if anchor else '')+'<h2>'+pic('hdr-'+k+'-en',titles[k]).replace('\n','')+'</h2>\n')
+    heading('about','about')
+    for line in en['about']:a('- '+line)
+    a('\n> ✨ My engineering interest: connect documents, models, tools and infrastructure into systems that are understandable, deployable and maintainable.\n')
+    a('### Where to start\n\n- **AI application engineering** → the knowledge Agent platform: connectors, retrieval, graphs and workflows.\n- **AIOps / SRE** → the diagnosis platform: infrastructure evidence, runbooks and execution traces.\n- **MCP engineering** → the DevOps server: tool schemas, risk classification and execution gates.\n')
+    heading('stack','stack')
+    original=copy.deepcopy(CFG['badge_groups'])
+    try:
+        for group,title in zip(CFG['badge_groups'],en['skills'][0]):group['title']=title
+        a(tech_badge_grid())
+    finally:CFG['badge_groups']=original
+    a('These technologies reflect application and integration work across the public projects; see each repository for its actual scope.\n')
+    for line in en['skills'][1]:a('- '+line)
+    a('')
+    heading('projects','projects')
+    a('The core portfolio follows **knowledge automation → incident diagnosis → tool governance**.\n')
+    for i,(pr,d) in enumerate(zip(CFG['projects'],en['projects'])):
+        if i==3:
+            heading('portfolio')
+            a('Additional open-source practice in gateways, commerce and network authentication. Repository capabilities are described here; attribution and licensing remain with each project.\n')
+        a(f'### {i+1:02d} · [{d["name"]}]({pr["url"]})\n')
+        a('<a href="'+pr['url']+'">'+pic('proj-'+pr['slug']+'-en',d['name']).replace('\n','')+'</a>\n')
+        a(d['intro']+'\n')
+        a('<details open>\n<summary>🔬 Technical implementation</summary>\n')
+        for line in d['bullets']:a('- '+line)
+        a('\n</details>\n\n> 🔧 Engineering focus: '+d['focus']+'\n')
+        links=[('Source',pr['url'])]
+        labels=['Demo','Architecture','Reference']
+        links.extend((labels[j] if j<len(labels) else 'Documentation',url) for j,(_,url) in enumerate(CFG['project_details'][i]['links']))
+        a(' · '.join(f'[{label}]({url})' for label,url in links)+'\n\n---\n')
+    heading('notes','notes')
+    a('Use the project documentation as a reading path from a concrete engineering question to its design:\n')
+    for title,repo,fragment in [('How does enterprise knowledge enter RAG?','enterprise-ai-agent-platform','rag-pipeline'),('How are Agent tasks orchestrated?','enterprise-ai-agent-platform','核心能力'),('How is incident evidence collected?','enterprise-ai-sre-platform','features'),('How does MCP separate reads from writes?','enterprise-devops-mcp-server','mcp-tool-catalog'),('How is the platform deployed?','enterprise-ai-agent-platform','部署架构')]:
+        a(f'- [{title}](https://github.com/{u}/{repo}#{fragment})')
+    a('')
+    heading('focus')
+    for line in en['next']:a('- '+line)
+    a('')
+    heading('principles')
+    for line in en['principles']:a('- '+line)
+    a('')
+    heading('links','contact')
+    a('Happy to exchange ideas about **Agent engineering, RAG, MCP, Kubernetes diagnosis and platform engineering**. Issues and pull requests are welcome in the relevant repositories.\n')
+    a(f'[GitHub](https://github.com/{u}) · [All repositories](https://github.com/{u}?tab=repositories)\n\n---\n\nBuild ideas into code, and make systems understandable and reliable. Thanks for your feedback and support ✨\n')
+    a(language)
+    (ROOT/'README_EN.md').write_text('\n'.join(L)+'\n',encoding='utf-8')
+
+
 def main():
     n = build_assets()
     for key,t in THEMES.items():
         (ASSETS/f'languages-{key}.svg').write_text(language_panel(t),encoding='utf-8')
         (ASSETS/f'capability-{key}.svg').write_text(capability_map(t),encoding='utf-8')
     build_readme()
+    build_english()
     build_preview()
     print(f"OK: {n} animated SVG + README.md + preview.html")
     print(f"assets -> {ASSETS}")

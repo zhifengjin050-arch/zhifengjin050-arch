@@ -1,3 +1,5 @@
+<p align="center"><strong>简体中文</strong> &nbsp;|&nbsp; <a href="https://github.com/zhifengjin050-arch/zhifengjin050-arch/blob/main/README_EN.md">English</a></p>
+
 <div align="center">
 
 <picture>
