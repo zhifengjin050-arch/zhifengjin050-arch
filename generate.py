@@ -383,9 +383,9 @@ def project(t, p_, idx):
     W, H = 1000, 150
     A, INK, SUB, LINE = t["accent"], t["ink"], t["sub"], t["line"]
     p = glass_bg(t, W, H, 16)
-    p.append('<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><linearGradient id="cardsheen"><stop stop-color="'+A+'" stop-opacity="0"/><stop offset=".5" stop-color="'+A+'" stop-opacity=".09"/><stop offset="1" stop-color="'+A+'" stop-opacity="0"/></linearGradient></defs>')
-    p.append('<style>@keyframes sweep{0%,15%{transform:translateX(-350px)}65%,100%{transform:translateX(1100px)}}@keyframes trace{to{stroke-dashoffset:-2300}}.sheen{animation:sweep 10s ease-in-out infinite}.edge{animation:trace 24s linear infinite}@media(prefers-reduced-motion:reduce){.sheen{display:none}.edge{animation:none}}</style>')
-    p.append('<g clip-path="url(#cardclip)"><rect class="sheen" x="0" y="0" width="280" height="150" fill="url(#cardsheen)"/></g>')
+    p.append('<defs><clipPath id="cardclip"><rect x="1" y="1" width="998" height="148" rx="16"/></clipPath><radialGradient id="cardsheen" cx="50%" cy="50%" r="50%"><stop stop-color="'+A+'" stop-opacity=".23"/><stop offset=".5" stop-color="'+A+'" stop-opacity=".12"/><stop offset="1" stop-color="'+A+'" stop-opacity="0"/></radialGradient></defs>')
+    p.append('<style>@keyframes sweep{0%,100%{transform:translateX(-100px)}50%{transform:translateX(560px)}}@keyframes trace{to{stroke-dashoffset:-2300}}.sheen{animation:sweep 9s ease-in-out infinite}.edge{animation:trace 24s linear infinite}@media(prefers-reduced-motion:reduce){.sheen{display:none}.edge{animation:none}}</style>')
+    p.append(f'<g clip-path="url(#cardclip)"><rect class="sheen" style="animation-delay:-{idx*1.2:.1f}s" x="0" y="-35" width="560" height="220" fill="url(#cardsheen)"/></g>')
     p.append(f'<rect class="edge" x="1" y="1" width="998" height="148" rx="16" fill="none" stroke="{A}" stroke-width="1.3" stroke-dasharray="95 2205" opacity=".55"/>')
     p.append(R(20, 22, 4, 106, 2, A))
     p.append(T(962, 66, f"{idx:02d}", 46, t, color=A, weight=800, mono=True,
