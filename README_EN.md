@@ -16,11 +16,16 @@ Make knowledge searchable, tools governed, and systems observable.
 
 ### 🎬 Project Preview
 
-<table width="100%"><tr>
-<td width="33%" valign="top"><h4>01 · Knowledge Agent</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-agent-platform/main/docs/videos/cover.png" alt="Knowledge Agent demo cover" width="100%"></a><p>Documents → Retrieval → Workflow</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform">Source ↗</a></p></td>
-<td width="33%" valign="top"><h4>02 · SRE Diagnosis</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-sre-platform/main/docs/videos/cover.png" alt="SRE Diagnosis demo cover" width="100%"></a><p>Evidence → Runbooks → Reports</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform">Source ↗</a></p></td>
-<td width="33%" valign="top"><h4>03 · MCP Tooling</h4><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-devops-mcp-server/main/docs/videos/cover.png" alt="MCP Tooling demo cover" width="100%"></a><p>Tool schemas → Gates → Audit</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server">Source ↗</a></p></td>
-</tr></table>
+<table width="100%">
+<tr>
+<td width="50%" valign="top"><h4>01 · Knowledge Agent</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-agent-platform/main/docs/videos/cover.png" alt="Knowledge Agent demo cover" width="100%"></a><p>Documents → Retrieval → Workflow</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform">Source ↗</a></p></td>
+<td width="50%" valign="top"><h4>02 · SRE Diagnosis</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-sre-platform/main/docs/videos/cover.png" alt="SRE Diagnosis demo cover" width="100%"></a><p>Evidence → Runbooks → Reports</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform">Source ↗</a></p></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><h4>03 · MCP Tooling</h4><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-devops-mcp-server/main/docs/videos/cover.png" alt="MCP Tooling demo cover" width="100%"></a><p>Tool schemas → Gates → Audit</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/">▶ Watch demo</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server">Source ↗</a></p></td>
+<td width="50%" valign="top"><h4>04 · Toyouju Tutorial</h4><a href="https://vibeadmin.aiallmax.top/share/bx74ulrj2s/p/-ZCwn0ws9Nh"><img src="https://toyouju.aimszs.top/assets/brand/og-cover.png" alt="Toyouju tutorial cover" width="100%"></a><p>Activate → Set up → Apply → Track progress</p><p><a href="https://vibeadmin.aiallmax.top/share/bx74ulrj2s/p/-ZCwn0ws9Nh">▶ Watch tutorial</a> · <a href="https://toyouju.aimszs.top/">Website ↗</a></p></td>
+</tr>
+</table>
 
 <a id="about"></a>
 
@@ -261,7 +266,9 @@ Toyouju helps job seekers prioritize roles using resume matching, manage applica
 - **Local execution**: application actions run in the user's own browser; users complete sign-in and verification themselves.
 - **Progress tracking**: bring application records and funnel status together for review and follow-up.
 
-> 🔒 This project is in development. Its repository is currently private; a public link will be added when materials are available.
+> 🔒 The repository is currently private; the website and tutorial are publicly accessible.
+
+[Website](https://toyouju.aimszs.top/) · [One-minute video tutorial](https://vibeadmin.aiallmax.top/share/bx74ulrj2s/p/-ZCwn0ws9Nh)
 
 ---
 
