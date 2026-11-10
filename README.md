@@ -31,11 +31,16 @@
 
 ### 🎬 先看作品 · Project Preview
 
-<table width="100%"><tr>
-<td width="33%" valign="top"><h4>01 · 知识库 Agent</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-agent-platform/main/docs/videos/cover.png" alt="知识库 Agent demo cover" width="100%"></a><p>文档接入 → 混合检索 → 工作流</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform">源码 ↗</a></p></td>
-<td width="33%" valign="top"><h4>02 · SRE 故障诊断</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-sre-platform/main/docs/videos/cover.png" alt="SRE 故障诊断 demo cover" width="100%"></a><p>现场证据 → 知识检索 → 故障报告</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform">源码 ↗</a></p></td>
-<td width="33%" valign="top"><h4>03 · MCP 工具治理</h4><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-devops-mcp-server/main/docs/videos/cover.png" alt="MCP 工具治理 demo cover" width="100%"></a><p>工具协议 → 执行保护 → 审计</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server">源码 ↗</a></p></td>
-</tr></table>
+<table width="100%">
+<tr>
+<td width="50%" valign="top"><h4>01 · 知识库 Agent</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-agent-platform/main/docs/videos/cover.png" alt="知识库 Agent demo cover" width="100%"></a><p>文档接入 → 混合检索 → 工作流</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-agent-platform/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-agent-platform">源码 ↗</a></p></td>
+<td width="50%" valign="top"><h4>02 · SRE 故障诊断</h4><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-ai-sre-platform/main/docs/videos/cover.png" alt="SRE 故障诊断 demo cover" width="100%"></a><p>现场证据 → 知识检索 → 故障报告</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-ai-sre-platform/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-ai-sre-platform">源码 ↗</a></p></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><h4>03 · MCP 工具治理</h4><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/"><img src="https://raw.githubusercontent.com/zhifengjin050-arch/enterprise-devops-mcp-server/main/docs/videos/cover.png" alt="MCP 工具治理 demo cover" width="100%"></a><p>工具协议 → 执行保护 → 审计</p><p><a href="https://zhifengjin050-arch.github.io/enterprise-devops-mcp-server/">▶ 观看演示</a> · <a href="https://github.com/zhifengjin050-arch/enterprise-devops-mcp-server">源码 ↗</a></p></td>
+<td width="50%" valign="top"><h4>04 · 投有据使用教程</h4><a href="https://vibeadmin.aiallmax.top/share/bx74ulrj2s/p/-ZCwn0ws9Nh"><img src="https://toyouju.aimszs.top/assets/brand/og-cover.png" alt="投有据使用教程封面" width="100%"></a><p>激活 → 配置任务 → 自动投递 → 查看记录</p><p><a href="https://vibeadmin.aiallmax.top/share/bx74ulrj2s/p/-ZCwn0ws9Nh">▶ 观看教学视频</a> · <a href="https://toyouju.aimszs.top/">官网 ↗</a></p></td>
+</tr>
+</table>
 
 <a id="about"></a>
 
@@ -371,7 +376,9 @@ Go + Vue 3 / TypeScript 的虚拟商品交易与自动发货系统实践，覆�
 - **本机执行**：投递操作在用户自己的浏览器中进行；登录和验证码由用户自行完成。
 - **进度管理**：汇总投递记录与漏斗状态，方便回看和跟进。
 
-> 🔒 项目仍在开发，仓库暂未公开；此处展示产品方向，公开资料准备好后再补充访问入口。
+> 🔒 项目仓库目前未公开；官网与使用教程可公开访问。
+
+[🌐 官网](https://toyouju.aimszs.top/) · [🎬 一分钟使用教程](https://vibeadmin.aiallmax.top/share/bx74ulrj2s/p/-ZCwn0ws9Nh)
 
 ---
 
