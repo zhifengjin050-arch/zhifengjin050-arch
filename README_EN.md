@@ -30,7 +30,7 @@ Make knowledge searchable, tools governed, and systems observable.
 - 🧠 **AI applications**: document connectors, Hybrid RAG, knowledge graphs and Agent runtimes that connect information with actionable workflows.
 - ☁️ **Infrastructure**: Kubernetes diagnosis, governed MCP tools and observability, with attention to evidence, permissions and execution boundaries.
 - 🛠️ **Engineering**: Python / FastAPI, Go, React / Vue and TypeScript across APIs, data layers, dashboards and deployment.
-- 📦 **Portfolio**: three core AI / operations projects, plus gateway, full-stack commerce and network authentication practice.
+- 📦 **Portfolio**: three core AI / operations projects, three open-source engineering projects, and Toyouju, a job application product in development.
 - 🌱 **Exploring**: retrieval evaluation, reliable Agent execution, tenant boundaries and failure recovery.
 
 > ✨ My engineering interest: connect documents, models, tools and infrastructure into systems that are understandable, deployable and maintainable.
@@ -246,6 +246,20 @@ An enterprise Wi-Fi authentication integration using Go-Ldap-Admin, OpenLDAP, Fr
 > 🔧 Engineering focus: Identity integration, protocol configuration and reproducible troubleshooting.
 
 [Source](https://github.com/zhifengjin050-arch/ldap-radius-unifi-auth)
+
+---
+
+### 07 · Toyouju (投有据) · Local Job Application Copilot
+
+**JOB SEARCH × LOCAL AUTOMATION** · `Python` / `Browser automation` / `Application tracking`
+
+Toyouju helps job seekers prioritize roles using resume matching, manage applications on their own computers, and track progress through an application funnel.
+
+- **Role matching**: use resume and job information to help prioritize applications.
+- **Local execution**: application actions run in the user's own browser; users complete sign-in and verification themselves.
+- **Progress tracking**: bring application records and funnel status together for review and follow-up.
+
+> 🔒 This project is in development. Its repository is currently private; a public link will be added when materials are available.
 
 ---
 
